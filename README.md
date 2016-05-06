@@ -12,8 +12,8 @@ The Docker image used by the compile script is available from
 1. Edit the `ergodox-*.kll` files in the `kiibohd` folder
 2. When adding or removing a layer, change the value of PartialMaps in `kiibohd/ergodox.bash` accordingly
 3. Run `./compile.sh`
-4. The compiled firmware is now available as `kiibohd/*.dfu.bin`
-5. Flash the keyboard with [dfu-util](https://github.com/kiibohd/controller/wiki/Loading-DFU-Firmware)
+4. The compiled firmware is now available as as files `kiibohd/left_kiibohd.dfu.bin` and `kiibohd/right_kiibohd.dfu.bin`
+5. Flash the keyboard (see below)
 
 It's enough to flash the master half of the keyboard (the one that's plugged into the host computer).
 However, you might be surprised if you ever switch the master to the other half -- your layout is
@@ -22,11 +22,9 @@ of confusion.
 
 ## Flashing
 
-You need to install `dfu-util`.  For me, this was `brew install dfu-util`.
+You need to install [dfu-util](https://github.com/kiibohd/controller/wiki/Loading-DFU-Firmware).  For me, this was `brew install dfu-util`.
 
-Place your keyboard into flash mode.  For me, I switch to layer 3 and hit the escape key, or the `=` key.
-The default Ergodox firmware doesn't have a way to enable flashing without pressing the switch on the bottom
-of the PCB, which would require me to dissamble my keyboard (later model have an access hole).
+Place your keyboard into flash mode, by hitting the switch on the bottom of the PCB, or using a key sequence that enables flashing.
 
 Execute `dfu-util -D kiibohd/left_kiibohd.dfu.bin`:
 
@@ -57,3 +55,5 @@ state(7) = dfuMANIFEST, status(0) = No error condition is present
 dfu-util: unable to read DFU status after completion
 18:58:47 ~/workspaces/github/ergodox-infinity-layout >
 ```
+
+Obiously, if you use the right half of your Ergodox as the master, flash using the other file.
