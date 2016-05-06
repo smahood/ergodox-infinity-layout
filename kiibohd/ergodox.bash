@@ -2,6 +2,7 @@
 # This is a build script template
 # These build scripts are just a convenience for configuring your keyboard (less daunting than CMake)
 # Jacob Alexander 2015
+# Howard M. Lewis Ship 2016
 
 
 
@@ -23,7 +24,7 @@ BaseMap="defaultMap leftHand slave1 rightHand"
 # This is the default layer of the keyboard
 # NOTE: To combine kll files into a single layout, separate them by spaces
 # e.g.  DefaultMap="mylayout mylayoutmod"
-DefaultMap="fred-0 lcdFuncMap"
+DefaultMap="ergodox-0 lcdFuncMap"
 
 # This is where you set the additional layers
 # NOTE: Indexing starts at 1
@@ -31,8 +32,8 @@ DefaultMap="fred-0 lcdFuncMap"
 # e.g.  PartialMaps[1]="layer1 layer1mod"
 #       PartialMaps[2]="layer2"
 #       PartialMaps[3]="layer3"
-PartialMaps[1]="fred-1"
-PartialMaps[2]="fred-2"
+PartialMaps[1]="ergodox-1"
+PartialMaps[2]="ergodox-2"
 
 
 

@@ -1,23 +1,25 @@
 # Infinity ErgoDox layout and Kiibohd kll compiler
 
-My layout for the [Infinity ErgoDox](http://input.club/devices/infinity-ergodox) keyboard.
+Forked and customized from [fredZen;s project](https://github.com/fredZen/ergodox-infinity-layout).
 
-![Keyboard layout](layout.png)
+My layout for the [Infinity ErgoDox](http://input.club/devices/infinity-ergodox) keyboard.
 
 ## Editing
 
-The layout files are in kiibohd/*.kll.
-
-- fred-0.kll is the main layer
-- fred-1.kll is the layer with arrows, function keys and braces
-- fred-2.kll is the layer with the keypad
+The layout files are in `kiibohd/ergodox-*.kll`.
 
 ## Workflow
 
-My workflow uses the [dockerized version](https://hub.docker.com/r/fmerizen/ergodox-infinity-layout/) of the KLL compiler. First make sure that you have a working docker installation.
+The Docker image used by the compile script is available from
+[Docker Hub](https://hub.docker.com/r/fmerizen/ergodox-infinity-layout/).
 
-1. Edit fred-*.kll to my liking.
-2. If I added or removed a layer, I need to change the value of PartialMaps in kiibohd/fred.bash accordingly
-3. Run `./compile.sh fred.bash` from a docker aware bash. For me that will just be git-bash. And yes, that's correct, there is no directory before fred.bash although fred.bash is in the kiibohd subdirectory.
-4. The compiled firmware is now available as kiibohd/*.dfu.bin.
-5. Flash the keyboard with [dfu-util](https://github.com/kiibohd/controller/wiki/Loading-DFU-Firmware). It's enough to flash the master half of the keyboard (the one that's plugged into the keyboard). For instance, I always have the right half plugged into the computer; the left half is plugged into the right half. So I flash right_kiibohd.dfu.bin.
+1. Edit the .kll files in the `kiibohd` folder
+2. When adding or removing a layer, change the value of PartialMaps in `kiibohd/ergodox.bash` accordingly
+3. Run `./compile.sh`
+4. The compiled firmware is now available as `kiibohd/*.dfu.bin`.
+5. Flash the keyboard with [dfu-util](https://github.com/kiibohd/controller/wiki/Loading-DFU-Firmware). 
+
+It's enough to flash the master half of the keyboard (the one that's plugged into the keyboard).
+However, you might be surprised if you ever switch the master to the other half -- your layout is
+determined by the firmware of the master half; keeping both halves in sync may spare you a lot
+of confusion.

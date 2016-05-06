@@ -1,13 +1,12 @@
-Author = "Frederic Merizen 2015";
-Base = "Blank";
-Date = "2015-10-23";
-Generator = "KIICONF 0.2";
-KLL = "0.3c";
+Name = "MDErgo1";
 Layout = "Default";
-Name = "Fred";
+Base = "Blank";
 Version = "0.1";
+Author = "HaaTa (Jacob Alexander) 2015";
+KLL = "0.3c";
+Date = "2015-09-12";
+Generator = "KIICONF 0.2";
 
-U"EQUALS" : flashMode();
 U"7" : U"NUMLOCK";
 U"8" : U"P/";
 U"9" : U"P*";
