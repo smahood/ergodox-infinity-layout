@@ -12,7 +12,7 @@ The Docker image used by the compile script is available from
 1. Edit the `ergodox-*.kll` files in the `kiibohd` folder
 2. When adding or removing a layer, change the value of PartialMaps in `kiibohd/ergodox.bash` accordingly
 3. Run `./compile.sh`
-4. The compiled firmware is now available as as files `kiibohd/left_kiibohd.dfu.bin` and `kiibohd/right_kiibohd.dfu.bin`
+4. The compiled firmware is now available as files `kiibohd/left_kiibohd.dfu.bin` and `kiibohd/right_kiibohd.dfu.bin`
 5. Flash the keyboard (see below)
 
 It's enough to flash the master half of the keyboard (the one that's plugged into the host computer).
@@ -55,5 +55,4 @@ state(7) = dfuMANIFEST, status(0) = No error condition is present
 dfu-util: unable to read DFU status after completion
 18:58:47 ~/workspaces/github/ergodox-infinity-layout >
 ```
-
-Obiously, if you use the right half of your Ergodox as the master, flash using the other file.
+Otionally, switch your cables to make the other side the master, and repeat with the other firmware file.
