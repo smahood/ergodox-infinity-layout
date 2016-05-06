@@ -4,6 +4,21 @@ Forked and customized from [fredZen's project](https://github.com/fredZen/ergodo
 
 My layout for the [Infinity ErgoDox](http://input.club/devices/infinity-ergodox) keyboard.
 
+This is the basic layout:
+
+![Layout](basic-layout.png)
+ 
+In layer 1, the `=` key locks layer 2, the numeric pad mode.
+
+In layer 1, you csn also lock layer 3, the Cursive editting and navigation layer.
+
+Layer 3 also include firmware flash keys, on `ESC` and `=`.
+
+Gradually, the above image may grow out of date, as I continue to edit the KLL (Keyboard
+Layout Language) files.
+
+The [KLL Spec](https://www.overleaf.com/read/zzqbdwqjfwwf) explains how to do more advanced customizations.
+
 ## Workflow
 
 The Docker image used by the compile script is available from
