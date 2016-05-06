@@ -9,7 +9,7 @@ My layout for the [Infinity ErgoDox](http://input.club/devices/infinity-ergodox)
 The Docker image used by the compile script is available from
 [Docker Hub](https://hub.docker.com/r/fmerizen/ergodox-infinity-layout/).
 
-1. Edit the `ergodox-*..kll` files in the `kiibohd` folder
+1. Edit the `ergodox-*.kll` files in the `kiibohd` folder
 2. When adding or removing a layer, change the value of PartialMaps in `kiibohd/ergodox.bash` accordingly
 3. Run `./compile.sh`
 4. The compiled firmware is now available as `kiibohd/*.dfu.bin`
