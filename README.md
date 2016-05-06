@@ -1,6 +1,6 @@
 # Infinity ErgoDox layout and Kiibohd kll compiler
 
-Forked and customized from [fredZen;s project](https://github.com/fredZen/ergodox-infinity-layout).
+Forked and customized from [fredZen's project](https://github.com/fredZen/ergodox-infinity-layout).
 
 My layout for the [Infinity ErgoDox](http://input.club/devices/infinity-ergodox) keyboard.
 
