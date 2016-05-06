@@ -1,8 +1,8 @@
-Name = "MDErgo1";
+Name = "ergodox";
 Layout = "Default";
 Base = "Blank";
 Version = "0.1";
-Author = "HaaTa (Jacob Alexander) 2015";
+Author = "Howard M. Lewis Ship";
 KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
@@ -10,3 +10,8 @@ Generator = "KIICONF 0.2";
 U"EQUALS" : flashMode();
 U"MINUS" : flashMode();
 
+# Cursive stuff
+
+U"r" : U["Ctrl"] + U["Alt"] + U"d";		# move forward into sexp
+U"f" : U["Ctrl"] + U["Alt"] + U"f";		# move forward
+U"v" : U["Ctrl"] + U["Alt"] + U"n";		# move forward out of sexp
