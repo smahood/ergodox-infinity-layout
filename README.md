@@ -55,4 +55,4 @@ state(7) = dfuMANIFEST, status(0) = No error condition is present
 dfu-util: unable to read DFU status after completion
 18:58:47 ~/workspaces/github/ergodox-infinity-layout >
 ```
-Otionally, switch your cables to make the other side the master, and repeat with the other firmware file.
+Optionally, switch your cables to make the other side the master, and repeat with the other firmware file.
