@@ -12,7 +12,7 @@ In layer 1, the `=` key locks layer 2, the numeric pad mode.
 
 In layer 1, you csn also lock layer 3, the Cursive editting and navigation layer.
 
-Layer 3 also include firmware flash keys, on `\`` (left) and `=` (right), as well as a
+Layer 3 also include firmware flash keys, on <code>\`</code> (left) and `=` (right), as well as a
 large number of mappings specific to IntelliJ and Cursive.
 
 Gradually, the above image may grow out of date, as I continue to edit the KLL (Keyboard
