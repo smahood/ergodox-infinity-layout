@@ -7,12 +7,10 @@ KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
-U"EQUALS" : flashMode();
-U"MINUS" : flashMode();
-
-# Cursive stuff
 
 # Left:
+
+U"`" : flashMode();
 
 U"r" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
 U"f" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
@@ -27,6 +25,9 @@ U"z" : U["Ctrl"] + U["Shift"] + U"e";				# send form before carat to repl
 U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
 
 # Right:
+
+U"EQUALS" : flashMode();
+
 
 U["Enter"] : U["Ctrl"] + U["Shift"] + U"m";			# load file in repl
 U["Space"] : U["Ctrl"] + U["Shift"] + U"o";			# [open] namespace...
