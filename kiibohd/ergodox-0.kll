@@ -26,7 +26,7 @@ U"F" : U"F";
 U"D" : U"D";
 U"S" : U"S";
 U"A" : U"A";
-U"TAB" : U"CAPSLOCK";
+U"TAB" : U"LCTRL";
 U"LALT" : U"LALT";
 U"LCTRL" : U"LCTRL";
 U"FUNCTION2" : U"FUN1";
@@ -84,3 +84,4 @@ U"UP" : U"UP";
 U"RIGHT" : U"RIGHT";
 U"RGUI" : U"RGUI";
 
+U"LSHIFT" + U"RSHIFT" : U"CAPSLOCK";
