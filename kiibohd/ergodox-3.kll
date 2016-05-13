@@ -12,12 +12,14 @@ Generator = "KIICONF 0.2";
 
 U"`" : flashMode();
 
-U"r" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
-U"f" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
-U"v" : U["Ctrl"] + U["Alt"] + U"n";					# move forward out of sexp
-U"t" : U["Ctrl"] + U["Shift"] + U"]"; 				# barf forwards
-U"g" : U["Ctrl"] + U["Shift"] + U"0"; 				# slurp forwards
-U"b" : U["Gui"] + U["Ctrl"] + U"s";					# join
+U"b" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
+U"g" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
+U"t" : U["Ctrl"] + U["Alt"] + U"n";					# move forward out of sexp
+
+U"v" : U["Alt"] + U["Ctrl"] + U"p";					# move backward into sexp
+U"f" : U["Alt"] + U["Ctrl"] + U"b";					# move backward
+U"r" : U["Alt"] + U["Ctrl"] + U"u";					# move backward out of sexp
+
 U["Backspace"] : U["Ctrl"] + U["Shift"] + U"c";		# clear repl output
 
 U"q" : U["Ctrl"] + U["Shift"] + U"t";				# run tests in ns in repl
@@ -31,12 +33,14 @@ U"EQUALS" : flashMode();
 
 U["Enter"] : U["Ctrl"] + U["Shift"] + U"m";			# load file in repl
 U["Space"] : U["Ctrl"] + U["Shift"] + U"o";			# [open] namespace...
+
 U"y" : U["Ctrl"] + U["Shift"] + U"["; 				# barf backwards
 U"h" : U["Gui"] + U["Ctrl"] + U"j";					# slurp backwards
 U"n" : U["Alt"] + U["Shift"] + U"s";				# split
-U"u" : U["Alt"] + U["Ctrl"] + U"p";					# move backward into sexp
-U"j" : U["Alt"] + U["Ctrl"] + U"b";					# move backward
-U"m" : U["Alt"] + U["Ctrl"] + U"u";					# move backward out of sexp
+U"u" : U["Ctrl"] + U["Shift"] + U"]"; 				# barf forwards
+U"j" : U["Ctrl"] + U["Shift"] + U"0"; 				# slurp forwards
+U"m" : U["Gui"] + U["Ctrl"] + U"s";					# join
+
 U"k" : U["Alt"] + U"s";								# splice
 U"," : U["Gui"] + U["Alt"] + U",";					# thread form
 U"." : U["Gui"] + U["Alt"] + U".";					# unthread form
