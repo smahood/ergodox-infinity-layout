@@ -26,6 +26,8 @@ U"q" : U["Ctrl"] + U["Shift"] + U"t";				# run tests in ns in repl
 U"z" : U["Ctrl"] + U["Shift"] + U"e";				# send form before carat to repl
 U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
 
+U"2" : U"Gui" + U"F12";								# file structure
+
 # Right:
 
 U"EQUALS" : flashMode();
@@ -46,3 +48,6 @@ U"," : U["Gui"] + U["Alt"] + U",";					# thread form
 U"." : U["Gui"] + U["Alt"] + U".";					# unthread form
 
 U"p" : U["Gui"] + U["Shift"] + U"a";				# find action...
+
+U"6" : U"Shift" + U"F6";							# rename ...
+U";" : U"Gui" + U"Alt" + U"l";						# reformat
