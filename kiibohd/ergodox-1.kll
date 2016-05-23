@@ -43,4 +43,4 @@ U"RIGHT" : U"F14";
 
 # The escape key is hard to get at with my pinky; here's an alternate way
 
-U"`" : U"Esc";
+U"BACKTICK" : U"ESC";
