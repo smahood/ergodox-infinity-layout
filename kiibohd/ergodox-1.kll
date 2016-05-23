@@ -7,6 +7,11 @@ KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
+
+# The escape key is hard to get at with my pinky; here's an alternate way
+
+U"EQUALS" : U"ESC";
+
 U"ESC" : U"LCK3";
 U"5" : U"F5";
 U"4" : U"F4";
@@ -34,13 +39,9 @@ U"P" : U"F11";
 U"J" : U"LEFT";
 U"K" : U"DOWN";
 U"L" : U"RIGHT";
-U"SEMICOLON" : U"F12";
+U"SEMICOLON" : U0x45; # U"F12" doesn't work!
 U"M" : CONS"MUTE";
 U"COMMA" : CONS"VOLUMEDOWN";
 U"PERIOD" : CONS"VOLUMEUP";
 U"SLASH" : U"F13";
 U"RIGHT" : U"F14";
-
-# The escape key is hard to get at with my pinky; here's an alternate way
-
-U"BACKTICK" : U"ESC";
