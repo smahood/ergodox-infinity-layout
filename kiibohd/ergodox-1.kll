@@ -45,3 +45,7 @@ U"COMMA" : CONS"VOLUMEDOWN";
 U"PERIOD" : CONS"VOLUMEUP";
 U"SLASH" : U"F13";
 U"RIGHT" : U"F14";
+
+U"FUNCTION1" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
+
+U"LBRACE" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / forward

@@ -86,6 +86,3 @@ U"RGUI" : U"RGUI";
 
 U"LSHIFT" + U"RSHIFT" : U"CAPSLOCK";
 
-U"FUNCTION1" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
-
-U"LBRACE" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / back
