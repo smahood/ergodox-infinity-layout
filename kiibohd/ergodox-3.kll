@@ -28,6 +28,9 @@ U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
 
 U"2" : U"Gui" + U"F12";								# file structure
 
+U"FUNCTION1" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
+
+
 # Right:
 
 U"EQUALS" : flashMode();
@@ -51,3 +54,7 @@ U"p" : U["Gui"] + U["Shift"] + U"a";				# find action...
 
 U"6" : U"Shift" + U"F6";							# rename ...
 U";" : U"Gui" + U"Alt" + U"l";						# reformat
+
+U"QUOTE" : U"Gui" + U"QUOTE";						# raise
+
+U"LBRACE" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / back
