@@ -28,6 +28,7 @@ U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
 
 U"2" : U"Gui" + U"F12";								# file structure
 
+U"1" : U["Alt"] + U"F1";							# navigate / select in...
 
 # Right:
 
