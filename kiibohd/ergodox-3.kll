@@ -8,21 +8,20 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
-# Left:
-
 U"`" : flashMode();
+U"EQUALS" : flashMode();
 
-U"b" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
-U"g" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
-U"t" : U["Ctrl"] + U["Alt"] + U"n";					# move forward out of sexp
+U"v" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
+U"f" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
+U"r" : U["Ctrl"] + U["Alt"] + U"n";					# move forward out of sexp
 
-U"v" : U["Alt"] + U["Ctrl"] + U"p";					# move backward into sexp
-U"f" : U["Alt"] + U["Ctrl"] + U"b";					# move backward
-U"r" : U["Alt"] + U["Ctrl"] + U"u";					# move backward out of sexp
+U"c" : U["Alt"] + U["Ctrl"] + U"p";					# move backward into sexp
+U"d" : U["Alt"] + U["Ctrl"] + U"b";					# move backward
+U"e" : U["Alt"] + U["Ctrl"] + U"u";					# move backward out of sexp
 
 U["Backspace"] : U["Ctrl"] + U["Shift"] + U"c";		# clear repl output
 
-U"q" : U["Ctrl"] + U["Shift"] + U"t";				# run tests in ns in repl
+U"\" : U["Ctrl"] + U["Shift"] + U"t";				# run tests in ns in repl
 U"z" : U["Ctrl"] + U["Shift"] + U"e";				# send form before carat to repl
 U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
 
@@ -32,21 +31,15 @@ U"1" : U["Alt"] + U"F1";							# navigate / select in...
 
 U"3" : U"Gui" + U"F3";								# show bookmarks
 
-
-# Right:
-
-U"EQUALS" : flashMode();
-
-
 U["Enter"] : U["Ctrl"] + U["Shift"] + U"m";			# load file in repl
 U["Space"] : U["Ctrl"] + U["Shift"] + U"o";			# [open] namespace...
 
-U"y" : U["Ctrl"] + U["Shift"] + U"["; 				# barf backwards
-U"h" : U["Gui"] + U["Ctrl"] + U"j";					# slurp backwards
-U"n" : U["Alt"] + U["Shift"] + U"s";				# split
-U"u" : U["Ctrl"] + U["Shift"] + U"]"; 				# barf forwards
-U"j" : U["Ctrl"] + U["Shift"] + U"0"; 				# slurp forwards
-U"m" : U["Gui"] + U["Ctrl"] + U"s";					# join
+U"w" : U["Ctrl"] + U["Shift"] + U"["; 				# barf backwards
+U"s" : U["Gui"] + U["Ctrl"] + U"j";					# slurp backwards
+U"j" : U["Alt"] + U["Shift"] + U"s";				# split
+U"t" : U["Ctrl"] + U["Shift"] + U"]"; 				# barf forwards
+U"g" : U["Ctrl"] + U["Shift"] + U"0"; 				# slurp forwards
+U"b" : U["Gui"] + U["Ctrl"] + U"s";					# join
 
 U"k" : U["Alt"] + U"s";								# splice
 U"," : U["Gui"] + U["Alt"] + U",";					# thread form
@@ -58,6 +51,7 @@ U"6" : U"Shift" + U"F6";							# rename ...
 U";" : U"Gui" + U"Alt" + U"l";						# reformat
 
 U"QUOTE" : U"Gui" + U"QUOTE";						# raise
+U"x" : U"Gui" + U"QUOTE";							# raise
 
 U"7": U["Alt"] + U"F7";								# find usages
 
