@@ -30,6 +30,9 @@ U"2" : U"Gui" + U"F12";								# file structure
 
 U"1" : U["Alt"] + U"F1";							# navigate / select in...
 
+U"3" : U"Gui" + U"F3";								# show bookmarks
+
+
 # Right:
 
 U"EQUALS" : flashMode();
@@ -55,4 +58,6 @@ U"6" : U"Shift" + U"F6";							# rename ...
 U";" : U"Gui" + U"Alt" + U"l";						# reformat
 
 U"QUOTE" : U"Gui" + U"QUOTE";						# raise
+
+U"7": U["Alt"] + U"F7";								# find usages
 
