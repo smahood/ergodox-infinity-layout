@@ -53,5 +53,7 @@ U";" : U"Gui" + U"Alt" + U"l";						# reformat
 U"QUOTE" : U"Gui" + U"QUOTE";						# raise
 U"x" : U"Gui" + U"QUOTE";							# raise
 
-U"7": U["Alt"] + U"F7";								# find usages
+U"7" : U["Alt"] + U"F7";							# find usages
 
+U"Up" : U["Alt"] + U["Gui"] + U"Up";				# previous occurance (search)
+U"Down" : U["Alt"] + U["Gui"] + U"Down";			# next occurance (search)
