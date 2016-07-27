@@ -8,7 +8,7 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
-U"`" : flashMode();
+U"-" : flashMode();
 U"EQUALS" : flashMode();
 
 U"v" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp

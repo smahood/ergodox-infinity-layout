@@ -8,11 +8,6 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
-# The escape key is hard to get at with my pinky; here's an alternate way
-
-U"EQUALS" : U"ESC";
-
-U"ESC" : U"LCK3";
 U"5" : U"F5";
 U"4" : U"F4";
 U"3" : U"F3";
@@ -27,7 +22,7 @@ U"V" : CONS"PAUSEPLAY";
 U"C" : CONS"SCANPREVIOUSTRACK";
 U"X" : CONS"BRIGHTNESSINCREMENT";
 U"Z" : CONS"BRIGHTNESSDECREMENT";
-U"FUNCTION6" : U"LCK3";
+U"LGUI" : U"LCK3";
 U"6" : U"F6";
 U"7" : U"F7";
 U"8" : U"F8";
@@ -46,7 +41,7 @@ U"PERIOD" : CONS"VOLUMEUP";
 U"SLASH" : U"F13";
 U"RIGHT" : U"F14";
 
-U"FUNCTION1" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
+U"LEFT" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
 
-U"LBRACE" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / forward
+U"RIGHT" : U["Gui"] + U["Alt"] + U["Right"];	# navigate / forward
 
