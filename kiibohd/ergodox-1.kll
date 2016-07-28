@@ -42,6 +42,11 @@ U"SLASH" : U"F13";
 U"RIGHT" : U"F14";
 
 U"LEFT" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
+U"FUN4" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
 
 U"RIGHT" : U["Gui"] + U["Alt"] + U["Right"];	# navigate / forward
+U"FUN5" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / forward
 
+# The backtick reach is a bit hard, this makes it easier, its on
+# the big ESCAPE key.
+U"=" : U"BACKTICK";
