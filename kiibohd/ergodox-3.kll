@@ -57,3 +57,5 @@ U"7" : U["Alt"] + U"F7";							# find usages
 
 U"Up" : U["Alt"] + U["Gui"] + U"Up";				# previous occurance (search)
 U"Down" : U["Alt"] + U["Gui"] + U"Down";			# next occurance (search)
+
+U"Y" : U"Ctrl" + U"Shift" + U"J";					# join lines
