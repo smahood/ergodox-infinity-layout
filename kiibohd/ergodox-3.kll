@@ -59,3 +59,9 @@ U"Up" : U["Alt"] + U["Gui"] + U"Up";				# previous occurance (search)
 U"Down" : U["Alt"] + U["Gui"] + U"Down";			# next occurance (search)
 
 U"Y" : U"Ctrl" + U"Shift" + U"J";					# join lines
+
+U"LEFT" : U"Gui" + U"Shift" + U"Up";				# move form up
+U"FUN4" : U"Gui" + U"Shift" + U"Up";
+
+U"RIGHT" : U"Gui" + U"Shift" + U"Down";				# move form down
+U"FUN5" : U"Gui" + U"Shift" + U"Down";
