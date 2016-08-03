@@ -27,7 +27,7 @@ The Docker image used by the compile script is available from
 
 1. Edit the `ergodox-*.kll` files in the `kiibohd` folder
 2. When adding or removing a layer, change the value of PartialMaps in `kiibohd/ergodox.bash` accordingly
-3. Run `./compile.sh`
+3. Run `make compile`
 4. The compiled firmware is now available as files `kiibohd/left_kiibohd.dfu.bin` and `kiibohd/right_kiibohd.dfu.bin`
 5. Flash the keyboard (see below)
 
@@ -42,10 +42,11 @@ You need to install [dfu-util](https://github.com/kiibohd/controller/wiki/Loadin
 
 Place your keyboard into flash mode, by hitting the switch on the bottom of the PCB, or using a key sequence that enables flashing.
 
-Execute `dfu-util -D kiibohd/left_kiibohd.dfu.bin`:
+Execute `make install`:
 
 ```
-18:56:59 ~/workspaces/github/ergodox-infinity-layout > dfu-util -D kiibohd/left_kiibohd.dfu.bin
+18:56:59 ~/workspaces/github/ergodox-infinity-layout > make install
+dfu-util -D kiibohd/left_kiibohd.dfu.bin
 dfu-util 0.9
 
 Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
@@ -71,4 +72,4 @@ state(7) = dfuMANIFEST, status(0) = No error condition is present
 dfu-util: unable to read DFU status after completion
 18:58:47 ~/workspaces/github/ergodox-infinity-layout >
 ```
-Optionally, switch your cables to make the other side the master, and repeat with the other firmware file.
+Optionally, switch your cables to make the other side the master, and use the command `make install-right`.
