@@ -1,52 +1,28 @@
-Name = "MDErgo1";
+Name = "ergodox";
 Layout = "Default";
 Base = "Blank";
 Version = "0.1";
-Author = "HaaTa (Jacob Alexander) 2015";
+Author = "Shaun Mahood";
 KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
+U"ESC" : flashMode();
+U"R" : U"QUOTE";
+U"E" : U"PERIOD";
+U"W" : U"COMMA";
+U"D" : U"SEMICOLON";
+U"S" : U"BACKTICK";
+U"C" : U"Z";
+U"X" : U"Q";
+U"HOME" : U"APP";
+U"FUNCTION6" : flashMode();
+U"U" : U"LBRACE";
+U"I" : U"SLASH";
+U"O" : U"RBRACE";
+U"J" : '(';
+U"K" : U"MINUS";
+U"L" : ')';
+U"COMMA" : U"EQUALS";
+U"PAGEUP" : U"APP";
 
-U"5" : U"F5";
-U"4" : U"F4";
-U"3" : U"F3";
-U"2" : U"F2";
-U"1" : U"F1";
-U"W" : U"UP";
-U"D" : U"RIGHT";
-U"S" : U"DOWN";
-U"A" : U"LEFT";
-U"B" : CONS"SCANNEXTTRACK";
-U"V" : CONS"PAUSEPLAY";
-U"C" : CONS"SCANPREVIOUSTRACK";
-U"X" : CONS"BRIGHTNESSINCREMENT";
-U"Z" : CONS"BRIGHTNESSDECREMENT";
-U"LGUI" : U"LCK3";
-U"6" : U"F6";
-U"7" : U"F7";
-U"8" : U"F8";
-U"9" : U"F9";
-U"0" : U"F10";
-U"MINUS" : U"LCK2";
-U"I" : U"UP";
-U"P" : U"F11";
-U"J" : U"LEFT";
-U"K" : U"DOWN";
-U"L" : U"RIGHT";
-U"SEMICOLON" : U0x45; # U"F12" doesn't work!
-U"M" : CONS"MUTE";
-U"COMMA" : CONS"VOLUMEDOWN";
-U"PERIOD" : CONS"VOLUMEUP";
-U"SLASH" : U"F13";
-U"RIGHT" : U"F14";
-
-U"LEFT" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
-U"FUN4" : U["Gui"] + U["Alt"] + U["Left"];		# navigate / back
-
-U"RIGHT" : U["Gui"] + U["Alt"] + U["Right"];	# navigate / forward
-U"FUN5" : U["Gui"] + U["Alt"] + U["Right"];		# navigate / forward
-
-# The backtick reach is a bit hard, this makes it easier, its on
-# the big ESCAPE key.
-U"=" : U"BACKTICK";
