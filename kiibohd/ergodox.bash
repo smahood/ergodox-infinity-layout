@@ -35,6 +35,9 @@ DefaultMap="ergodox-0 lcdFuncMap"
 PartialMaps[1]="ergodox-1 lcdFuncMap"
 PartialMaps[2]="ergodox-2 lcdFuncMap"
 PartialMaps[3]="ergodox-3 lcdFuncMap"
+PartialMaps[4]="ergodox-4 lcdFuncMap"
+PartialMaps[5]="ergodox-5 lcdFuncMap"
+PartialMaps[6]="ergodox-6 lcdFuncMap"
 
 
 

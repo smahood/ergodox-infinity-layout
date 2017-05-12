@@ -7,80 +7,119 @@ KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
+###################
+### Unused Keys ###
+###################
+
 U"ESC" : None;
-U"5" : U"5";
-U"4" : U"4";
-U"3" : U"3";
-U"2" : U"2";
-U"1" : U"1";
 U"EQUALS" : None;
 U"FUNCTION1" : None;
-U"T" : U"Y";
-U"R" : U"P";
-U"E" : U"A";
-U"W" : U"S";
-U"Q" : U"TAB";
 U"BACKSLASH" : None;
-U"G" : U"I";
-U"F" : U"U";
-U"D" : U"E";
-U"S" : U"O";
-U"A" : U"DELETE";
 U"TAB" : None;
-U"LALT" : U"LALT";
-U"LCTRL" : U"LCTRL";
 U"FUNCTION2" : None;
-U"B" : U"X";
-U"V" : U"J";
-U"C" : U"N";
-U"X" : U"K";
-U"Z" : U"BACKSLASH";
-U"LSHIFT" : None;
-U"HOME" : U"LGUI";
-U"END" : U"ESCAPE";
-U"DELETE" : U"LSHIFT";
-U"BACKSPACE" : U"SPACE";
-U"FUNCTION5" : U"FUN1";
-U"FUNCTION4" : U"FUN2";
-U"FUNCTION3" : U"FUN3";
-U"BACKTICK" : U"FUN4";
 U"LGUI" : None;
 U"FUNCTION6" : None;
+U"LSHIFT" : None;
+U"RGUI" : None;
+U"RSHIFT" : None;
+U"FUNCTION7" : None;
+U"QUOTE" : None;
+U"RBRACE" : None;
+U"MINUS" : None;
+U"LBRACE" : None;
+
+#################
+### First Row ###
+#################
+
+U"1" : U"1";
+U"2" : U"2";
+U"3" : U"3";
+U"4" : U"4";
+U"5" : U"5";
+
 U"6" : U"6";
 U"7" : U"7";
 U"8" : U"8";
 U"9" : U"9";
 U"0" : U"0";
-U"MINUS" : None;
-U"LBRACE" : None;
+
+##################
+### Second Row ###
+##################
+
+U"Q" : U"TAB";
+U"W" : U"S";
+U"E" : U"A";
+U"R" : U"P";
+U"T" : U"Y";
+
 U"Y" : U"F";
 U"U" : U"G";
 U"I" : U"C";
 U"O" : U"R";
 U"P" : U"BACKSPACE";
-U"RBRACE" : None;
+
+#################
+### Third Row ###
+#################
+
+U"A" : U"DELETE";
+U"S" : U"O";
+U"D" : U"E";
+U"F" : U"U";
+U"G" : U"I";
+
 U"H" : U"D";
 U"J" : U"H";
 U"K" : U"T";
-U"L" : U"L";
+U"L" : U"N";
 U"SEMICOLON" : U"ESCAPE";
-U"QUOTE" : None;
-U"RALT" : U"RALT";
-U"RCTRL" : U"RCTRL";
-U"FUNCTION7" : None;
-U"N" : U"M";
-U"M" : U"B";
-U"COMMA" : U"V";
-U"PERIOD" : U"W";
+
+##################
+### Fourth Row ###
+##################
+
+U"Z" : U"PERIOD";
+U"X" : U"FUN5";
+U"C" : U"FUN3";
+U"V" : U"FUN1";
+U"B" : U"X";
+
+U"N" : U"B";
+U"M" : U"FUN2";
+U"COMMA" : U"FUN4";
+U"PERIOD" : U"FUN6";
 U"SLASH" : U"ENTER";
-U"RSHIFT" : None;
+
+#################
+### Fifth Row ###
+#################
+
+U"BACKTICK" : U"Q";
+U"FUNCTION3" : U"J";
+U"FUNCTION4" : U"K";
+U"FUNCTION5" : U"L";
+
+U"LEFT" : U"M";
+U"DOWN" : U"W";
+U"UP" : U"V";
+U"RIGHT" : U"Z";
+
+######################
+### Thumb Clusters ###
+######################
+
+U"LCTRL" : U"LCTRL";
+U"LALT" : U"LALT";
+U"BACKSPACE" : U"LCTRL";
+U"DELETE" : U"LALT";
+U"HOME" : U"LGUI";
+U"END" : U"ESCAPE";
+
+U"RALT" : U"RCTRL";
+U"RCTRL" : U"RCTRL";
 U"PAGEUP" : U"RGUI";
 U"PAGEDOWN" : U"ESCAPE";
 U"ENTER" : U"RSHIFT";
 U"SPACE" : U"SPACE";
-U"LEFT" : U"FUN1";
-U"DOWN" : U"FUN2";
-U"UP" : U"FUN3";
-U"RIGHT" : U"FUN4";
-U"RGUI" : None;
-

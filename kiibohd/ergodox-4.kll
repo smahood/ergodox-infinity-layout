@@ -14,8 +14,8 @@ U"-" : flashMode();
 ### First Row ###
 #################
 
-#U"1" : 
-#U"2" :
+U"1" :  U"ESC", U"SPACE", U"m", U"QUOTE";
+U"2" :  U"ESC", U"SPACE", U"m", '"';
 #U"3" :
 #U"4" :
 #U"5" :
@@ -30,16 +30,16 @@ U"-" : flashMode();
 ### Second Row ###
 ##################
 
-#U"Q" :
+#U"Q" : 
 #U"W" :
 #U"E" :
 #U"R" :
 #U"T" :
 
 #U"Y" :
-U"U" : U"HOME";
-U"I" : U"UP";
-U"O" : U"END";
+#U"U" :
+#U"I" :
+#U"O" :
 #U"P" :
 
 #################
@@ -53,9 +53,9 @@ U"O" : U"END";
 #U"G" : 
 
 #U"H" :
-U"J" : U"LEFT";
-U"K" : U"DOWN";
-U"L" : U"RIGHT";
+#U"J" :
+#U"K" :
+#U"L" :
 #U"SEMICOLON" :
 
 ##################
@@ -70,9 +70,9 @@ U"L" : U"RIGHT";
 
 #U"N" : 
 #U"M" : 
-#U"COMMA" : 
-#U"PERIOD" : 
-#U"SLASH" : 
+#U"COMMA" :
+#U"PERIOD" :
+#U"SLASH" :
 
 #################
 ### Fifth Row ###
@@ -95,13 +95,3 @@ U"L" : U"RIGHT";
 #U"LCTRL" :
 #U"LALT" : 
 #U"BACKSPACE" :
-#U"DELETE" :
-#U"HOME" :
-#U"END" :
-
-#U"RALT" :
-#U"RCTRL" :
-#U"PAGEUP" :
-#U"PAGEDOWN" :
-#U"ENTER" :
-#U"SPACE" :
