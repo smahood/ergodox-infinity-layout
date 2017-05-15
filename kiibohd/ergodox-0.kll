@@ -80,7 +80,7 @@ U"SEMICOLON" : U"ESCAPE";
 ### Fourth Row ###
 ##################
 
-U"Z" : U"PERIOD";
+U"Z" : U"Q";
 U"X" : U"FUN5";
 U"C" : U"FUN3";
 U"V" : U"FUN1";
@@ -96,7 +96,7 @@ U"SLASH" : U"ENTER";
 ### Fifth Row ###
 #################
 
-U"BACKTICK" : U"Q";
+U"BACKTICK" : U"\";
 U"FUNCTION3" : U"J";
 U"FUNCTION4" : U"K";
 U"FUNCTION5" : U"L";
@@ -110,8 +110,8 @@ U"RIGHT" : U"Z";
 ### Thumb Clusters ###
 ######################
 
-U"LCTRL" : U"LCTRL";
-U"LALT" : U"LALT";
+U"LCTRL" : U"LSHIFT";
+U"LALT" : U"SPACE";
 U"BACKSPACE" : U"LCTRL";
 U"DELETE" : U"LALT";
 U"HOME" : U"LGUI";
