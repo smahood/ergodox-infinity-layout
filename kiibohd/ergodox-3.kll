@@ -48,9 +48,9 @@ U"O" : U"END";
 
 #U"A" : 
 #U"S" : 
-#U"D" : 
-#U"F" : 
-#U"G" : 
+#U"D" :
+U"F" : '^';
+U"G" : '&'; 
 
 #U"H" :
 U"J" : U"LEFT";
@@ -65,8 +65,8 @@ U"L" : U"RIGHT";
 #U"Z" : 
 #U"X" : 
 #U"C" :
-#U"V" :
-#U"B" :
+U"V" : '@';
+U"B" : '!';
 
 #U"N" : 
 #U"M" : 
@@ -81,7 +81,7 @@ U"L" : U"RIGHT";
 #U"BACKTICK" :
 #U"FUNCTION3" :
 #U"FUNCTION4" :
-#U"FUNCTION5" :
+U"FUNCTION5" : '+';
 
 #U"LEFT" :
 #U"DOWN" :

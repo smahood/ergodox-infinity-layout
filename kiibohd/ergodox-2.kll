@@ -65,9 +65,9 @@ U"FUNCTION3" : '*';
 U"FUNCTION4" : '%';
 U"FUNCTION5" : '+';
 
+U"LEFT" : '=';
 U"DOWN" : '#';
 U"UP" : '$';
-
 
 ######################
 ### Thumb Clusters ###
