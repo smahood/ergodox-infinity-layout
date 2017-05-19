@@ -14,94 +14,34 @@ U"-" : flashMode();
 ### First Row ###
 #################
 
-#U"1" : 
-#U"2" :
-#U"3" :
-#U"4" :
-#U"5" :
-
-#U"6" :
-#U"7" :
-#U"8" :
-#U"9" :
-#U"0" :
-
 ##################
 ### Second Row ###
 ##################
 
-#U"Q" :
-#U"W" :
-#U"E" :
-#U"R" :
-#U"T" :
-
-#U"Y" :
 U"U" : U"HOME";
 U"I" : U"UP";
 U"O" : U"END";
-#U"P" :
 
 #################
 ### Third Row ###
 #################
 
-#U"A" : 
-#U"S" : 
-#U"D" :
-U"F" : '^';
-U"G" : '&'; 
+U"F" : '=';
 
-#U"H" :
 U"J" : U"LEFT";
 U"K" : U"DOWN";
 U"L" : U"RIGHT";
-#U"SEMICOLON" :
 
 ##################
 ### Fourth Row ###
 ##################
 
-#U"Z" : 
-#U"X" : 
-#U"C" :
-U"V" : '@';
-U"B" : '!';
-
-#U"N" : 
-#U"M" : 
-#U"COMMA" : 
-#U"PERIOD" : 
-#U"SLASH" : 
+U"V" : '+';
 
 #################
 ### Fifth Row ###
 #################
 
-#U"BACKTICK" :
-#U"FUNCTION3" :
-#U"FUNCTION4" :
-U"FUNCTION5" : '+';
-
-#U"LEFT" :
-#U"DOWN" :
-#U"UP" :
-#U"RIGHT" :
-
 ######################
 ### Thumb Clusters ###
 ######################
-
-#U"LCTRL" :
-#U"LALT" : 
-#U"BACKSPACE" :
-#U"DELETE" :
-#U"HOME" :
-#U"END" :
-
-#U"RALT" :
-#U"RCTRL" :
-#U"PAGEUP" :
-#U"PAGEDOWN" :
-#U"ENTER" :
-#U"SPACE" :

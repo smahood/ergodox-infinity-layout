@@ -40,7 +40,6 @@ U"O" : '}';
 U"S" : ',';
 U"D" : '.';
 
-U"H" : '/'; 
 U"J" : '_';
 U"K" : '[';
 U"L" : ']';
@@ -52,7 +51,6 @@ U"L" : ']';
 U"X" : ';'; 
 U"C" : ':';
 
-U"N" : '?';
 U"M" : '-';
 U"COMMA" : '(';
 U"PERIOD" : ')';
@@ -61,13 +59,11 @@ U"PERIOD" : ')';
 ### Fifth Row ###
 #################
 
-U"FUNCTION3" : '*';
-U"FUNCTION4" : '%';
-U"FUNCTION5" : '+';
+U"FUNCTION3" : U"Q";
+U"FUNCTION4" : U"Z";
 
-U"LEFT" : '=';
-U"DOWN" : '#';
-U"UP" : '$';
+U"DOWN" : '/';
+U"UP" : '?';
 
 ######################
 ### Thumb Clusters ###
