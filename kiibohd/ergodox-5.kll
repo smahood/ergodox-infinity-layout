@@ -11,63 +11,34 @@ Generator = "KIICONF 0.2";
 U"-" : flashMode();
 U"EQUALS" : flashMode();
 
-U"1" : U"F11";
-U"2" : U"F12";
-U"3" : U"F13";
-U"4" : U"F14";
-U"5" : U"F15";
 
-U"v" : U["Ctrl"] + U["Alt"] + U"d";					# move forward into sexp
-U"f" : U["Ctrl"] + U["Alt"] + U"f";					# move forward
-U"r" : U["Ctrl"] + U["Alt"] + U"n";					# move forward out of sexp
 
-U"c" : U["Alt"] + U["Ctrl"] + U"p";					# move backward into sexp
-U"d" : U["Alt"] + U["Ctrl"] + U"b";					# move backward
-U"e" : U["Alt"] + U["Ctrl"] + U"u";					# move backward out of sexp
+#################
+### First Row ###
+#################
 
-U["Backspace"] : U["Ctrl"] + U["Shift"] + U"c";		# clear repl output
+##################
+### Second Row ###
+##################
 
-U"\" : U["Ctrl"] + U["Shift"] + U"t";				# run tests in ns in repl
-U"z" : U["Ctrl"] + U["Shift"] + U"e";				# send form before carat to repl
-U"a" : U["Ctrl"] + U["Shift"] + U"n";				# switch repl ns to current file
+#################
+### Third Row ###
+#################
 
-U"2" : U"Gui" + U"F12";								# file structure
+U"C" : U"J";
+U"V" : U"K";
 
-U"1" : U["Alt"] + U"F1";							# navigate / select in...
+##################
+### Fourth Row ###
+##################
 
-U"3" : U"Gui" + U"F3";								# show bookmarks
+U"FUNCTION5" : U"L";
 
-U["Enter"] : U["Ctrl"] + U["Shift"] + U"m";			# load file in repl
-U["Space"] : U["Ctrl"] + U["Shift"] + U"o";			# [open] namespace...
+#################
+### Fifth Row ###
+#################
 
-U"w" : U["Ctrl"] + U["Shift"] + U"["; 				# barf backwards
-U"s" : U["Gui"] + U["Ctrl"] + U"j";					# slurp backwards
-U"j" : U["Alt"] + U["Shift"] + U"s";				# split
-U"t" : U["Ctrl"] + U["Shift"] + U"]"; 				# barf forwards
-U"g" : U["Ctrl"] + U["Shift"] + U"0"; 				# slurp forwards
-U"b" : U["Gui"] + U["Ctrl"] + U"s";					# join
 
-U"k" : U["Alt"] + U"s";								# splice
-U"," : U["Gui"] + U["Alt"] + U",";					# thread form
-U"." : U["Gui"] + U["Alt"] + U".";					# unthread form
-
-U"p" : U["Gui"] + U["Shift"] + U"a";				# find action...
-
-U"6" : U"Shift" + U"F6";							# rename ...
-U";" : U"Gui" + U"Alt" + U"l";						# reformat
-
-U"QUOTE" : U"Gui" + U"QUOTE";						# raise
-U"x" : U"Gui" + U"QUOTE";							# raise
-
-U"7" : U["Alt"] + U"F7";							# find usages
-
-U"Up" : U["Alt"] + U["Gui"] + U"Up";				# previous occurance (search)
-U"Down" : U["Alt"] + U["Gui"] + U"Down";			# next occurance (search)
-
-U"Y" : U"Ctrl" + U"Shift" + U"J";					# join lines
-
-U"LEFT" : U"Gui" + U"Shift" + U"Up";				# move form up
-U"FUN4" : U"Gui" + U"Shift" + U"Up";
-
-U"RIGHT" : U"Gui" + U"Shift" + U"Down";				# move form down
-U"FUN5" : U"Gui" + U"Shift" + U"Down";
+######################
+### Thumb Clusters ###
+######################
