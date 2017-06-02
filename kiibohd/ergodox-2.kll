@@ -62,8 +62,8 @@ U"PERIOD" : ')';
 U"FUNCTION3" : U"Q";
 U"FUNCTION4" : U"Z";
 
-U"DOWN" : '/';
-U"UP" : '?';
+U"DOWN" : '<';
+U"UP" : '>';
 
 ######################
 ### Thumb Clusters ###
