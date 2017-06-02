@@ -1,4 +1,4 @@
-* Uncomfortable keys / motions
+* Uncomfortable keys / motions on the base layer
 ** j
 ** k
 ** q
