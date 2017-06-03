@@ -25,21 +25,22 @@ U"ESC" : flashMode();
 ### Third Row ###
 #################
 
-U"S" : U"W";
-U"D" : U"V";
+U"J" : U"J";
+U"K" : U"K";
+U"L" : U"L";
 
 ##################
 ### Fourth Row ###
 ##################
 
-U"X" : U"J"; 
-U"C" : U"K";
+U"N" : U"Q";
+U"M" : U"W";
+U"COMMA" : U"V";
+U"PERIOD" : U"Z";
 
 #################
 ### Fifth Row ###
 #################
-
-U"FUNCTION5" : U"L";
 
 ######################
 ### Thumb Clusters ###
