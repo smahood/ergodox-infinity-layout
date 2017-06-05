@@ -14,6 +14,8 @@ U"-" : flashMode();
 ### First Row ###
 #################
 
+U"8" : U"PAGEUP";
+
 ##################
 ### Second Row ###
 ##################
@@ -33,6 +35,10 @@ U"L" : U"RIGHT";
 ##################
 ### Fourth Row ###
 ##################
+
+U"M" : U"Ctrl" + U"Left";
+U"COMMA" : U"PAGEDOWN";
+U"PERIOD" : U"Ctrl" + U"Right";
 
 #################
 ### Fifth Row ###
