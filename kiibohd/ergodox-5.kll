@@ -25,14 +25,19 @@ U"EQUALS" : flashMode();
 ### Third Row ###
 #################
 
-U"C" : U"J";
-U"V" : U"K";
+U"H" : U"PAGEUP";
+U"J" : U"UP";
+U"K" : U"HOME";
+U"L" : U"END";
 
 ##################
 ### Fourth Row ###
 ##################
 
-U"FUNCTION5" : U"L";
+U"N" : U"PAGEDOWN";
+U"M" : U"DOWN";
+U"COMMA" : U"LEFT";
+U"PERIOD" : U"RIGHT";
 
 #################
 ### Fifth Row ###
