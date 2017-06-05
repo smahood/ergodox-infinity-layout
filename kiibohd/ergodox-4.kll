@@ -22,12 +22,18 @@ U"-" : flashMode();
 ### Third Row ###
 #################
 
+U"D" : U"Ctrl" + U"Shift" + U"["; # Barf Backwards
+U"F" : U"Ctrl" + U"Shift" + U"]"; # Barf Forwards
+
 U"J" : '_';
 U"L" : '?';
 
 ##################
 ### Fourth Row ###
 ##################
+
+U"C" : U"Ctrl" + U"Shift" + U"9"; # Slurp Backwards
+U"V" : U"Ctrl" + U"Shift" + U"0"; # Slurp Forwards
 
 U"N" : '+';
 U"M" : '-';

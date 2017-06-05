@@ -26,22 +26,27 @@ U"0" : U"F10";
 ### Second Row ###
 ##################
 
+U"U" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
+U"I" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
+U"O" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
+
 #################
 ### Third Row ###
 #################
 
-U"J" : U"J";
-U"K" : U"K";
-U"L" : U"L";
+U"J" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
+U"K" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
+U"L" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
 
 ##################
 ### Fourth Row ###
 ##################
  
-U"N" : U"Q";
-U"M" : U"Z";
-U"COMMA" : U"W";
-U"PERIOD" : U"V";
+
+#U"N" : U"Q";
+#U"M" : U"Z";
+#U"COMMA" : U"W";
+#U"PERIOD" : U"V";
 
 #################
 ### Fifth Row ###

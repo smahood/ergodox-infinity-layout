@@ -50,8 +50,7 @@ U"0" : U"0";
 
 U"Q" : U"TAB";
 
-U"W" : None;
-# U"L";
+U"W" : U"J";
 U"E" : U"A";
 U"R" : U"P";
 U"T" : U"Y";
@@ -82,8 +81,7 @@ U"SEMICOLON" : U"ESCAPE";
 ### Fourth Row ###
 ##################
 
-U"Z" : None;
-# U"Q";
+U"Z" : U"\";
 U"X" : U"FUN5";
 U"C" : U"FUN3";
 U"V" : U"FUN1";
@@ -99,21 +97,15 @@ U"SLASH" : U"ENTER";
 ### Fifth Row ###
 #################
 
-U"BACKTICK" : None;
-# U"\";
-U"FUNCTION3" : None;
-# U"J";
-U"FUNCTION4" : None;
-# U"K";
+U"BACKTICK" : U"Q";
+U"FUNCTION3" : U"W";
+U"FUNCTION4" : U"V";
 U"FUNCTION5" : U"S";
 
 U"LEFT" : U"M";
-U"DOWN" : None;
-# U"W";
-U"UP" : None;
-# U"V";
-U"RIGHT" : None;
-# U"Z";
+U"DOWN" : U"K";
+U"UP" : U"L";
+U"RIGHT" : U"Z";
 
 ######################
 ### Thumb Clusters ###

@@ -30,18 +30,12 @@ U"9" : '>';
 ### Second Row ###
 ##################
 
-U"E" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
-U"R" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
-
 U"I" : '{'; 
 U"O" : '}';
 
 #################
 ### Third Row ###
 #################
-
-U"D" : U["Ctrl"] + U["Alt"] + U["B"];  # S-exp left
-U"F" : U["Ctrl"] + U"Alt" + U["F"]; # S-exp right
 
 U"K" : '[';
 U"L" : ']';
@@ -50,22 +44,12 @@ U"L" : ']';
 ### Fourth Row ###
 ##################
 
-U"C" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
-U"V" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
-
-#U"X" : ';'; 
-#U"C" : ':';
-#U"V" : '+';
-
 U"COMMA" : '(';
 U"PERIOD" : ')';
 
 #################
 ### Fifth Row ###
 #################
-
-#U"FUNCTION3" : U"Q";
-#U"FUNCTION4" : U"Z";
 
 U"DOWN" : '<';
 U"UP" : '>';
