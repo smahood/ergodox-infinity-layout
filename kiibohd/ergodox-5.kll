@@ -21,13 +21,28 @@ U"EQUALS" : flashMode();
 ### Second Row ###
 ##################
 
+U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
+U"O" : U"Alt" + U"Shift" + U"RBRACE"; # Close } and newline
+
 #################
 ### Third Row ###
 #################
 
+U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
+U"K" : U"Alt" + U"LBRACE"; # Wrap with []
+U"L" : U"Alt" + U"RBRACE"; # Close ] and newline
+
 ##################
 ### Fourth Row ###
 ##################
+
+U"C" : None;
+U"V" : None;
+
+U"M" : None;
+U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
+U"PERIOD" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
+
 
 #################
 ### Fifth Row ###

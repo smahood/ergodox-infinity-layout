@@ -36,6 +36,9 @@ U"L" : U"RIGHT";
 ### Fourth Row ###
 ##################
 
+U"X" : None;
+U"V" : None;
+
 U"M" : U"Ctrl" + U"Left";
 U"COMMA" : U"PAGEDOWN";
 U"PERIOD" : U"Ctrl" + U"Right";

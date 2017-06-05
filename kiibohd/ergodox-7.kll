@@ -16,11 +16,6 @@ U"ESC" : flashMode();
 #################
 ### First Row ###
 #################
-U"6" : U"F6";
-U"7" : U"F7";
-U"8" : U"F8";
-U"9" : U"F9";
-U"0" : U"F10";
 
 ##################
 ### Second Row ###
@@ -41,14 +36,12 @@ U"L" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
 ##################
 ### Fourth Row ###
 ##################
+ 
 
-U"X" : None;
-U"C" : U"FUN7";
-
-U"M" : U"FUN8";
-U"COMMA" : U"FUN9";
-U"PERIOD" : U"FUN10";
-
+#U"N" : U"Q";
+#U"M" : U"Z";
+#U"COMMA" : U"W";
+#U"PERIOD" : U"V";
 
 #################
 ### Fifth Row ###

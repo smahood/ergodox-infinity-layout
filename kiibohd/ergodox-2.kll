@@ -44,15 +44,16 @@ U"L" : ']';
 ### Fourth Row ###
 ##################
 
+U"X" : None;
+U"C" : None; 
+U"V" : None;
+
 U"COMMA" : '(';
 U"PERIOD" : ')';
 
 #################
 ### Fifth Row ###
 #################
-
-U"DOWN" : '<';
-U"UP" : '>';
 
 ######################
 ### Thumb Clusters ###

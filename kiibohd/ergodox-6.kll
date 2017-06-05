@@ -37,6 +37,10 @@ U"K" : U"QUOTE";
 ### Fourth Row ###
 ##################
 
+U"X" : None;
+U"C" : None;
+U"V" : None;
+
 U"N" : '~';
 U"M" : ':';
 U"COMMA" : '.';
