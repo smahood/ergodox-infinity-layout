@@ -29,7 +29,7 @@ U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
 
 U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
 U"K" : U"Alt" + U"LBRACE"; # Wrap with []
-
+U"L" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
 ##################
 ### Fourth Row ###
 ##################
@@ -37,7 +37,7 @@ U"K" : U"Alt" + U"LBRACE"; # Wrap with []
 U"C" : None;
 U"V" : None;
 
-U"M" : None;
+U"N" : U"Ctrl" + U"Shift" + U"M"; # Send form before caret to REPL
 U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
 U"PERIOD" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
 

@@ -30,6 +30,8 @@ U"9" : '>';
 ### Second Row ###
 ##################
 
+U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
+
 U"I" : '{'; 
 U"O" : '}';
 
@@ -47,6 +49,7 @@ U"L" : ']';
 U"X" : None;
 U"C" : None; 
 U"V" : None;
+U"B" : U"Ctrl" + U"Shift" + U"B"; # Send form to REPL
 
 U"COMMA" : '(';
 U"PERIOD" : ')';
@@ -54,6 +57,10 @@ U"PERIOD" : ')';
 #################
 ### Fifth Row ###
 #################
+
+U"FUNCTION3" : U"Alt" + U"Shift" + U"J"; # Join s-exp
+U"FUNCTION4" : U"Ctrl" + U"Alt" + U"K"; # Kill s-exp
+U"FUNCTION5" : U"Alt" + U"Shift" + U"S"; # Split s-exp
 
 ######################
 ### Thumb Clusters ###

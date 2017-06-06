@@ -20,7 +20,7 @@ U"9" : U"Ctrl" + U"Alt" + U"."; # Unthread form
 ### Second Row ###
 ##################
 
-U"I" : U"Ctrl" + U"QUOTE"; # Raise
+U"O" : U"Ctrl" + U"QUOTE"; # Raise
 
 #################
 ### Third Row ###
@@ -36,8 +36,8 @@ U"L" : U"Ctrl" + U"Alt" + U"K"; # Kill s-exp
 U"X" : None;
 U"C" : None;
 
-U"COMMA" : U"Alt" + U"Shift" + U"J"; # Join s-exp
-U"PERIOD" : U"Alt" + U"Shift" + U"S"; # Split s-exp
+U"COMMA" : None;
+U"PERIOD" : None;
 
 
 #################
