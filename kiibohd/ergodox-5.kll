@@ -22,7 +22,6 @@ U"EQUALS" : flashMode();
 ##################
 
 U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
-U"O" : U"Alt" + U"Shift" + U"RBRACE"; # Close } and newline
 
 #################
 ### Third Row ###
@@ -30,7 +29,6 @@ U"O" : U"Alt" + U"Shift" + U"RBRACE"; # Close } and newline
 
 U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
 U"K" : U"Alt" + U"LBRACE"; # Wrap with []
-U"L" : U"Alt" + U"RBRACE"; # Close ] and newline
 
 ##################
 ### Fourth Row ###

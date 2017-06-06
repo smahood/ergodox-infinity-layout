@@ -21,27 +21,31 @@ U"ESC" : flashMode();
 ### Second Row ###
 ##################
 
-U"U" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
-U"I" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
-U"O" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
+#U"U" : U"Ctrl" + U"Shift" + U"9"; # Slurp backwards
+#U"I" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
+#U"O" : U"Ctrl" + U"Shift" + U"Lbrace"; # Barf backwards
 
 #################
 ### Third Row ###
 #################
 
-U"J" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
-U"K" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
-U"L" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
+#U"J" : U"Ctrl" + U"Shift" + U"0"; # Slurp forwards
+#U"K" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
+#U"L" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards 
 
 ##################
 ### Fourth Row ###
 ##################
  
+U"X" : None;
 
-#U"N" : U"Q";
-#U"M" : U"Z";
-#U"COMMA" : U"W";
-#U"PERIOD" : U"V";
+#U"M" : U"Alt" + U"Up"; # Splice killing backwards
+#U"COMMA" : U"Alt" + U"S"; # Splice
+#U"PERIOD" : U"Alt" + U"Down"; # Splice killing forwards
+
+
+
+
 
 #################
 ### Fifth Row ###

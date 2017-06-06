@@ -50,7 +50,7 @@ U"0" : U"0";
 
 U"Q" : U"TAB";
 
-U"W" : U"J";
+U"W" : U"L";
 U"E" : U"A";
 U"R" : U"P";
 U"T" : U"Y";
@@ -98,13 +98,13 @@ U"SLASH" : U"ENTER";
 #################
 
 U"BACKTICK" : U"Q";
-U"FUNCTION3" : U"W";
-U"FUNCTION4" : U"V";
+U"FUNCTION3" : U"J";
+U"FUNCTION4" : U"K";
 U"FUNCTION5" : U"S";
 
 U"LEFT" : U"M";
-U"DOWN" : U"K";
-U"UP" : U"L";
+U"DOWN" : U"W";
+U"UP" : U"V";
 U"RIGHT" : U"Z";
 
 ######################
