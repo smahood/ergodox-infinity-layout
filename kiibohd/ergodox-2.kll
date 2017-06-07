@@ -7,9 +7,6 @@ KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
-###################
-### Unused Keys ###
-###################
 
 U"ESC" : flashMode();
 
@@ -17,58 +14,48 @@ U"ESC" : flashMode();
 ### First Row ###
 #################
 
-U"1" : U"F1";
-U"2" : U"F2";
-U"3" : U"F3";
-U"4" : U"F4";
-U"5" : U"F5";
-
-U"8" : '<';
-U"9" : '>';
+U"6" : U"PAGEUP";
 
 ##################
 ### Second Row ###
 ##################
 
-U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
-U"E" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
-
-U"I" : '{';
-U"O" : '}';
+U"Y" : U"PAGEUP";
+U"U" : U"HOME";
+U"I" : U"UP";
+U"O" : U"END";
+U"P" : U"PAGEDOWN";
 
 #################
 ### Third Row ###
 #################
-
-U"K" : '[';
-U"L" : ']';
+U"H" : U"Ctrl" + U"LEFT"; # Previous Word
+U"J" : U"LEFT";
+U"K" : U"DOWN";
+U"L" : U"RIGHT";
+U"SEMICOLON" : U"Ctrl" + U"RIGHT"; # Next Word
 
 ##################
 ### Fourth Row ###
 ##################
 
 U"X" : None;
-U"C" : None; 
-U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
-U"B" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
+U"V" : None;
 
-U"COMMA" : '(';
-U"PERIOD" : ')';
+U"M" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
+U"COMMA" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
+U"PERIOD" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
 
 #################
 ### Fifth Row ###
 #################
 
-U"FUNCTION3" : U"Alt" + U"Shift" + U"J"; # Join s-exp
-U"FUNCTION4" : U"Ctrl" + U"Alt" + U"K"; # Kill s-exp
-U"FUNCTION5" : U"Alt" + U"Shift" + U"S"; # Split s-exp
-
-U"DOWN" : '_';
-U"UP" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
+U"LEFT" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
+U"DOWN" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
+U"UP" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
 
 ######################
 ### Thumb Clusters ###
 ######################
 
-U"HOME" : U"APP";
-U"PAGEUP" : U"APP";
+

@@ -18,6 +18,12 @@ U"ESC" : flashMode();
 ### First Row ###
 #################
 
+U"1" : U"F1";
+U"2" : U"F2";
+U"3" : U"F3";
+U"4" : U"F4";
+U"5" : U"F5";
+
 U"6" : U"F6";
 U"7" : U"F7";
 U"8" : U"F8";
@@ -49,10 +55,9 @@ U"K" : U"Alt" + U"LBRACE"; # Wrap with []
 U"X" :  U"Ctrl" + U"Shift" + U"Lbrace"; # Barf backwards
 U"C" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards 
 
-U"M" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
+U"M" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
 U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
-U"PERIOD" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
-
+U"PERIOD" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
 
 
 #################

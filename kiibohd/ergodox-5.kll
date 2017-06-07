@@ -8,9 +8,8 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
+U"-" : flashMode();
 U"EQUALS" : flashMode();
-
-
 
 #################
 ### First Row ###
@@ -23,14 +22,29 @@ U"EQUALS" : flashMode();
 #################
 ### Third Row ###
 #################
+
+U"H" : '`';
+U"J" : '"';
+U"K" : U"QUOTE";
+
 ##################
 ### Fourth Row ###
 ##################
 
+U"X" : None;
+U"C" : None;
+U"V" : None;
+
+U"N" : '~';
+U"M" : ':';
+U"COMMA" : '.';
 
 #################
 ### Fifth Row ###
 #################
+
+U"LEFT" : ';';
+U"DOWN" : ',';
 
 ######################
 ### Thumb Clusters ###

@@ -37,11 +37,6 @@ PartialMaps[2]="ergodox-2 lcdFuncMap"
 PartialMaps[3]="ergodox-3 lcdFuncMap"
 PartialMaps[4]="ergodox-4 lcdFuncMap"
 PartialMaps[5]="ergodox-5 lcdFuncMap"
-PartialMaps[6]="ergodox-6 lcdFuncMap"
-PartialMaps[7]="ergodox-7 lcdFuncMap"
-PartialMaps[8]="ergodox-8 lcdFuncMap"
-PartialMaps[9]="ergodox-9 lcdFuncMap"
-PartialMaps[10]="ergodox-10 lcdFuncMap"
 
 ##########################
 # Advanced Configuration #
