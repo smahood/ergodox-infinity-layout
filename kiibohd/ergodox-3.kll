@@ -8,29 +8,32 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
-U"-" : flashMode();
+U"ESC" : flashMode();
 
 #################
 ### First Row ###
 #################
 
-U"8" : U"PAGEUP";
+U"6" : U"PAGEUP";
 
 ##################
 ### Second Row ###
 ##################
 
+U"Y" : U"PAGEUP";
 U"U" : U"HOME";
 U"I" : U"UP";
 U"O" : U"END";
+U"P" : U"PAGEDOWN";
 
 #################
 ### Third Row ###
 #################
-
+U"H" : U"Ctrl" + U"LEFT"; # Previous Word
 U"J" : U"LEFT";
 U"K" : U"DOWN";
 U"L" : U"RIGHT";
+U"SEMICOLON" : U"Ctrl" + U"RIGHT"; # Next Word
 
 ##################
 ### Fourth Row ###
@@ -39,14 +42,20 @@ U"L" : U"RIGHT";
 U"X" : None;
 U"V" : None;
 
-U"M" : U"Ctrl" + U"Left";
-U"COMMA" : U"PAGEDOWN";
-U"PERIOD" : U"Ctrl" + U"Right";
+U"M" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
+U"COMMA" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
+U"PERIOD" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
 
 #################
 ### Fifth Row ###
 #################
 
+U"LEFT" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
+U"DOWN" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
+U"UP" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
+
 ######################
 ### Thumb Clusters ###
 ######################
+
+

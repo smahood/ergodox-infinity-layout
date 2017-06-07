@@ -31,8 +31,9 @@ U"9" : '>';
 ##################
 
 U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
+U"E" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
 
-U"I" : '{'; 
+U"I" : '{';
 U"O" : '}';
 
 #################
@@ -48,8 +49,8 @@ U"L" : ']';
 
 U"X" : None;
 U"C" : None; 
-U"V" : None;
-U"B" : U"Ctrl" + U"Shift" + U"B"; # Send form to REPL
+U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
+U"B" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
 
 U"COMMA" : '(';
 U"PERIOD" : ')';
@@ -61,6 +62,9 @@ U"PERIOD" : ')';
 U"FUNCTION3" : U"Alt" + U"Shift" + U"J"; # Join s-exp
 U"FUNCTION4" : U"Ctrl" + U"Alt" + U"K"; # Kill s-exp
 U"FUNCTION5" : U"Alt" + U"Shift" + U"S"; # Split s-exp
+
+U"DOWN" : '_';
+U"UP" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
 
 ######################
 ### Thumb Clusters ###

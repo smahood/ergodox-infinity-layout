@@ -11,11 +11,13 @@ Generator = "KIICONF 0.2";
 ### Unused Keys ###
 ###################
 
+U"-" : flashMode();
 U"ESC" : flashMode();
 
 #################
 ### First Row ###
 #################
+
 U"6" : U"F6";
 U"7" : U"F7";
 U"8" : U"F8";
@@ -26,28 +28,31 @@ U"0" : U"F10";
 ### Second Row ###
 ##################
 
-U"U" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
-U"I" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
-U"O" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
+U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
+U"O" : U"Alt" + U"R"; # Raise form 
 
 #################
 ### Third Row ###
 #################
 
-U"J" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
-U"K" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
-U"L" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
+U"S" : U"Ctrl" + U"Shift" + U"9"; # Slurp backwards
+U"D" : U"Ctrl" + U"Shift" + U"0"; # Slurp forwards
+
+U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
+U"K" : U"Alt" + U"LBRACE"; # Wrap with []
 
 ##################
 ### Fourth Row ###
 ##################
 
-U"X" : None;
-U"C" : U"FUN7";
 
-U"M" : U"FUN8";
-U"COMMA" : U"FUN9";
-U"PERIOD" : U"FUN10";
+U"X" :  U"Ctrl" + U"Shift" + U"Lbrace"; # Barf backwards
+U"C" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards 
+
+U"M" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
+U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
+U"PERIOD" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
+
 
 
 #################

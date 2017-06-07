@@ -8,7 +8,6 @@ Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
 
-U"-" : flashMode();
 U"EQUALS" : flashMode();
 
 
@@ -21,25 +20,12 @@ U"EQUALS" : flashMode();
 ### Second Row ###
 ##################
 
-U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
-
 #################
 ### Third Row ###
 #################
-
-U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
-U"K" : U"Alt" + U"LBRACE"; # Wrap with []
-U"L" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
 ##################
 ### Fourth Row ###
 ##################
-
-U"C" : None;
-U"V" : None;
-
-U"N" : U"Ctrl" + U"Shift" + U"M"; # Send form before caret to REPL
-U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
-U"PERIOD" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
 
 
 #################
