@@ -63,6 +63,7 @@ U"PERIOD" : ')';
 U"FUNCTION4" : U"Ctrl" + U"Alt" + U"K"; # Kill s-exp
 U"FUNCTION5" : U"Alt" + U"Shift" + U"S"; # Split s-exp
 
+U"LEFT" : '_';
 U"DOWN" : '<';
 U"UP" : '>';
 
