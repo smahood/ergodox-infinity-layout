@@ -40,7 +40,7 @@ U"SEMICOLON" : U"Ctrl" + U"RIGHT"; # Next Word
 ##################
 
 U"X" : None;
-U"V" : None;
+U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
 
 U"M" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
 U"COMMA" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
