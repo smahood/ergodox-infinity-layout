@@ -7,7 +7,6 @@ KLL = "0.3c";
 Date = "2015-09-12";
 Generator = "KIICONF 0.2";
 
-
 U"ESC" : flashMode();
 
 #################
@@ -39,7 +38,8 @@ U"SEMICOLON" : U"Ctrl" + U"RIGHT"; # Next Word
 ### Fourth Row ###
 ##################
 
-U"X" : None;
+U"X" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
+U"C" : U"FUN2";
 U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
 
 U"M" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
@@ -53,9 +53,9 @@ U"PERIOD" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
 U"LEFT" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
 U"DOWN" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
 U"UP" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
+U"RIGHT" : U"LAT2";
 
 ######################
 ### Thumb Clusters ###
 ######################
-
 

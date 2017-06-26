@@ -23,38 +23,40 @@ U"3" : U"F3";
 U"4" : U"F4";
 U"5" : U"F5";
 
+U"7" : '<', '<', '-';
 U"8" : '<', '-';
 U"9" : '-', '>';
-
+U"0" : '-', '>', '>';
 
 ##################
 ### Second Row ###
 ##################
 
-U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
-U"E" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
-
 U"I" : '{';
 U"O" : '}';
+U"P" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
 
 #################
 ### Third Row ###
 #################
 
+U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
 U"K" : '[';
 U"L" : ']';
+U"SEMICOLON" : U"Alt" + U"LBRACE"; # Wrap with []
 
 ##################
 ### Fourth Row ###
 ##################
 
-U"X" : U"Alt" + U"Shift" + U"J"; # Join s-exp
+U"X" : None;
 U"C" : None; 
 U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
-U"B" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
 
+U"M" : U"FUN3";
 U"COMMA" : '(';
 U"PERIOD" : ')';
+U"SLASH" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
 
 #################
 ### Fifth Row ###
@@ -69,6 +71,7 @@ U"UP" : '>';
 
 # U"DOWN" : '_';
 # U"UP" : U"Alt" + U"Shift" + U"0"; # Close ) and newline
+U"RIGHT" : U"LAT3";
 
 ######################
 ### Thumb Clusters ###

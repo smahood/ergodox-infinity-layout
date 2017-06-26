@@ -34,35 +34,39 @@ U"0" : U"F10";
 ### Second Row ###
 ##################
 
-U"I" : U"Alt" + U"Shift" + U"LBRACE"; # Wrap with {}
+U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
+U"E" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
+
+U"I" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
 U"O" : U"Alt" + U"R"; # Raise form 
 
 #################
 ### Third Row ###
 #################
 
-U"S" : U"Ctrl" + U"Shift" + U"9"; # Slurp backwards
-U"D" : U"Ctrl" + U"Shift" + U"0"; # Slurp forwards
+U"S" : U"Ctrl" + U"W"; # Extend Selection
+U"D" : U"Ctrl" + U"Shift" + U"W"; # Shrink Selection
 
-U"J" : U"Alt" + U"Shift" + U"QUOTE"; # Wrap with ""
-U"K" : U"Alt" + U"LBRACE"; # Wrap with []
+U"K" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
 
 ##################
 ### Fourth Row ###
 ##################
 
+U"X" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
+U"C" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
+U"V" : U"FUN1";
 
-U"X" :  U"Ctrl" + U"Shift" + U"Lbrace"; # Barf backwards
-U"C" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards 
-
-U"M" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
-U"COMMA" : U"Alt" + U"Shift" + U"9"; # Wrap with ()
-U"PERIOD" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
-
+U"M" : U"Ctrl" + U"Shift" + U"0"; # Slurp forwards
+U"COMMA" : U"Alt" + U"S"; # Splice s-exp
+U"PERIOD" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards
 
 #################
 ### Fifth Row ###
 #################
+
+U"DOWN" : U"Alt" + U"Shift" + U"J"; # Join s-exp
+U"RIGHT" : U"LAT1";
 
 ######################
 ### Thumb Clusters ###

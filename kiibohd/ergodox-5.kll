@@ -45,6 +45,7 @@ U"COMMA" : '.';
 
 U"LEFT" : ';';
 U"DOWN" : ',';
+U"RIGHT" : U"LAT5";
 
 ######################
 ### Thumb Clusters ###
