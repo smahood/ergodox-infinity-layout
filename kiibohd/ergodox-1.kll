@@ -44,8 +44,8 @@ U"O" : U"Alt" + U"R"; # Raise form
 ### Third Row ###
 #################
 
-U"S" : U"Ctrl" + U"W"; # Extend Selection
-U"D" : U"Ctrl" + U"Shift" + U"W"; # Shrink Selection
+U"S" : U"Ctrl" + U"Shift" + U"W"; # Shrink Selection
+U"D" : U"Ctrl" + U"W"; # Extend Selection
 
 U"K" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
 
