@@ -38,6 +38,8 @@ U"V" : None;
 U"N" : '~';
 U"M" : ':';
 U"COMMA" : '.';
+U"PERIOD" : U"FUN5";
+
 
 #################
 ### Fifth Row ###
