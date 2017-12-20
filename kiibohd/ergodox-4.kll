@@ -4,55 +4,19 @@ Base = "Blank";
 Version = "0.1";
 Author = "Shaun Mahood";
 KLL = "0.3c";
-Date = "2015-09-12";
-Generator = "KIICONF 0.2";
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-
-U"-" : flashMode();
-
-#################
-### First Row ###
-#################
-
-U"1" : U"F11";
-U"2" : U"F12";
-U"3" : U"F13";
-U"4" : U"F14";
-U"5" : U"F15";
-
-
-##################
-### Second Row ###
-##################
-
-#################
-### Third Row ###
-#################
-
-U"J" : U"=";
+U"DOWN" : U"BACKSLASH";
+U"ESC" : flashMode();
+U"M" : U"MINUS";
+U"COMMA" : U"FUN4";
+U"MINUS" : flashMode();
 U"L" : '?';
-
-##################
-### Fourth Row ###
-##################
-
-
-U"X" : None;
-U"C" : None;
-U"V" : None;
-
-U"M" : '-';
-U"COMMA": U"FUN4";
-U"PERIOD" : '/';
-
-#################
-### Fifth Row ###
-#################
-
-U"LEFT" : '+';
-U"UP" : U"\";
+U"UP" : U"BACKSLASH";
+U"K" : U"QUOTE";
+U"J" : U"EQUALS";
 U"RIGHT" : U"LAT4";
-
-######################
-### Thumb Clusters ###
-######################
+U"PERIOD" : U"SLASH";
+U"I" : '{';
+U"LEFT" : '+';

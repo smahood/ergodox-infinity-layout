@@ -1,11 +1,10 @@
 (ns clj-ergodox.core
-  (:require [clojure.edn :as edn]))
-
-
-
+  (:require [clojure.edn :as edn]
+            [clojure.string]))
 
 (defn ergodox-layout [path]
   (edn/read-string (slurp path)))
+
 
 (defn shortcuts [layout]
   (:shortcuts layout))
@@ -18,23 +17,21 @@
   (apply max (for [[_ vs] kmap]
                (count vs))))
 
-(def shaun-layout (ergodox-layout "ergodox-keymap.edn"))
-(def shaun-keymap (keymap shaun-layout))
-
-(def shaun-shortcuts (shortcuts shaun-layout))
-
-
-(set? #{:r :alt})
-(set? {:r :alt})
-(set? [:r :alt])
-
-
-(def shaun-layer-count (num-layers (keymap shaun-layout)))
-
 (defn usb-code [x]
-  (str "U\"" (name x) "\";"))
+  (str "U\"" (clojure.string/upper-case (name x)) "\";"))
 
-(string? :f)
+(defn key-sequence [x]
+  (str "'" x "';"))
+
+(defn key-combination [xs]
+  (str (clojure.string/join " + "
+                            (map #(str "U\"" (clojure.string/upper-case (name %)) "\"")
+                                 xs))
+       ";"))
+
+
+(defn capability [xs]
+  (str (first xs) "();"))
 
 
 (defn get-shortcut
@@ -43,8 +40,9 @@
      (cond
        (nil? value) nil
        (nil? shortcut-value) (usb-code value)
-       (set? shortcut-value) (str "SET! " value " - " shortcut-value) ; U"Alt" + U"Shift" + U"QUOTE";
-       (string? shortcut-value) (str "STRING! " value " - " shortcut-value) ; '<', '<', '-';
+       (set? shortcut-value) (key-combination shortcut-value)
+       (list? shortcut-value) (capability shortcut-value)
+       (string? shortcut-value) (key-sequence shortcut-value)
        :else (str value " - " shortcut-value))))
   ([value shortcuts layer]
    (let [shortcut-value (get shortcuts value)]
@@ -67,4 +65,36 @@
                                                        (get-shortcut (nth vs n) shortcuts))}))))})))))
 
 
-(make-layers shaun-keymap shaun-shortcuts)
+(defn make-body [xs]
+  (clojure.string/join
+    "\n"
+    (map #(str "U\"" (clojure.string/upper-case (name (key %))) "\"" " : " (val %))
+         xs)))
+
+(defn make-bash-file [layers]
+  (let [header (slurp "resources/bash-header.txt")
+        footer (slurp "resources/bash-footer.txt")
+        c (count layers)
+        body (clojure.string/join "\n"
+                                  (map #(str "PartialMaps[" % "]=\"ergodox-" % " lcdFuncMap\"")
+                                       (range 1 c)))]
+    (str header body footer)))
+
+
+(defn make-files [layers target-folder]
+  (let [kll-header (slurp "resources/kll-header.txt")]
+    (spit (str target-folder "ergodox.bash")
+          (make-bash-file layers))
+    (doseq [[k vs] layers]
+      (spit
+        (str target-folder "ergodox-" k ".kll")
+        (str kll-header
+             (make-body vs))))))
+
+
+(let [tf "../kiibohd/"
+      el (ergodox-layout "resources/ergodox-keymap.edn")
+      km (keymap el)
+      sc (shortcuts el)]
+  (-> (make-layers km sc)
+      (make-files tf)))

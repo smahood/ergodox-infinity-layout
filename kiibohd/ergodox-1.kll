@@ -4,73 +4,35 @@ Base = "Blank";
 Version = "0.1";
 Author = "Shaun Mahood";
 KLL = "0.3c";
-Date = "2015-09-12";
-Generator = "KIICONF 0.2";
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-###################
-### Unused Keys ###
-###################
-
-U"-" : flashMode();
-U"ESC" : flashMode();
-
-#################
-### First Row ###
-#################
-
-U"1" : U"F1";
-U"2" : U"F2";
-U"3" : U"F3";
-U"4" : U"F4";
-U"5" : U"F5";
-
-U"6" : U"F6";
-U"7" : U"F7";
-U"8" : U"F8";
-U"9" : U"F9";
-U"0" : U"F10";
-
-##################
-### Second Row ###
-##################
-
-U"W" : U"Ctrl" + U"Shift" + U"L"; # Load file in REPL 
-U"E" : U"Ctrl" + U"Shift" + U"N"; # Switch REPL to NS
-
-U"I" :  U"Ctrl" + U"Shift" + U"Up"; # Move form up
-U"O" : U"Alt" + U"R"; # Raise form 
-
-#################
-### Third Row ###
-#################
-
-U"S" : U"Ctrl" + U"Shift" + U"W"; # Shrink Selection
-U"D" : U"Ctrl" + U"W"; # Extend Selection
-
-U"K" : U"Ctrl" + U"Shift" + U"Down";  # Move form down
-
-##################
-### Fourth Row ###
-##################
-
-U"X" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
-U"C" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
-U"V" : U"FUN1";
-
-U"M" : U"Ctrl" + U"Shift" + U"0"; # Slurp forwards
-U"COMMA" : U"Alt" + U"S"; # Splice s-exp
-U"PERIOD" : U"Ctrl" + U"Shift" + U"Rbrace"; # Barf forwards
-
-#################
-### Fifth Row ###
-#################
-
-U"DOWN" : U"Alt" + U"Shift" + U"J"; # Join s-exp
-U"RIGHT" : U"LAT1";
-
-######################
-### Thumb Clusters ###
-######################
-
+U"DOWN" : U"SHIFT" + U"ALT" + U"J";
 U"HOME" : U"APP";
+U"V" : U"FUN1";
+U"O" : U"R" + U"ALT";
+U"ESC" : flashMode();
+U"W" : U"SHIFT" + U"CTRL" + U"L";
+U"M" : U"SHIFT" + U"0" + U"CTRL";
+U"COMMA" : U"ALT" + U"S";
+U"0" : U"F10";
 U"PAGEUP" : U"APP";
+U"4" : U"F4";
+U"MINUS" : flashMode();
+U"7" : U"F7";
+U"E" : U"SHIFT" + U"N" + U"CTRL";
+U"S" : U"SHIFT" + U"W" + U"CTRL";
+U"K" : U"SHIFT" + U"DOWN" + U"CTRL";
+U"1" : U"F1";
+U"8" : U"F8";
+U"C" : U"SHIFT" + U"CTRL" + U"T";
+U"9" : U"F9";
+U"2" : U"F2";
+U"RIGHT" : U"LAT1";
+U"5" : U"F5";
+U"D" : U"W" + U"CTRL";
+U"X" : U"SHIFT" + U"CTRL" + U"B";
+U"PERIOD" : U"SHIFT" + U"CTRL" + U"RBRACE";
+U"3" : U"F3";
+U"6" : U"F6";
+U"I" : U"SHIFT" + U"CTRL" + U"UP";

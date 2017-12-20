@@ -4,58 +4,34 @@ Base = "Blank";
 Version = "0.1";
 Author = "Shaun Mahood";
 KLL = "0.3c";
-Date = "2015-09-12";
-Generator = "KIICONF 0.2";
-
-U"ESC" : flashMode();
-
-#################
-### First Row ###
-#################
-
-U"6" : U"PAGEUP";
-
-##################
-### Second Row ###
-##################
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
 U"Y" : U"PAGEUP";
-U"U" : U"HOME";
-U"I" : U"UP";
+U"DOWN" : U"ALT" + U"CTRL" + U"D";
+U"V" : U"SHIFT" + U"CTRL" + U"T";
 U"O" : U"END";
-U"P" : U"PAGEDOWN";
-
-#################
-### Third Row ###
-#################
-U"H" : U"Ctrl" + U"LEFT"; # Previous Word
-U"J" : U"LEFT";
-U"K" : U"DOWN";
+U"ESC" : flashMode();
+U"M" : U"ALT" + U"CTRL" + U"P";
+U"COMMA" : U"ALT" + U"CTRL" + U"U";
+U"0" : '->>';
+U"FUNCTION4" : U"ALT" + U"CTRL" + U"K";
+U"MINUS" : flashMode();
+U"7" : '<<-';
 U"L" : U"RIGHT";
-U"SEMICOLON" : U"Ctrl" + U"RIGHT"; # Next Word
-
-##################
-### Fourth Row ###
-##################
-
-U"X" : U"Ctrl" + U"Shift" + U"B"; # Send form before to REPL
+U"UP" : U"ALT" + U"CTRL" + U"F";
+U"K" : U"DOWN";
+U"8" : '<-';
 U"C" : U"FUN2";
-U"V" : U"Ctrl" + U"Shift" + U"T"; # Send top form to REPL
-
-U"M" : U"Ctrl" + U"Alt" + U"P"; # S-exp down-left
-U"COMMA" : U"Ctrl" + U"Alt" + U"U"; # S-exp up-left
-U"PERIOD" : U"Ctrl" + U"Alt" + U"N"; # S-exp up-right
-
-#################
-### Fifth Row ###
-#################
-
-U"LEFT" : U"Ctrl" + U"Alt" + U"B";  # S-exp left
-U"DOWN" : U"Ctrl" + U"Alt" + U"D"; # S-exp down-right
-U"UP" :  U"Ctrl" + U"Alt" + U"F"; # S-exp right
+U"9" : '->';
+U"J" : U"LEFT";
+U"H" : U"CTRL" + U"LEFT";
+U"SEMICOLON" : U"CTRL" + U"RIGHT";
 U"RIGHT" : U"LAT2";
-
-######################
-### Thumb Clusters ###
-######################
-
+U"X" : U"SHIFT" + U"CTRL" + U"B";
+U"PERIOD" : U"ALT" + U"N" + U"CTRL";
+U"FUNCTION5" : U"SHIFT" + U"ALT" + U"S";
+U"P" : U"PAGEDOWN";
+U"I" : U"UP";
+U"LEFT" : U"ALT" + U"CTRL" + U"B";
+U"U" : U"HOME";

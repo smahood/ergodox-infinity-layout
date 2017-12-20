@@ -23,14 +23,11 @@
              :thread-first-backwards        "<-"
              :thread-last                   "->>"
              :thread-last-backwards         "<<-"
-             :thread-last                   "<-"
              :left-curly-brace              "{"
              :right-curly-brace             "}"
-             :wrap-with-curly-braces        #{:ctrl :shift :lbrace}
+             :wrap-with-curly-braces        #{:ctrl :shift :lbracket}
              :wrap-with-double-quotes       #{:ctrl :shift :quote}
-             :left-square-brace             "["
-             :right-square-brace            "]"
-             :wrap-with-square-braces       #{:alt :lbrace}
+             :wrap-with-square-braces       #{:alt :lbracket}
              :left-round-brace              "("
              :right-round-brace             ")"
              :wrap-with-round-braces        #{:alt :shift :9}
@@ -38,11 +35,14 @@
              :split-sexp                    #{:alt :shift :s}
              :underscore                    "_"
              :left-angle-brace              "<"
-             :right-angle-brance            ">"
+             :right-angle-brace             ">"
+             :question-mark                 "?"
+             :double-quote                  "\""
+             :tilde                         "~"
+             :colon                         ":"
+             :plus                          "+"
              :close-round-brace-and-newline #{:alt :shift :0}
-
-             }
-
+             :flashmode                     ("flashMode")}
 
  :keymap    {
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -50,20 +50,20 @@
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
              :equals    [nil]
-             :1         [:1 :f1 nil :f1]
-             :2         [:2 :f2 nil :f2]
-             :3         [:3 :f3 nil :f3]
-             :4         [:4 :f4 nil :f5]
-             :5         [:5 :f5 nil :f5]
-             :esc       [nil :flashmode]
+             :1         [:1 :f1 nil :f11]
+             :2         [:2 :f2 nil :f12]
+             :3         [:3 :f3 nil :f13]
+             :4         [:4 :f4 nil :f14]
+             :5         [:5 :f5 nil :f15]
+             :esc       [nil :flashmode :flashmode :flashmode :flashmode :flashmode]
 
              :function6 [nil]
-             :6         [:6 :f6 :pageup]
+             :6         [:6 :f6]
              :7         [:7 :f7 :thread-last-backwards]
              :8         [:8 :f8 :thread-first-backwards]
              :9         [:9 :f9 :thread-first]
              :0         [:0 :f10 :thread-last]
-             :minus     [nil :flashmode]
+             :minus     [nil :flashmode :flashmode :flashmode :flashmode :flashmode]
 
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
              ;;;           2nd row          ;;;
@@ -90,17 +90,17 @@
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
              :tab       [nil]
-             :a         [:delete nil]
+             :a         [:delete]
              :s         [:o :shrink-selection]
              :d         [:e :extend-selection]
-             :f         [:u nil]
-             :g         [:i nil]
+             :f         [:u]
+             :g         [:i]
 
-             :h         [:d nil :previous-word]
-             :j         [:h nil :left]
-             :k         [:t :move-form-down :down]
-             :l         [:n nil :right]
-             :semicolon [:escape nil :next-word]
+             :h         [:d nil :previous-word nil nil :backtick]
+             :j         [:h nil :left :wrap-with-double-quotes :equals :double-quote]
+             :k         [:t :move-form-down :down :lbracket :quote]
+             :l         [:n nil :right :rbracket :question-mark]
+             :semicolon [:escape nil :next-word :wrap-with-square-braces]
              :quote     [nil]
 
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -108,20 +108,20 @@
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
              :lshift    [nil]
-             :z         [:backslash nil nil]
+             :z         [:backslash]
              :x         [:j :send-form-before-to-repl :send-form-before-to-repl]
              :c         [:fun2 :send-top-form-to-repl :fun2]
-             :v         [:fun1 :fun1 :send-top-form-to-repl]
-             :b         [:x nil nil]
-             :function1 [nil]
+             :v         [:fun1 :fun1 :send-top-form-to-repl :send-top-form-to-repl]
+             :b         [:x]
+             :function2 [nil]
 
 
-             :function6 [nil]
-             :n         [:b nil]
-             :m         [:fun3 :slurp-forward :sexp-down-left]
-             :comma     [:fun4 :splice-sexp :sexp-up-left]
-             :period    [:fun5 :barf-forward :sexp-up-right]
-             :slash     [:enter nil]
+             :function7 [nil]
+             :n         [:b nil nil nil nil :tilde]
+             :m         [:fun3 :slurp-forward :sexp-down-left :fun3 :minus :colon]
+             :comma     [:fun4 :splice-sexp :sexp-up-left :left-round-brace :fun4 :period]
+             :period    [:fun5 :barf-forward :sexp-up-right :right-round-brace :slash :fun5]
+             :slash     [:enter nil nil :wrap-with-round-braces]
              :rshift    [nil]
 
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -129,36 +129,34 @@
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
              :lgui      [nil]
-             :backtick  [:q nil]
-             :function3 [:q nil]
-             :function4 [:k nil]
-             :function5 [:s nil]
+             :backtick  [nil]
+             :function3 [:q]
+             :function4 [:k nil :kill-sexp]
+             :function5 [:s nil :split-sexp]
 
-             :left      [:m nil :sexp-left]
-             :down      [:w :join-sexp :sexp-down-right]
-             :up        [:v nil :sexp-right]
-             :right     [:z :lat1 :lat2]
-             :rgui      [nil nil]
+             :left      [:m nil :sexp-left :underscore :plus :semicolon]
+             :down      [:w :join-sexp :sexp-down-right :left-angle-brace nil :comma]
+             :up        [:v nil :sexp-right :right-angle-brace :backslash]
+             :right     [:z :lat1 :lat2 :lat3 :lat4 :lat5]
+             :rgui      [nil]
 
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
              ;;;     left thumb cluster     ;;;
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-             :lctrl     [:lshift nil]
-             :lalt      [:space nil]
-             :backspace [:lctrl nil]
-             :delete    [:lalt nil]
+             :lctrl     [:lshift]
+             :lalt      [:space]
+             :backspace [:lctrl]
+             :delete    [:lalt]
              :home      [:lgui :app]
-             :end       [:escape nil]
+             :end       [:escape]
 
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
              ;;;     right thumb cluster    ;;;
              ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-             :ralt      [:ralt nil]
-             :rctrl     [:rctrl nil]
+             :ralt      [:ralt]
+             :rctrl     [:rctrl]
              :pageup    [:rgui :app]
-             :pagedown  [:escape nil]
-             :enter     [:rshift nil]
-             :space     [:space nil]
-             }
-
- }
+             :pagedown  [:escape]
+             :enter     [:rshift]
+             :space     [:space]
+             }}

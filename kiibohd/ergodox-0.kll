@@ -4,123 +4,82 @@ Base = "Blank";
 Version = "0.1";
 Author = "Shaun Mahood";
 KLL = "0.3c";
-Date = "2015-09-12";
-Generator = "KIICONF 0.2";
-
-###################
-### Unused Keys ###
-###################
-
-U"ESC" : None;
-U"EQUALS" : None;
-U"FUNCTION1" : None;
-U"BACKSLASH" : None;
-U"TAB" : None;
-U"FUNCTION2" : None;
-U"LGUI" : None;
-U"FUNCTION6" : None;
-U"LSHIFT" : None;
-U"RGUI" : None;
-U"RSHIFT" : None;
-U"FUNCTION7" : None;
-U"QUOTE" : None;
-U"RBRACE" : None;
-U"MINUS" : None;
-U"LBRACE" : None;
-
-#################
-### First Row ###
-#################
-
-U"1" : U"1";
-U"2" : U"2";
-U"3" : U"3";
-U"4" : U"4";
-U"5" : U"5";
-
-U"6" : U"6";
-U"7" : U"7";
-U"8" : U"8";
-U"9" : U"9";
-U"0" : U"0";
-
-##################
-### Second Row ###
-##################
-
-U"Q" : U"TAB";
-
-U"W" : U"L";
-U"E" : U"A";
-U"R" : U"P";
-U"T" : U"Y";
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
 U"Y" : U"F";
-U"U" : U"G";
-U"I" : U"C";
-U"O" : U"R";
-U"P" : U"BACKSPACE";
-
-#################
-### Third Row ###
-#################
-
-U"A" : U"DELETE";
-U"S" : U"O";
-U"D" : U"E";
-U"F" : U"U";
-U"G" : U"I";
-
-U"H" : U"D";
-U"J" : U"H";
-U"K" : U"T";
-U"L" : U"N";
-U"SEMICOLON" : U"ESCAPE";
-
-##################
-### Fourth Row ###
-##################
-
-U"Z" : U"\";
-U"X" : U"J";
-U"C" : U"FUN2";
+U"Q" : U"TAB";
+U"SLASH" : U"ENTER";
+U"DOWN" : U"W";
+U"R" : U"P";
+U"SPACE" : U"SPACE";
+U"HOME" : U"LGUI";
+U"RGUI" : None;
+U"LBRACE" : None;
 U"V" : U"FUN1";
-U"B" : U"X";
-
+U"O" : U"R";
+U"LCTRL" : U"LSHIFT";
+U"FUNCTION1" : None;
+U"RCTRL" : U"RCTRL";
+U"ESC" : None;
 U"N" : U"B";
+U"W" : U"L";
 U"M" : U"FUN3";
 U"COMMA" : U"FUN4";
-U"PERIOD" : U"FUN5";
-U"SLASH" : U"ENTER";
-
-#################
-### Fifth Row ###
-#################
-
-# U"BACKTICK" : U"Q";
-U"FUNCTION3" : U"Q";
-U"FUNCTION4" : U"K";
-U"FUNCTION5" : U"S";
-
-U"LEFT" : U"M";
-U"DOWN" : U"W";
-U"UP" : U"V";
-U"RIGHT" : U"Z";
-
-######################
-### Thumb Clusters ###
-######################
-
-U"LCTRL" : U"LSHIFT";
+U"0" : U"0";
 U"LALT" : U"SPACE";
-U"BACKSPACE" : U"LCTRL";
-U"DELETE" : U"LALT";
-U"HOME" : U"LGUI";
-U"END" : U"ESCAPE";
-
-U"RALT" : U"RALT";
-U"RCTRL" : U"RCTRL";
 U"PAGEUP" : U"RGUI";
-U"PAGEDOWN" : U"ESCAPE";
+U"4" : U"4";
+U"FUNCTION4" : U"K";
+U"FUNCTION2" : None;
+U"RSHIFT" : None;
+U"DELETE" : U"LALT";
+U"MINUS" : None;
+U"RALT" : U"RALT";
+U"LSHIFT" : None;
+U"7" : U"7";
+U"EQUALS" : None;
+U"E" : U"A";
+U"S" : U"O";
+U"L" : U"N";
+U"UP" : U"V";
+U"K" : U"T";
+U"1" : U"1";
 U"ENTER" : U"RSHIFT";
-U"SPACE" : U"SPACE";
+U"BACKTICK" : None;
+U"8" : U"8";
+U"Z" : U"BACKSLASH";
+U"G" : U"I";
+U"C" : U"FUN2";
+U"FUNCTION6" : None;
+U"9" : U"9";
+U"J" : U"H";
+U"QUOTE" : None;
+U"H" : U"D";
+U"LGUI" : None;
+U"SEMICOLON" : U"ESCAPE";
+U"B" : U"X";
+U"2" : U"2";
+U"RIGHT" : U"Z";
+U"RBRACE" : None;
+U"PAGEDOWN" : U"ESCAPE";
+U"FUNCTION3" : U"Q";
+U"5" : U"5";
+U"D" : U"E";
+U"F" : U"U";
+U"BACKSPACE" : U"LCTRL";
+U"T" : U"Y";
+U"X" : U"J";
+U"PERIOD" : U"FUN5";
+U"3" : U"3";
+U"END" : U"ESCAPE";
+U"FUNCTION7" : None;
+U"6" : U"6";
+U"TAB" : None;
+U"FUNCTION5" : U"S";
+U"P" : U"BACKSPACE";
+U"I" : U"C";
+U"A" : U"DELETE";
+U"BACKSLASH" : None;
+U"LEFT" : U"M";
+U"U" : U"G";

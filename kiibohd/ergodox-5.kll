@@ -2,53 +2,19 @@ Name = "ergodox";
 Layout = "Default";
 Base = "Blank";
 Version = "0.1";
-Author = "Howard M. Lewis Ship";
+Author = "Shaun Mahood";
 KLL = "0.3c";
-Date = "2015-09-12";
-Generator = "KIICONF 0.2";
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-
-U"-" : flashMode();
-U"EQUALS" : flashMode();
-
-#################
-### First Row ###
-#################
-
-##################
-### Second Row ###
-##################
-
-#################
-### Third Row ###
-#################
-
-U"H" : '`';
-U"J" : '"';
-U"K" : U"QUOTE";
-
-##################
-### Fourth Row ###
-##################
-
-U"X" : None;
-U"C" : None;
-U"V" : None;
-
+U"DOWN" : U"COMMA";
+U"ESC" : flashMode();
 U"N" : '~';
 U"M" : ':';
-U"COMMA" : '.';
-U"PERIOD" : U"FUN5";
-
-
-#################
-### Fifth Row ###
-#################
-
-U"LEFT" : ';';
-U"DOWN" : ',';
+U"COMMA" : U"PERIOD";
+U"MINUS" : flashMode();
+U"J" : '"';
+U"H" : U"BACKTICK";
 U"RIGHT" : U"LAT5";
-
-######################
-### Thumb Clusters ###
-######################
+U"PERIOD" : U"FUN5";
+U"LEFT" : U"SEMICOLON";

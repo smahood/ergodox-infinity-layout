@@ -1,0 +1,9 @@
+Name = "ergodox";
+Layout = "Default";
+Base = "Blank";
+Version = "0.1";
+Author = "Shaun Mahood";
+KLL = "0.3c";
+Date = "2017-12-20";
+Generator = "clj-ergodox 0.1.0-SNAPSHOT";
+
