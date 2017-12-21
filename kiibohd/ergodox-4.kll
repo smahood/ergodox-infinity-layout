@@ -7,16 +7,13 @@ KLL = "0.3c";
 Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-U"DOWN" : U"BACKSLASH";
 U"ESC" : flashMode();
 U"M" : U"MINUS";
 U"COMMA" : U"FUN4";
 U"MINUS" : flashMode();
 U"L" : '?';
 U"UP" : U"BACKSLASH";
-U"K" : U"QUOTE";
 U"J" : U"EQUALS";
 U"RIGHT" : U"LAT4";
 U"PERIOD" : U"SLASH";
-U"I" : '{';
 U"LEFT" : '+';

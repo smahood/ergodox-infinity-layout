@@ -13,6 +13,7 @@ U"N" : '~';
 U"M" : ':';
 U"COMMA" : U"PERIOD";
 U"MINUS" : flashMode();
+U"K" : U"QUOTE";
 U"J" : '"';
 U"H" : U"BACKTICK";
 U"RIGHT" : U"LAT5";

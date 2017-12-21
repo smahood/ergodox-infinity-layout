@@ -27,5 +27,6 @@ U"RIGHT" : U"LAT3";
 U"5" : U"F15";
 U"PERIOD" : ')';
 U"3" : U"F13";
-U"P" : U"SHIFT" + U"LBRACKET" + U"CTRL";
+U"P" : U"SHIFT" + U"ALT" + U"LBRACKET";
+U"I" : '{';
 U"LEFT" : '_';
