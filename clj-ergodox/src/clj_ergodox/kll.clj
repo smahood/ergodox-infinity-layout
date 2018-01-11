@@ -41,13 +41,6 @@
 
 
 
-
-
-
-
-
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;                       New keymap -> kll                                  ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -153,11 +146,6 @@
     (str header body footer)))
 
 
-
-
-
-
-
 (defn make-files [layout-file target-folder]
   (let [kll-header "resources/kll-header.txt"
         kll-bodies (make-kll-file-bodies kll-header layout-file)]
@@ -166,10 +154,7 @@
     (doseq [body kll-bodies]
       (spit
         (str target-folder "ergodox-" (key (first body)) ".kll")
-        (val (first body))))
-    ))
-
-(comment (make-files "resources/ergodox-keymap.edn" "../kiibohd/"))
+        (val (first body))))))
 
 
 ;(str "# --------------------------------------------------.           ,--------------------------------------------------.")
