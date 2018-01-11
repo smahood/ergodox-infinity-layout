@@ -1,4 +1,4 @@
-(ns clj-ergodox.qmk-generator
+(ns clj-ergodox.qmk
   (:require [clojure.edn :as edn]
             [clojure.string]))
 

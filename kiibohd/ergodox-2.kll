@@ -7,31 +7,39 @@ KLL = "0.3c";
 Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-U"Y" : U"PAGEUP";
-U"DOWN" : U"ALT" + U"CTRL" + U"D";
-U"V" : U"SHIFT" + U"CTRL" + U"T";
-U"O" : U"END";
-U"ESC" : flashMode();
-U"M" : U"ALT" + U"CTRL" + U"P";
-U"COMMA" : U"ALT" + U"CTRL" + U"U";
-U"0" : '->>';
-U"FUNCTION4" : U"ALT" + U"CTRL" + U"K";
-U"MINUS" : flashMode();
-U"7" : '<<-';
-U"L" : U"RIGHT";
-U"UP" : U"ALT" + U"CTRL" + U"F";
-U"K" : U"DOWN";
-U"8" : '<-';
-U"C" : U"FUN2";
-U"9" : '->';
-U"J" : U"LEFT";
-U"H" : U"CTRL" + U"LEFT";
-U"SEMICOLON" : U"CTRL" + U"RIGHT";
-U"RIGHT" : U"LAT2";
-U"X" : U"SHIFT" + U"CTRL" + U"B";
-U"PERIOD" : U"ALT" + U"N" + U"CTRL";
-U"FUNCTION5" : U"SHIFT" + U"ALT" + U"S";
-U"P" : U"PAGEDOWN";
-U"I" : U"UP";
-U"LEFT" : U"ALT" + U"CTRL" + U"B";
-U"U" : U"HOME";
+### Left Hand ###
+
+# I
+U"FUNCTION5" : U"SHIFT" + U"ALT" + U"S";   # left i [0 -1]
+
+# M
+U"FUNCTION4" : U"ALT" + U"CTRL" + U"K";   # left m [0 -1]
+U"C" : U"FUN2";   # left m [0 0]
+
+# A
+U"X" : U"SHIFT" + U"CTRL" + U"B";   # left a [0 0]
+
+### Right Hand ###
+
+# I
+U"LEFT" : U"ALT" + U"CTRL" + U"B";   # right i [0 -1]
+U"M" : U"ALT" + U"CTRL" + U"P";   # right i [0 0]
+U"J" : U"LEFT";   # right i [0 1]
+U"U" : U"HOME";   # right i [0 2]
+U"H" : U"CTRL" + U"LEFT";   # right i [1 1]
+U"Y" : U"PAGEUP";   # right i [1 2]
+
+# M
+U"DOWN" : U"ALT" + U"CTRL" + U"D";   # right m [0 -1]
+U"COMMA" : U"ALT" + U"CTRL" + U"U";   # right m [0 0]
+U"K" : U"DOWN";   # right m [0 1]
+U"I" : U"UP";   # right m [0 2]
+
+# A
+U"RIGHT" : U"LAT2";   # right a [-1 -1]
+U"SEMICOLON" : U"CTRL" + U"RIGHT";   # right a [-1 1]
+U"P" : U"PAGEDOWN";   # right a [-1 2]
+U"UP" : U"ALT" + U"CTRL" + U"F";   # right a [0 -1]
+U"PERIOD" : U"ALT" + U"N" + U"CTRL";   # right a [0 0]
+U"L" : U"RIGHT";   # right a [0 1]
+U"O" : U"END";   # right a [0 2]

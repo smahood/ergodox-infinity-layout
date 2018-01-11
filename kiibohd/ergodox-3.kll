@@ -7,26 +7,42 @@ KLL = "0.3c";
 Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-U"SLASH" : U"SHIFT" + U"ALT" + U"9";
-U"DOWN" : '<';
-U"V" : U"SHIFT" + U"CTRL" + U"T";
-U"O" : '}';
-U"ESC" : flashMode();
-U"M" : U"FUN3";
-U"COMMA" : '(';
-U"4" : U"F14";
-U"MINUS" : flashMode();
-U"L" : U"RBRACKET";
-U"UP" : '>';
-U"K" : U"LBRACKET";
-U"1" : U"F11";
-U"J" : U"SHIFT" + U"CTRL" + U"QUOTE";
-U"SEMICOLON" : U"ALT" + U"LBRACKET";
-U"2" : U"F12";
-U"RIGHT" : U"LAT3";
-U"5" : U"F15";
-U"PERIOD" : ')';
-U"3" : U"F13";
-U"P" : U"SHIFT" + U"ALT" + U"LBRACKET";
-U"I" : '{';
-U"LEFT" : '_';
+### Left Hand ###
+
+# I
+U"4" : U"F4";   # left i [0 3]
+U"5" : U"F5";   # left i [1 3]
+
+# M
+U"3" : U"F3";   # left m [0 3]
+
+# A
+U"1" : U"F1";   # left a [-1 3]
+U"2" : U"F2";   # left a [0 3]
+
+### Right Hand ###
+
+# I
+U"LEFT" : '_';   # right i [0 -1]
+U"M" : U"FUN3";   # right i [0 0]
+U"J" : U"SHIFT" + U"CTRL" + U"QUOTE";   # right i [0 1]
+U"7" : '<<-';   # right i [0 3]
+
+# M
+U"DOWN" : '<';   # right m [0 -1]
+U"COMMA" : '(';   # right m [0 0]
+U"K" : U"LBRACKET";   # right m [0 1]
+U"I" : '{';   # right m [0 2]
+U"8" : '<-';   # right m [0 3]
+
+# A
+U"RIGHT" : U"LAT3";   # right a [-1 -1]
+U"SLASH" : U"SHIFT" + U"ALT" + U"9";   # right a [-1 0]
+U"SEMICOLON" : U"ALT" + U"LBRACKET";   # right a [-1 1]
+U"P" : U"SHIFT" + U"ALT" + U"LBRACKET";   # right a [-1 2]
+U"0" : '->>';   # right a [-1 3]
+U"UP" : '>';   # right a [0 -1]
+U"PERIOD" : ')';   # right a [0 0]
+U"L" : U"RBRACKET";   # right a [0 1]
+U"O" : '}';   # right a [0 2]
+U"9" : '->';   # right a [0 3]

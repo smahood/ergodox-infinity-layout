@@ -1,252 +1,434 @@
-{:shortcuts     {:underscore                            "_"
-                 :left-angle-brace                      "<"
-                 :right-angle-brace                     ">"
-                 :question-mark                         "?"
-                 :double-quote                          "\""
-                 :tilde                                 "~"
-                 :colon                                 ":"
-                 :plus                                  "+"
-                 :left-curly-brace                      "{"
-                 :right-curly-brace                     "}"
-                 :left-round-brace                      "("
-                 :right-round-brace                     ")"
+{:shortcuts    {:underscore                            "_"
+                :left-angle-brace                      "<"
+                :right-angle-brace                     ">"
+                :question-mark                         "?"
+                :double-quote                          "\""
+                :tilde                                 "~"
+                :colon                                 ":"
+                :plus                                  "+"
+                :left-curly-brace                      "{"
+                :right-curly-brace                     "}"
+                :left-round-brace                      "("
+                :right-round-brace                     ")"
 
-                 :previous-word                         #{:ctrl :left}
-                 :next-word                             #{:ctrl :right}
+                :previous-word                         #{:ctrl :left}
+                :next-word                             #{:ctrl :right}
 
-                 :clj/thread-first                      "->"
-                 :clj/thread-first-backwards            "<-"
-                 :clj/thread-last                       "->>"
-                 :clj/thread-last-backwards             "<<-"
+                :clj/thread-first                      "->"
+                :clj/thread-first-backwards            "<-"
+                :clj/thread-last                       "->>"
+                :clj/thread-last-backwards             "<<-"
 
-                 :cursive/load-file-in-repl             #{:ctrl :shift :l}
-                 :cursive/switch-repl-to-ns             #{:ctrl :shift :n}
-                 :cursive/move-form-up                  #{:ctrl :shift :up}
-                 :cursive/raise-form                    #{:alt :r}
-                 :cursive/shrink-selection              #{:ctrl :shift :w}
-                 :cursive/extend-selection              #{:ctrl :w}
-                 :cursive/move-form-down                #{:ctrl :shift :down}
-                 :cursive/send-form-before-to-repl      #{:ctrl :shift :b}
-                 :cursive/send-top-form-to-repl         #{:ctrl :shift :t}
-                 :cursive/barf-forward                  #{:ctrl :shift :rbrace}
-                 :cursive/join-sexp                     #{:alt :shift :j}
-                 :cursive/slurp-forward                 #{:ctrl :shift :0}
-                 :cursive/splice-sexp                   #{:alt :s}
-                 :cursive/sexp-down-left                #{:ctrl :alt :p}
-                 :cursive/sexp-up-left                  #{:ctrl :alt :u}
-                 :cursive/sexp-up-right                 #{:ctrl :alt :n}
-                 :cursive/sexp-left                     #{:ctrl :alt :b}
-                 :cursive/sexp-down-right               #{:ctrl :alt :d}
-                 :cursive/sexp-right                    #{:ctrl :alt :f}
-                 :cursive/wrap-with-curly-braces        #{:alt :shift :lbracket}
-                 :cursive/wrap-with-double-quotes       #{:ctrl :shift :quote}
-                 :cursive/wrap-with-square-braces       #{:alt :lbracket}
-                 :cursive/wrap-with-round-braces        #{:alt :shift :9}
-                 :cursive/kill-sexp                     #{:ctrl :alt :k}
-                 :cursive/split-sexp                    #{:alt :shift :s}
-                 :cursive/close-round-brace-and-newline #{:alt :shift :0}
+                :cursive/load-file-in-repl             #{:ctrl :shift :l}
+                :cursive/switch-repl-to-ns             #{:ctrl :shift :n}
+                :cursive/move-form-up                  #{:ctrl :shift :up}
+                :cursive/raise-form                    #{:alt :r}
+                :cursive/shrink-selection              #{:ctrl :shift :w}
+                :cursive/extend-selection              #{:ctrl :w}
+                :cursive/move-form-down                #{:ctrl :shift :down}
+                :cursive/send-form-before-to-repl      #{:ctrl :shift :b}
+                :cursive/send-top-form-to-repl         #{:ctrl :shift :t}
+                :cursive/barf-forward                  #{:ctrl :shift :rbrace}
+                :cursive/join-sexp                     #{:alt :shift :j}
+                :cursive/slurp-forward                 #{:ctrl :shift :0}
+                :cursive/splice-sexp                   #{:alt :s}
+                :cursive/sexp-down-left                #{:ctrl :alt :p}
+                :cursive/sexp-up-left                  #{:ctrl :alt :u}
+                :cursive/sexp-up-right                 #{:ctrl :alt :n}
+                :cursive/sexp-left                     #{:ctrl :alt :b}
+                :cursive/sexp-down-right               #{:ctrl :alt :d}
+                :cursive/sexp-right                    #{:ctrl :alt :f}
+                :cursive/wrap-with-curly-braces        #{:alt :shift :lbracket}
+                :cursive/wrap-with-double-quotes       #{:ctrl :shift :quote}
+                :cursive/wrap-with-square-braces       #{:alt :lbracket}
+                :cursive/wrap-with-round-braces        #{:alt :shift :9}
+                :cursive/kill-sexp                     #{:ctrl :alt :k}
+                :cursive/split-sexp                    #{:alt :shift :s}
+                :cursive/close-round-brace-and-newline #{:alt :shift :0}
 
-                 :firmware/flashmode                    ("flashMode")}
+                :firmware/flashmode                    ("flashMode")}
 
- :fingers       {:left  {:p {[0 0] {0 :lctrl}
-                             [1 0] {0 :lalt}
-                             [2 0] {0 :escape}
-                             [1 1] {0 :lshift}
-                             [2 1] {0 :lgui}}
-                         :i {[0 -1] {0 :s}
-                             [0 0]  {0 :toggle-layer1}
-                             [0 1]  {0 :u}
-                             [0 2]  {0 :p}
-                             [0 3]  {0 :4}
-                             [1 0]  {0 :x}
-                             [1 1]  {0 :i}
-                             [1 2]  {0 :y}
-                             [1 3]  {0 :5}
-                             [2 0]  {0 nil}
-                             [2 2]  {0 nil}
-                             [2 3]  {0 nil}}
-                         :m {[0 -1] {0 :k}
-                             [0 0]  {0 :toggle-layer2}
-                             [0 1]  {0 :e}
-                             [0 2]  {0 :a}
-                             [0 3]  {0 :3}}
-                         :a {[0 -1]  {0 :q}
-                             [0 0]   {0 :j}
-                             [0 1]   {0 :o}
-                             [0 2]   {0 :l}
-                             [0 3]   {0 :2}
-                             [-1 -1] {0 nil}
-                             [-1 0]  {0 :backslash}
-                             [-1 1]  {0 :delete}
-                             [-1 2]  {0 :tab}
-                             [-1 3]  {0 :1}
-                             [-2 -1] {0 nil}
-                             [-2 0]  {0 nil}
-                             [-2 1]  {0 nil}
-                             [-2 2]  {0 nil}
-                             [-2 3]  {0 nil}}}
-                 :right {:p {[0 0] {0 :space}
-                             [1 0] {0 :rshift}
-                             [2 0] {0 :escape}
-                             [1 1] {0 :rctrl}
-                             [2 1] {0 :ralt}}
-                         :i {[0 -1] {0 :m}
-                             [0 0]  {0 :toggle-layer3}
-                             [0 1]  {0 :h}
-                             [0 2]  {0 :g}
-                             [0 3]  {0 :7}
-                             [1 0]  {0 :b}
-                             [1 1]  {0 :d}
-                             [1 2]  {0 :f}
-                             [1 3]  {0 :6}
-                             [2 0]  {0 nil}
-                             [2 2]  {0 nil}
-                             [2 3]  {0 nil}}
-                         :m {[0 -1] {0 :w}
-                             [0 0]  {0 :toggle-layer4}
-                             [0 1]  {0 :t}
-                             [0 2]  {0 :c}
-                             [0 3]  {0 :8}}
-                         :a {[0 -1]  {0 :v}
-                             [0 0]   {0 :toggle-layer5}
-                             [0 1]   {0 :n}
-                             [0 2]   {0 :r}
-                             [0 3]   {0 :9}
-                             [-1 -1] {0 :z}
-                             [-1 0]  {0 :enter}
-                             [-1 1]  {0 :escape}
-                             [-1 2]  {0 :backspace}
-                             [-1 3]  {0 :0}
-                             [-2 -1] {0 nil}
-                             [-2 0]  {0 nil}
-                             [-2 1]  {0 nil}
-                             [-2 2]  {0 nil}
-                             [-2 3]  {0 nil}}}}
+ ; p - thumb (pulgar)
+ ; i - index (indice)
+ ; m - middle (medio
+ ; a - ring finger (anular)
+ :keymap       {:left  {:p {[0 0] {0 :lctrl}
+                            [1 0] {0 :lalt}
+                            [1 2] {0 :lshift}
+                            [2 0] {0 :escape}
+                            [2 1] {0 :lgui
+                                   1 :app}
+                            [2 2] {0 :space}}
+                        :i {[0 -1] {0 :s
+                                    2 :cursive/split-sexp}
+                            [0 0]  {0 :fun1}
+                            [0 1]  {0 :u}
+                            [0 2]  {0 :p}
+                            [0 3]  {0 :4
+                                    1 :f4
+                                    3 :f4
+                                    4 :f14}
+                            [1 0]  {0 :x}
+                            [1 1]  {0 :i}
+                            [1 2]  {0 :y}
+                            [1 3]  {0 :5
+                                    1 :f5
+                                    3 :f5
+                                    4 :f15}
+                            [2 0]  {0 nil}
+                            [2 2]  {0 nil}
+                            [2 3]  {0 nil}}
+                        :m {[0 -1] {0 :k
+                                    2 :cursive/kill-sexp}
+                            [0 0]  {0 :fun2
+                                    1 :cursive/send-top-form-to-repl
+                                    2 :fun2}
+                            [0 1]  {0 :e
+                                    1 :cursive/extend-selection}
+                            [0 2]  {0 :a
+                                    1 :cursive/switch-repl-to-ns}
+                            [0 3]  {0 :3
+                                    1 :f3
+                                    3 :f3
+                                    4 :f13}}
+                        :a {[0 -1]  {0 :q}
+                            [0 0]   {0 :j
+                                     1 :cursive/send-form-before-to-repl
+                                     2 :cursive/send-form-before-to-repl}
+                            [0 1]   {0 :o
+                                     1 :cursive/shrink-selection}
+                            [0 2]   {0 :l
+                                     1 :cursive/load-file-in-repl}
+                            [0 3]   {0 :2
+                                     1 :f2
+                                     3 :f2
+                                     4 :f12}
+                            [-1 -1] {0 nil}
+                            [-1 0]  {0 :backslash}
+                            [-1 1]  {0 :delete}
+                            [-1 2]  {0 :tab}
+                            [-1 3]  {0 :1
+                                     1 :f1
+                                     3 :f1
+                                     4 :f12}
+                            [-2 -1] {0 nil}
+                            [-2 0]  {0 nil}
+                            [-2 1]  {0 nil}
+                            [-2 2]  {0 nil}
+                            [-2 3]  {0 nil}}}
+                :right {:p {[0 0] {0 :space}
+                            [1 0] {0 :rshift}
+                            [1 2] {0 :ralt}
+                            [2 0] {0 :escape}
+                            [2 1] {0 :rgui
+                                   1 :app}
+                            [2 2] {0 :ralt}}
+                        :i {[0 -1] {0 :m
+                                    2 :cursive/sexp-left
+                                    3 :underscore
+                                    4 :plus
+                                    5 :semicolon}
+                            [0 0]  {0 :fun3
+                                    1 :cursive/slurp-forward
+                                    2 :cursive/sexp-down-left
+                                    3 :fun3
+                                    4 :minus
+                                    5 :colon}
+                            [0 1]  {0 :h
+                                    2 :left
+                                    3 :cursive/wrap-with-double-quotes
+                                    4 :equals
+                                    5 :double-quote}
+                            [0 2]  {0 :g
+                                    2 :home}
+                            [0 3]  {0 :7
+                                    1 :f7
+                                    3 :clj/thread-last-backwards}
+                            [1 0]  {0 :b
+                                    5 :tilde}
+                            [1 1]  {0 :d
+                                    2 :previous-word
+                                    5 :backtick}
+                            [1 2]  {0 :f
+                                    2 :pageup}
+                            [1 3]  {0 :6
+                                    1 :f6}
+                            [2 0]  {0 nil}
+                            [2 2]  {0 nil}
+                            [2 3]  {0 nil}}
+                        :m {[0 -1] {0 :w
+                                    1 :cursive/join-sexp
+                                    2 :cursive/sexp-down-right
+                                    3 :left-angle-brace
+                                    5 :comma}
+                            [0 0]  {0 :fun4
+                                    1 :cursive/splice-sexp
+                                    2 :cursive/sexp-up-left
+                                    3 :left-round-brace
+                                    4 :fun4
+                                    5 :period}
+                            [0 1]  {0 :t
+                                    1 :cursive/move-form-down
+                                    2 :down
+                                    3 :lbracket
+                                    5 :quote}
+                            [0 2]  {0 :c
+                                    1 :cursive/move-form-up
+                                    2 :up
+                                    3 :left-curly-brace}
+                            [0 3]  {0 :8
+                                    1 :f8
+                                    3 :clj/thread-first-backwards}}
+                        :a {[0 -1]  {0 :v
+                                     2 :cursive/sexp-right
+                                     3 :right-angle-brace
+                                     4 :backslash}
+                            [0 0]   {0 :fun5
+                                     1 :cursive/barf-forward
+                                     2 :cursive/sexp-up-right
+                                     3 :right-round-brace
+                                     4 :slash
+                                     5 :fun5}
+                            [0 1]   {0 :n
+                                     2 :right
+                                     3 :rbracket
+                                     4 :question-mark}
+                            [0 2]   {0 :r
+                                     1 :cursive/raise-form
+                                     2 :end
+                                     3 :right-curly-brace}
+                            [0 3]   {0 :9
+                                     1 :f9
+                                     3 :clj/thread-first}
+                            [-1 -1] {0 :z
+                                     1 :lat1
+                                     2 :lat2
+                                     3 :lat3
+                                     4 :lat4
+                                     5 :lat5}
+                            [-1 0]  {0 :enter
+                                     3 :cursive/wrap-with-round-braces}
+                            [-1 1]  {0 :escape
+                                     2 :next-word
+                                     3 :cursive/wrap-with-square-braces}
+                            [-1 2]  {0 :backspace
+                                     2 :pagedown
+                                     3 :cursive/wrap-with-curly-braces}
+                            [-1 3]  {0 :0
+                                     1 :f10
+                                     3 :clj/thread-last}
+                            [-2 -1] {0 nil}
+                            [-2 0]  {0 nil}
+                            [-2 1]  {0 nil}
+                            [-2 2]  {0 nil}
+                            [-2 3]  {0 nil}}}}
+
+ :fingers->kll {:left  {:p {[0 0] :backspace
+                            [1 0] :delete
+                            [1 2] :lctrl
+                            [2 0] :end
+                            [2 1] :home
+                            [2 2] :lalt}
+                        :i {[0 -1] :function5
+                            [0 0]  :v
+                            [0 1]  :f
+                            [0 2]  :r
+                            [0 3]  :4
+                            [1 0]  :b
+                            [1 1]  :g
+                            [1 2]  :t
+                            [1 3]  :5
+                            [2 0]  :function2
+                            [2 2]  :function1
+                            [2 3]  :escape}
+                        :m {[0 -1] :function4
+                            [0 0]  :c
+                            [0 1]  :d
+                            [0 2]  :e
+                            [0 3]  :3}
+                        :a {[0 -1]  :function3
+                            [0 0]   :x
+                            [0 1]   :s
+                            [0 2]   :w
+                            [0 3]   :2
+                            [-1 -1] :backtick
+                            [-1 0]  :z
+                            [-1 1]  :a
+                            [-1 2]  :q
+                            [-1 3]  :1
+                            [-2 -1] :lgui
+                            [-2 0]  :lshift
+                            [-2 1]  :tab
+                            [-2 2]  :backslash
+                            [-2 3]  :equals}}
+                :right {:p {[0 0] :space
+                            [1 0] :enter
+                            [1 2] :rctrl
+                            [2 0] :pagedown
+                            [2 1] :pageup
+                            [2 2] :ralt}
+                        :i {[0 -1] :left
+                            [0 0]  :m
+                            [0 1]  :j
+                            [0 2]  :u
+                            [0 3]  :7
+                            [1 0]  :n
+                            [1 1]  :h
+                            [1 2]  :y
+                            [1 3]  :6
+                            [2 0]  :function7
+                            [2 2]  :lbrace
+                            [2 3]  :function6}
+                        :m {[0 -1] :down
+                            [0 0]  :comma
+                            [0 1]  :k
+                            [0 2]  :i
+                            [0 3]  :8}
+                        :a {[0 -1]  :up
+                            [0 0]   :period
+                            [0 1]   :l
+                            [0 2]   :o
+                            [0 3]   :9
+                            [-1 -1] :right
+                            [-1 0]  :slash
+                            [-1 1]  :semicolon
+                            [-1 2]  :p
+                            [-1 3]  :0
+                            [-2 -1] :rgui
+                            [-2 0]  :rshift
+                            [-2 1]  :quote
+                            [-2 2]  :rbrace
+                            [-2 3]  :minus}}}
 
 
 
 
 
 
- :keymap        {
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;           1st row          ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-                 :equals    [nil]
-                 :1         [:1 :f1 nil :f11]
-                 :2         [:2 :f2 nil :f12]
-                 :3         [:3 :f3 nil :f13]
-                 :4         [:4 :f4 nil :f14]
-                 :5         [:5 :f5 nil :f15]
-                 :esc       [nil :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode]
-
-                 :function6 [nil]
-                 :6         [:6 :f6]
-                 :7         [:7 :f7 nil :clj/thread-last-backwards]
-                 :8         [:8 :f8 nil :clj/thread-first-backwards]
-                 :9         [:9 :f9 nil :clj/thread-first]
-                 :0         [:0 :f10 nil :clj/thread-last]
-                 :minus     [nil :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode]
-
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;           2nd row          ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-                 :backslash [nil]
-                 :q         [:tab nil]
-                 :w         [:l :cursive/load-file-in-repl]
-                 :e         [:a :cursive/switch-repl-to-ns]
-                 :r         [:p nil]
-                 :t         [:y nil]
-                 :function1 [nil]
-
-                 :lbrace    [nil]
-                 :y         [:f nil :pageup]
-                 :u         [:g nil :home]
-                 :i         [:c :cursive/move-form-up :up :left-curly-brace]
-                 :o         [:r :cursive/raise-form :end :right-curly-brace]
-                 :p         [:backspace nil :pagedown :cursive/wrap-with-curly-braces]
-                 :rbrace    [nil]
-
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;           3rd row          ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-                 :tab       [nil]
-                 :a         [:delete]
-                 :s         [:o :cursive/shrink-selection]
-                 :d         [:e :cursive/extend-selection]
-                 :f         [:u]
-                 :g         [:i]
-
-                 :h         [:d nil :previous-word nil nil :backtick]
-                 :j         [:h nil :left :cursive/wrap-with-double-quotes :equals :double-quote]
-                 :k         [:t :cursive/move-form-down :down :lbracket nil :quote]
-                 :l         [:n nil :right :rbracket :question-mark]
-                 :semicolon [:escape nil :next-word :cursive/wrap-with-square-braces]
-                 :quote     [nil]
-
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;           4th row          ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-                 :lshift    [nil]
-                 :z         [:backslash]
-                 :x         [:j :cursive/send-form-before-to-repl :cursive/send-form-before-to-repl]
-                 :c         [:fun2 :cursive/send-top-form-to-repl :fun2]
-                 :v         [:fun1 :fun1 :cursive/send-top-form-to-repl :cursive/send-top-form-to-repl]
-                 :b         [:x]
-                 :function2 [nil]
 
 
-                 :function7 [nil]
-                 :n         [:b nil nil nil nil :tilde]
-                 :m         [:fun3 :cursive/slurp-forward :cursive/sexp-down-left :fun3 :minus :colon]
-                 :comma     [:fun4 :cursive/splice-sexp :cursive/sexp-up-left :left-round-brace :fun4 :period]
-                 :period    [:fun5 :cursive/barf-forward :cursive/sexp-up-right :right-round-brace :slash :fun5]
-                 :slash     [:enter nil nil :cursive/wrap-with-round-braces]
-                 :rshift    [nil]
 
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;           5th row          ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ :old-keymap   {
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;           1st row          ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-                 :lgui      [nil]
-                 :backtick  [nil]
-                 :function3 [:q]
-                 :function4 [:k nil :cursive/kill-sexp]
-                 :function5 [:s nil :cursive/split-sexp]
+                :equals    [nil]
+                :1         [:1 :f1 nil :f11]
+                :2         [:2 :f2 nil :f12]
+                :3         [:3 :f3 nil :f13]
+                :4         [:4 :f4 nil :f14]
+                :5         [:5 :f5 nil :f15]
+                :esc       [nil :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode]
 
-                 :left      [:m nil :cursive/sexp-left :underscore :plus :semicolon]
-                 :down      [:w :cursive/join-sexp :cursive/sexp-down-right :left-angle-brace nil :comma]
-                 :up        [:v nil :cursive/sexp-right :right-angle-brace :backslash]
-                 :right     [:z :lat1 :lat2 :lat3 :lat4 :lat5]
-                 :rgui      [nil]
+                :function6 [nil]
+                :6         [:6 :f6]
+                :7         [:7 :f7 nil :clj/thread-last-backwards]
+                :8         [:8 :f8 nil :clj/thread-first-backwards]
+                :9         [:9 :f9 nil :clj/thread-first]
+                :0         [:0 :f10 nil :clj/thread-last]
+                :minus     [nil :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode :firmware/flashmode]
 
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;     left thumb cluster     ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 :lctrl     [:lshift]
-                 :lalt      [:space]
-                 :home      [:lgui :app]
-                 :backspace [:lctrl]
-                 :delete    [:lalt]
-                 :end       [:escape]
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;           2nd row          ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 ;;;     right thumb cluster    ;;;
-                 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-                 :ralt      [:ralt]
-                 :rctrl     [:rctrl]
-                 :pageup    [:rgui :app]
-                 :pagedown  [:escape]
-                 :enter     [:rshift]
-                 :space     [:space]
-                 }
+                :backslash [nil]
+                :q         [:tab nil]
+                :w         [:l :cursive/load-file-in-repl]
+                :e         [:a :cursive/switch-repl-to-ns]
+                :r         [:p nil]
+                :t         [:y nil]
+                :function1 [nil]
+
+                :lbrace    [nil]
+                :y         [:f nil :pageup]
+                :u         [:g nil :home]
+                :i         [:c :cursive/move-form-up :up :left-curly-brace]
+                :o         [:r :cursive/raise-form :end :right-curly-brace]
+                :p         [:backspace nil :pagedown :cursive/wrap-with-curly-braces]
+                :rbrace    [nil]
+
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;           3rd row          ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+                :tab       [nil]
+                :a         [:delete]
+                :s         [:o :cursive/shrink-selection]
+                :d         [:e :cursive/extend-selection]
+                :f         [:u]
+                :g         [:i]
+
+                :h         [:d nil :previous-word nil nil :backtick]
+                :j         [:h nil :left :cursive/wrap-with-double-quotes :equals :double-quote]
+                :k         [:t :cursive/move-form-down :down :lbracket nil :quote]
+                :l         [:n nil :right :rbracket :question-mark]
+                :semicolon [:escape nil :next-word :cursive/wrap-with-square-braces]
+                :quote     [nil]
+
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;           4th row          ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+                :lshift    [nil]
+                :z         [:backslash]
+                :x         [:j :cursive/send-form-before-to-repl :cursive/send-form-before-to-repl]
+                :c         [:fun2 :cursive/send-top-form-to-repl :fun2]
+                :v         [:fun1 :fun1 :cursive/send-top-form-to-repl :cursive/send-top-form-to-repl]
+                :b         [:x]
+                :function2 [nil]
 
 
- :->qmk         {nil "KC_NO"
-                 :1}
+                :function7 [nil]
+                :n         [:b nil nil nil nil :tilde]
+                :m         [:fun3 :cursive/slurp-forward :cursive/sexp-down-left :fun3 :minus :colon]
+                :comma     [:fun4 :cursive/splice-sexp :cursive/sexp-up-left :left-round-brace :fun4 :period]
+                :period    [:fun5 :cursive/barf-forward :cursive/sexp-up-right :right-round-brace :slash :fun5]
+                :slash     [:enter nil nil :cursive/wrap-with-round-braces]
+                :rshift    [nil]
+
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;           5th row          ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+                :lgui      [nil]
+                :backtick  [nil]
+                :function3 [:q]
+                :function4 [:k nil :cursive/kill-sexp]
+                :function5 [:s nil :cursive/split-sexp]
+
+                :left      [:m nil :cursive/sexp-left :underscore :plus :semicolon]
+                :down      [:w :cursive/join-sexp :cursive/sexp-down-right :left-angle-brace nil :comma]
+                :up        [:v nil :cursive/sexp-right :right-angle-brace :backslash]
+                :right     [:z :lat1 :lat2 :lat3 :lat4 :lat5]
+                :rgui      [nil]
+
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;     left thumb cluster     ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                :lctrl     [:lshift]
+                :lalt      [:space]
+                :home      [:lgui :app]
+                :backspace [:lctrl]
+                :delete    [:lalt]
+                :end       [:escape]
+
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                ;;;     right thumb cluster    ;;;
+                ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                :ralt      [:ralt]
+                :rctrl     [:rctrl]
+                :pageup    [:rgui :app]
+                :pagedown  [:escape]
+                :enter     [:rshift]
+                :space     [:space]
+                }
+
+
+
+
+ ;:->qmk     {nil "KC_NO"
+ ;            :1}
 
  }

@@ -6,4 +6,3 @@ Author = "Shaun Mahood";
 KLL = "0.3c";
 Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
-

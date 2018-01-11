@@ -7,15 +7,21 @@ KLL = "0.3c";
 Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
-U"DOWN" : U"COMMA";
-U"ESC" : flashMode();
-U"N" : '~';
-U"M" : ':';
-U"COMMA" : U"PERIOD";
-U"MINUS" : flashMode();
-U"K" : U"QUOTE";
-U"J" : '"';
-U"H" : U"BACKTICK";
-U"RIGHT" : U"LAT5";
-U"PERIOD" : U"FUN5";
-U"LEFT" : U"SEMICOLON";
+
+### Right Hand ###
+
+# I
+U"LEFT" : U"SEMICOLON";   # right i [0 -1]
+U"M" : ':';   # right i [0 0]
+U"J" : '"';   # right i [0 1]
+U"N" : '~';   # right i [1 0]
+U"H" : U"BACKTICK";   # right i [1 1]
+
+# M
+U"DOWN" : U"COMMA";   # right m [0 -1]
+U"COMMA" : U"PERIOD";   # right m [0 0]
+U"K" : U"QUOTE";   # right m [0 1]
+
+# A
+U"RIGHT" : U"LAT5";   # right a [-1 -1]
+U"PERIOD" : U"FUN5";   # right a [0 0]
