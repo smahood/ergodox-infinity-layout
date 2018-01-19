@@ -4,4 +4,4 @@
 (defn make-kll-files []
   (kll/make-files "resources/ergodox-keymap.edn" "../kiibohd/"))
 
-(comment (make-kll-files))
+(make-kll-files)
