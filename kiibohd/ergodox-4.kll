@@ -9,29 +9,21 @@ Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
 ### Left Hand ###
 
-# I
-U"4" : U"F14";   # left i [0 3]
-U"5" : U"F15";   # left i [1 3]
-
-# M
-U"3" : U"F13";   # left m [0 3]
-
-# A
-U"1" : U"F12";   # left a [-1 3]
-U"2" : U"F12";   # left a [0 3]
+# Fingers
+U"1" : U"F12";   # left fingers [1 4]
+U"2" : U"F12";   # left fingers [2 4]
+U"3" : U"F13";   # left fingers [3 4]
+U"4" : U"F14";   # left fingers [4 4]
+U"5" : U"F15";   # left fingers [5 4]
 
 ### Right Hand ###
 
-# I
-U"LEFT" : '+';   # right i [0 -1]
-U"M" : U"MINUS";   # right i [0 0]
-U"J" : U"EQUALS";   # right i [0 1]
-
-# M
-U"COMMA" : U"FUN4";   # right m [0 0]
-
-# A
-U"RIGHT" : U"LAT4";   # right a [-1 -1]
-U"UP" : U"BACKSLASH";   # right a [0 -1]
-U"PERIOD" : U"SLASH";   # right a [0 0]
-U"L" : '?';   # right a [0 1]
+# Fingers
+U"RIGHT" : U"LAT4";   # right fingers [1 0]
+U"UP" : U"BACKSLASH";   # right fingers [2 0]
+U"PERIOD" : U"SLASH";   # right fingers [2 1]
+U"L" : '?';   # right fingers [2 2]
+U"COMMA" : U"FUN4";   # right fingers [3 1]
+U"LEFT" : '+';   # right fingers [4 0]
+U"M" : U"MINUS";   # right fingers [4 1]
+U"J" : U"EQUALS";   # right fingers [4 2]

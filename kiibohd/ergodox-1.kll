@@ -8,45 +8,38 @@ Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
 ### Left Hand ###
-# P
-U"HOME" : U"APP";   # left p [2 1]
+# Thumb
+U"HOME" : U"APP";   # left thumb [2 1]
 
-# I
-U"4" : U"F4";   # left i [0 3]
-U"5" : U"F5";   # left i [1 3]
-
-# M
-U"C" : U"SHIFT" + U"CTRL" + U"T";   # left m [0 0]
-U"D" : U"W" + U"CTRL";   # left m [0 1]
-U"E" : U"SHIFT" + U"N" + U"CTRL";   # left m [0 2]
-U"3" : U"F3";   # left m [0 3]
-
-# A
-U"1" : U"F1";   # left a [-1 3]
-U"X" : U"SHIFT" + U"CTRL" + U"B";   # left a [0 0]
-U"S" : U"SHIFT" + U"W" + U"CTRL";   # left a [0 1]
-U"W" : U"SHIFT" + U"CTRL" + U"L";   # left a [0 2]
-U"2" : U"F2";   # left a [0 3]
+# Fingers
+U"1" : U"F1";   # left fingers [1 4]
+U"X" : U"SHIFT" + U"CTRL" + U"B";   # left fingers [2 1]
+U"S" : U"SHIFT" + U"W" + U"CTRL";   # left fingers [2 2]
+U"W" : U"SHIFT" + U"CTRL" + U"L";   # left fingers [2 3]
+U"2" : U"F2";   # left fingers [2 4]
+U"C" : U"SHIFT" + U"CTRL" + U"T";   # left fingers [3 1]
+U"D" : U"W" + U"CTRL";   # left fingers [3 2]
+U"E" : U"SHIFT" + U"N" + U"CTRL";   # left fingers [3 3]
+U"3" : U"F3";   # left fingers [3 4]
+U"4" : U"F4";   # left fingers [4 4]
+U"5" : U"F5";   # left fingers [5 4]
+U"ESCAPE" : flashMode();   # left fingers [6 4]
 
 ### Right Hand ###
-# P
-U"PAGEUP" : U"APP";   # right p [2 1]
+# Thumb
+U"PAGEUP" : U"APP";   # right thumb [2 1]
 
-# I
-U"M" : U"SHIFT" + U"0" + U"CTRL";   # right i [0 0]
-U"7" : U"F7";   # right i [0 3]
-U"6" : U"F6";   # right i [1 3]
-
-# M
-U"DOWN" : U"SHIFT" + U"ALT" + U"J";   # right m [0 -1]
-U"COMMA" : U"ALT" + U"S";   # right m [0 0]
-U"K" : U"SHIFT" + U"DOWN" + U"CTRL";   # right m [0 1]
-U"I" : U"SHIFT" + U"CTRL" + U"UP";   # right m [0 2]
-U"8" : U"F8";   # right m [0 3]
-
-# A
-U"RIGHT" : U"LAT1";   # right a [-1 -1]
-U"0" : U"F10";   # right a [-1 3]
-U"PERIOD" : U"SHIFT" + U"CTRL" + U"RBRACE";   # right a [0 0]
-U"O" : U"R" + U"ALT";   # right a [0 2]
-U"9" : U"F9";   # right a [0 3]
+# Fingers
+U"RIGHT" : U"LAT1";   # right fingers [1 0]
+U"0" : U"F10";   # right fingers [1 4]
+U"PERIOD" : U"SHIFT" + U"CTRL" + U"RBRACE";   # right fingers [2 1]
+U"O" : U"R" + U"ALT";   # right fingers [2 3]
+U"9" : U"F9";   # right fingers [2 4]
+U"DOWN" : U"SHIFT" + U"ALT" + U"J";   # right fingers [3 0]
+U"COMMA" : U"ALT" + U"S";   # right fingers [3 1]
+U"K" : U"SHIFT" + U"DOWN" + U"CTRL";   # right fingers [3 2]
+U"I" : U"SHIFT" + U"CTRL" + U"UP";   # right fingers [3 3]
+U"8" : U"F8";   # right fingers [3 4]
+U"M" : U"SHIFT" + U"0" + U"CTRL";   # right fingers [4 1]
+U"7" : U"F7";   # right fingers [4 4]
+U"6" : U"F6";   # right fingers [5 4]

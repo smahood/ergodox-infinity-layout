@@ -1,311 +1,685 @@
-{:shortcuts    {:underscore                            "_"
-                :left-angle-brace                      "<"
-                :right-angle-brace                     ">"
-                :question-mark                         "?"
-                :double-quote                          "\""
-                :tilde                                 "~"
-                :colon                                 ":"
-                :plus                                  "+"
-                :left-curly-brace                      "{"
-                :right-curly-brace                     "}"
-                :left-round-brace                      "("
-                :right-round-brace                     ")"
+{:shortcuts             {:underscore                            "_"
+                         :left-angle-brace                      "<"
+                         :right-angle-brace                     ">"
+                         :question-mark                         "?"
+                         :double-quote                          "\""
+                         :tilde                                 "~"
+                         :colon                                 ":"
+                         :plus                                  "+"
+                         :left-curly-brace                      "{"
+                         :right-curly-brace                     "}"
+                         :left-round-brace                      "("
+                         :right-round-brace                     ")"
 
-                :previous-word                         #{:ctrl :left}
-                :next-word                             #{:ctrl :right}
+                         :previous-word                         #{:ctrl :left}
+                         :next-word                             #{:ctrl :right}
 
-                :clj/thread-first                      "->"
-                :clj/thread-first-backwards            "<-"
-                :clj/thread-last                       "->>"
-                :clj/thread-last-backwards             "<<-"
+                         :clj/thread-first                      "->"
+                         :clj/thread-first-backwards            "<-"
+                         :clj/thread-last                       "->>"
+                         :clj/thread-last-backwards             "<<-"
 
-                :cursive/load-file-in-repl             #{:ctrl :shift :l}
-                :cursive/switch-repl-to-ns             #{:ctrl :shift :n}
-                :cursive/move-form-up                  #{:ctrl :shift :up}
-                :cursive/raise-form                    #{:alt :r}
-                :cursive/shrink-selection              #{:ctrl :shift :w}
-                :cursive/extend-selection              #{:ctrl :w}
-                :cursive/move-form-down                #{:ctrl :shift :down}
-                :cursive/send-form-before-to-repl      #{:ctrl :shift :b}
-                :cursive/send-top-form-to-repl         #{:ctrl :shift :t}
-                :cursive/barf-forward                  #{:ctrl :shift :rbrace}
-                :cursive/join-sexp                     #{:alt :shift :j}
-                :cursive/slurp-forward                 #{:ctrl :shift :0}
-                :cursive/splice-sexp                   #{:alt :s}
-                :cursive/sexp-down-left                #{:ctrl :alt :p}
-                :cursive/sexp-up-left                  #{:ctrl :alt :u}
-                :cursive/sexp-up-right                 #{:ctrl :alt :n}
-                :cursive/sexp-left                     #{:ctrl :alt :b}
-                :cursive/sexp-down-right               #{:ctrl :alt :d}
-                :cursive/sexp-right                    #{:ctrl :alt :f}
-                :cursive/wrap-with-curly-braces        #{:alt :shift :lbracket}
-                :cursive/wrap-with-double-quotes       #{:ctrl :shift :quote}
-                :cursive/wrap-with-square-braces       #{:alt :lbracket}
-                :cursive/wrap-with-round-braces        #{:alt :shift :9}
-                :cursive/kill-sexp                     #{:ctrl :alt :k}
-                :cursive/split-sexp                    #{:alt :shift :s}
-                :cursive/close-round-brace-and-newline #{:alt :shift :0}
+                         :cursive/load-file-in-repl             #{:ctrl :shift :l}
+                         :cursive/switch-repl-to-ns             #{:ctrl :shift :n}
+                         :cursive/move-form-up                  #{:ctrl :shift :up}
+                         :cursive/raise-form                    #{:alt :r}
+                         :cursive/shrink-selection              #{:ctrl :shift :w}
+                         :cursive/extend-selection              #{:ctrl :w}
+                         :cursive/move-form-down                #{:ctrl :shift :down}
+                         :cursive/send-form-before-to-repl      #{:ctrl :shift :b}
+                         :cursive/send-top-form-to-repl         #{:ctrl :shift :t}
+                         :cursive/barf-forward                  #{:ctrl :shift :rbrace}
+                         :cursive/join-sexp                     #{:alt :shift :j}
+                         :cursive/slurp-forward                 #{:ctrl :shift :0}
+                         :cursive/splice-sexp                   #{:alt :s}
+                         :cursive/sexp-down-left                #{:ctrl :alt :p}
+                         :cursive/sexp-up-left                  #{:ctrl :alt :u}
+                         :cursive/sexp-up-right                 #{:ctrl :alt :n}
+                         :cursive/sexp-left                     #{:ctrl :alt :b}
+                         :cursive/sexp-down-right               #{:ctrl :alt :d}
+                         :cursive/sexp-right                    #{:ctrl :alt :f}
+                         :cursive/wrap-with-curly-braces        #{:alt :shift :lbracket}
+                         :cursive/wrap-with-double-quotes       #{:alt :shift :quote}
+                         :cursive/wrap-with-square-braces       #{:alt :lbracket}
+                         :cursive/wrap-with-round-braces        #{:alt :shift :9}
+                         :cursive/kill-sexp                     #{:ctrl :alt :k}
+                         :cursive/split-sexp                    #{:alt :shift :s}
+                         :cursive/close-round-brace-and-newline #{:alt :shift :0}
 
-                :firmware/flashmode                    ("flashMode")}
-
- ; p - thumb (pulgar)
- ; i - index (indice)
- ; m - middle (medio
- ; a - ring finger (anular)
- :keymap       {:left  {:p  {[0 0] {0 :lctrl}
-                             [1 0] {0 :lalt}
-                             [1 2] {0 :lshift}
-                             [2 0] {0 :escape}
-                             [2 1] {0 :lgui
-                                    1 :app}
-                             [2 2] {0 :space}}
+                         :firmware/flashmode                    ("flashMode")}
 
 
+ :keys->qmk             {:0         "KC_0"
+                         :1         "KC_1"
+                         :2         "KC_2"
+                         :3         "KC_3"
+                         :4         "KC_4"
+                         :5         "KC_5"
+                         :6         "KC_6"
+                         :7         "KC_7"
+                         :8         "KC_8"
+                         :9         "KC_9"
 
-                        :i  {[0 -1] {0 :s
-                                     2 :cursive/split-sexp}
-                             [0 0]  {0 :fun1
-                                     2 :cursive/send-top-form-to-repl}
-                             [0 1]  {0 :u}
-                             [0 2]  {0 :p}
-                             [0 3]  {0 :4
-                                     1 :f4
-                                     3 :f4
-                                     4 :f14}
-                             [1 0]  {0 :x}
-                             [1 1]  {0 :i}
-                             [1 2]  {0 :y}
-                             [1 3]  {0 :5
-                                     1 :f5
-                                     3 :f5
-                                     4 :f15}
-                             [2 0]  {0 nil}
-                             [2 2]  {0 nil}
-                             [2 3]  {0 nil
-                                     1 :firmware/flashmode}}
+                         :a         "KC_A"
+                         :b         "KC_B"
+                         :c         "KC_C"
+                         :d         "KC_D"
+                         :e         "KC_E"
+                         :f         "KC_F"
+                         :g         "KC_G"
+                         :h         "KC_H"
+                         :i         "KC_I"
+                         :j         "KC_J"
+                         :k         "KC_K"
+                         :l         "KC_L"
+                         :m         "KC_M"
+                         :n         "KC_N"
+                         :o         "KC_O"
+                         :p         "KC_P"
+                         :q         "KC_Q"
+                         :r         "KC_R"
+                         :s         "KC_S"
+                         :t         "KC_T"
+                         :u         "KC_U"
+                         :v         "KC_V"
+                         :w         "KC_W"
+                         :x         "KC_X"
+                         :y         "KC_Y"
+                         :z         "KC_Z"
 
-                        :m  {[0 -1] {0 :k
-                                     2 :cursive/kill-sexp}
-                             [0 0]  {0 :fun2
-                                     1 :cursive/send-top-form-to-repl}
-                             [0 1]  {0 :e
-                                     1 :cursive/extend-selection}
-                             [0 2]  {0 :a
-                                     1 :cursive/switch-repl-to-ns}
-                             [0 3]  {0 :3
-                                     1 :f3
-                                     3 :f3
-                                     4 :f13}}
+                         :backslash "KC_BSLS"
+                         :backspace "KC_BSPC"
+                         :backtick  "KC_"
+                         :comma     "KC_COMM"
+                         :delete    "KC_DELT"
+                         :down      "KC_DOWN"
+                         :end       "KC_END"
+                         :enter     "KC_ENT"
+                         :equals    "KC_EQL"
+                         :escape    "KC_ESC"
+                         :function1 "KC_"
+                         :function2 "KC_"
+                         :function3 "KC_"
+                         :function4 "KC_"
+                         :function5 "KC_"
+                         :function6 "KC_"
+                         :function7 "KC_"
+                         :home      "KC_HOME"
+                         :lalt      "KC_LALT"
+                         :lbrace    "KC_LBRC"
+                         :lctrl     "KC_LCTRL"
+                         :left      "KC_LEFT"
+                         :lgui      "KC_LGUI"
+                         :lshift    "KC_LSHIFT"
+                         :minus     "KC_MINS"
+                         :pagedown  "KC_PGDN"
+                         :pageup    "KC_PGUP"
+                         :period    "KC_DOT"
+                         :quote     "KC_QUOT"
+                         :ralt      "KC_RALT"
+                         :rbrace    "KC_RBRC"
+                         :rctrl     "KC_RCTRL"
+                         :rgui      "KC_RGUI"
+                         :right     "KC_RIGHT"
+                         :rshift    "KC_RSHIFT"
+                         :semicolon "KC_SCLN"
+                         :slash     "KC_SLASH"
+                         :space     "KC_SPACE"
+                         :tab       "KC_TAB"
+                         :up        "KC_UP"}
 
-                        :a  {[0 -1]  {0 :q}
-                             [0 0]   {0 :j
-                                      1 :cursive/send-form-before-to-repl}
-                             [0 1]   {0 :o
-                                      1 :cursive/shrink-selection}
-                             [0 2]   {0 :l
-                                      1 :cursive/load-file-in-repl}
-                             [0 3]   {0 :2
-                                      1 :f2
-                                      3 :f2
-                                      4 :f12}
-                             [-1 -1] {0 nil}
-                             [-1 0]  {0 :backslash}
-                             [-1 1]  {0 :delete}
-                             [-1 2]  {0 :tab}
-                             [-1 3]  {0 :1
-                                      1 :f1
-                                      3 :f1
-                                      4 :f12}
-                             [-2 -1] {0 nil}
-                             [-2 0]  {0 nil}
-                             [-2 1]  {0 nil}
-                             [-2 2]  {0 nil}
-                             [-2 3]  {0 nil}}}
 
-                :right {:p {[0 0] {0 :space}
-                            [1 0] {0 :rshift}
-                            [1 2] {0 :ralt}
-                            [2 0] {0 :escape}
-                            [2 1] {0 :rgui
-                                   1 :app}
-                            [2 2] {0 :ralt}}
 
-                        :i {[0 -1] {0 :m
-                                    2 :cursive/sexp-left
-                                    3 :underscore
-                                    4 :plus
-                                    5 :semicolon}
-                            [0 0]  {0 :fun3
-                                    1 :cursive/slurp-forward
-                                    2 :cursive/sexp-down-left
-                                    3 :fun3
-                                    4 :minus
-                                    5 :colon}
-                            [0 1]  {0 :h
-                                    2 :left
-                                    3 :cursive/wrap-with-double-quotes
-                                    4 :equals
-                                    5 :double-quote}
-                            [0 2]  {0 :g
-                                    2 :home}
-                            [0 3]  {0 :7
-                                    1 :f7
-                                    3 :clj/thread-last-backwards}
-                            [1 0]  {0 :b
-                                    5 :tilde}
-                            [1 1]  {0 :d
-                                    2 :previous-word
-                                    5 :backtick}
-                            [1 2]  {0 :f
-                                    2 :pageup}
-                            [1 3]  {0 :6
-                                    1 :f6}
-                            [2 0]  {0 nil}
-                            [2 2]  {0 nil}
-                            [2 3]  {0 nil
-                                    3 :firmware/flashmode}}
 
-                        :m {[0 -1] {0 :w
-                                    1 :cursive/join-sexp
-                                    2 :cursive/sexp-down-right
-                                    3 :left-angle-brace
-                                    5 :comma}
-                            [0 0]  {0 :fun4
-                                    1 :cursive/splice-sexp
-                                    2 :cursive/sexp-up-left
-                                    3 :left-round-brace
-                                    4 :fun4
-                                    5 :period}
-                            [0 1]  {0 :t
-                                    1 :cursive/move-form-down
-                                    2 :down
-                                    3 :lbracket
-                                    5 :quote}
-                            [0 2]  {0 :c
-                                    1 :cursive/move-form-up
-                                    2 :up
-                                    3 :left-curly-brace}
-                            [0 3]  {0 :8
-                                    1 :f8
-                                    3 :clj/thread-first-backwards}}
 
-                        :a {[0 -1]  {0 :v
-                                     2 :cursive/sexp-right
-                                     3 :right-angle-brace
-                                     4 :backslash}
-                            [0 0]   {0 :fun5
-                                     1 :cursive/barf-forward
-                                     2 :cursive/sexp-up-right
-                                     3 :right-round-brace
-                                     4 :slash
-                                     5 :fun5}
-                            [0 1]   {0 :n
-                                     2 :right
-                                     3 :rbracket
-                                     4 :question-mark}
-                            [0 2]   {0 :r
-                                     1 :cursive/raise-form
-                                     2 :end
-                                     3 :right-curly-brace}
-                            [0 3]   {0 :9
-                                     1 :f9
-                                     3 :clj/thread-first}
-                            [-1 -1] {0 :z
-                                     1 :lat1
-                                     2 :lat2
-                                     3 :lat3
-                                     4 :lat4
-                                     5 :lat5}
-                            [-1 0]  {0 :enter
-                                     3 :cursive/wrap-with-round-braces}
-                            [-1 1]  {0 :escape
-                                     2 :next-word
-                                     3 :cursive/wrap-with-square-braces}
-                            [-1 2]  {0 :backspace
-                                     2 :pagedown
-                                     3 :cursive/wrap-with-curly-braces}
-                            [-1 3]  {0 :0
-                                     1 :f10
-                                     3 :clj/thread-last}
-                            [-2 -1] {0 nil}
-                            [-2 0]  {0 nil}
-                            [-2 1]  {0 nil}
-                            [-2 2]  {0 nil}
-                            [-2 3]  {0 nil}}}}
 
- :fingers->kll {:left  {:p {[0 0] :backspace
-                            [1 0] :delete
-                            [1 2] :lctrl
-                            [2 0] :end
-                            [2 1] :home
-                            [2 2] :lalt}
-                        :i {[0 -1] :function5
-                            [0 0]  :v
-                            [0 1]  :f
-                            [0 2]  :r
-                            [0 3]  :4
-                            [1 0]  :b
-                            [1 1]  :g
-                            [1 2]  :t
-                            [1 3]  :5
-                            [2 0]  :function2
-                            [2 2]  :function1
-                            [2 3]  :escape}
-                        :m {[0 -1] :function4
-                            [0 0]  :c
-                            [0 1]  :d
-                            [0 2]  :e
-                            [0 3]  :3}
-                        :a {[0 -1]  :function3
-                            [0 0]   :x
-                            [0 1]   :s
-                            [0 2]   :w
-                            [0 3]   :2
-                            [-1 -1] :backtick
-                            [-1 0]  :z
-                            [-1 1]  :a
-                            [-1 2]  :q
-                            [-1 3]  :1
-                            [-2 -1] :lgui
-                            [-2 0]  :lshift
-                            [-2 1]  :tab
-                            [-2 2]  :backslash
-                            [-2 3]  :equals}}
-                :right {:p {[0 0] :space
-                            [1 0] :enter
-                            [1 2] :rctrl
-                            [2 0] :pagedown
-                            [2 1] :pageup
-                            [2 2] :ralt}
-                        :i {[0 -1] :left
-                            [0 0]  :m
-                            [0 1]  :j
-                            [0 2]  :u
-                            [0 3]  :7
-                            [1 0]  :n
-                            [1 1]  :h
-                            [1 2]  :y
-                            [1 3]  :6
-                            [2 0]  :function7
-                            [2 2]  :lbrace
-                            [2 3]  :function6}
-                        :m {[0 -1] :down
-                            [0 0]  :comma
-                            [0 1]  :k
-                            [0 2]  :i
-                            [0 3]  :8}
-                        :a {[0 -1]  :up
-                            [0 0]   :period
-                            [0 1]   :l
-                            [0 2]   :o
-                            [0 3]   :9
-                            [-1 -1] :right
-                            [-1 0]  :slash
-                            [-1 1]  :semicolon
-                            [-1 2]  :p
-                            [-1 3]  :0
-                            [-2 -1] :rgui
-                            [-2 0]  :rshift
-                            [-2 1]  :quote
-                            [-2 2]  :rbrace
-                            [-2 3]  :minus}}}}
+ :->qmk                 {:left {:fingers {:rows {:0 []}}
+                                }}
+
+
+ :per-hand              {:left  {:thumb {;; [x y] Starts at bottom left
+                                         [0 0] {0 :lctrl}
+                                         [1 0] {0 :lalt}
+                                         [1 2] {0 :lshift}
+                                         [2 0] {0 :escape}
+                                         [2 1] {0 :lgui
+                                                1 :app}
+                                         [2 2] {0 :space}}
+
+
+                                 :fingers
+                                        {;; [x y] starts at bottom left
+                                         [0 0] {0 nil}
+                                         [1 0] {0 nil}
+                                         [2 0] {0 :q}
+                                         [3 0] {0 :k
+                                                2 :cursive/kill-sexp}
+                                         [4 0] {0 :s
+                                                2 :cursive/split-sexp}
+
+                                         [0 1] {0 nil}
+                                         [1 1] {0 :backslash}
+                                         [2 1] {0 :j
+                                                1 :cursive/send-form-before-to-repl}
+                                         [3 1] {0 :fun2
+                                                1 :cursive/send-top-form-to-repl}
+                                         [4 1] {0 :fun1
+                                                2 :cursive/send-top-form-to-repl}
+                                         [5 1] {0 :x}
+                                         [6 1] {0 nil}
+
+                                         [0 2] {0 nil}
+                                         [1 2] {0 :delete}
+                                         [2 2] {0 :o
+                                                1 :cursive/shrink-selection}
+                                         [3 2] {0 :e
+                                                1 :cursive/extend-selection}
+                                         [4 2] {0 :u}
+                                         [5 2] {0 :i}
+
+                                         [0 3] {0 nil}
+
+                                         [1 3] {0 :tab}
+                                         [2 3] {0 :l
+                                                1 :cursive/load-file-in-repl}
+                                         [3 3] {0 :a
+                                                1 :cursive/switch-repl-to-ns}
+                                         [4 3] {0 :p}
+                                         [5 3] {0 :y}
+                                         [6 3] {0 nil}
+                                         [0 4] {0 nil}
+                                         [1 4] {0 :1
+                                                1 :f1
+                                                3 :f1
+                                                4 :f12}
+                                         [2 4] {0 :2
+                                                1 :f2
+                                                3 :f2
+                                                4 :f12}
+                                         [3 4] {0 :3
+                                                1 :f3
+                                                3 :f3
+                                                4 :f13}
+                                         [4 4] {0 :4
+                                                1 :f4
+                                                3 :f4
+                                                4 :f14}
+                                         [5 4] {0 :5
+                                                1 :f5
+                                                3 :f5
+                                                4 :f15}
+                                         [6 4] {0 nil
+                                                1 :firmware/flashmode}}}
+
+                         :right {:thumb {;; [x y] Starts at bottom left
+                                         [0 0] {0 :space}
+                                         [1 0] {0 :rshift}
+                                         [1 2] {0 :ralt}
+                                         [2 0] {0 :escape}
+                                         [2 1] {0 :rgui
+                                                1 :app}
+                                         [2 2] {0 :ralt}}
+
+
+                                 :fingers
+                                        {;; [x y] starts at bottom right (mirror)
+                                         [0 0] {0 nil}
+                                         [1 0] {0 :z
+                                                1 :lat1
+                                                2 :lat2
+                                                3 :lat3
+                                                4 :lat4
+                                                5 :lat5}
+                                         [2 0] {0 :v
+                                                2 :cursive/sexp-right
+                                                3 :right-angle-brace
+                                                4 :backslash}
+                                         [3 0] {0 :w
+                                                1 :cursive/join-sexp
+                                                2 :cursive/sexp-down-right
+                                                3 :left-angle-brace
+                                                5 :comma}
+                                         [4 0] {0 :m
+                                                2 :cursive/sexp-left
+                                                3 :underscore
+                                                4 :plus
+                                                5 :semicolon}
+
+                                         [0 1] {0 nil}
+                                         [1 1] {0 :enter
+                                                3 :cursive/wrap-with-round-braces}
+                                         [2 1] {0 :fun5
+                                                1 :cursive/barf-forward
+                                                2 :cursive/sexp-up-right
+                                                3 :right-round-brace
+                                                4 :slash
+                                                5 :fun5}
+                                         [3 1] {0 :fun4
+                                                1 :cursive/splice-sexp
+                                                2 :cursive/sexp-up-left
+                                                3 :left-round-brace
+                                                4 :fun4
+                                                5 :period}
+                                         [4 1] {0 :fun3
+                                                1 :cursive/slurp-forward
+                                                2 :cursive/sexp-down-left
+                                                3 :fun3
+                                                4 :minus
+                                                5 :colon}
+                                         [5 1] {0 :b
+                                                5 :tilde}
+                                         [6 1] {0 nil}
+
+                                         [0 2] {0 nil}
+                                         [1 2] {0 :escape
+                                                2 :next-word
+                                                3 :cursive/wrap-with-square-braces}
+                                         [2 2] {0 :n
+                                                2 :right
+                                                3 :rbracket
+                                                4 :question-mark}
+                                         [3 2] {0 :t
+                                                1 :cursive/move-form-down
+                                                2 :down
+                                                3 :lbracket
+                                                5 :quote}
+                                         [4 2] {0 :h
+                                                2 :left
+                                                3 :cursive/wrap-with-double-quotes
+                                                4 :equals
+                                                5 :double-quote}
+                                         [5 2] {0 :d
+                                                2 :previous-word
+                                                5 :backtick}
+
+                                         [0 3] {0 nil}
+                                         [1 3] {0 :backspace
+                                                2 :pagedown
+                                                3 :cursive/wrap-with-curly-braces}
+                                         [2 3] {0 :r
+                                                1 :cursive/raise-form
+                                                2 :end
+                                                3 :right-curly-brace}
+                                         [3 3] {0 :c
+                                                1 :cursive/move-form-up
+                                                2 :up
+                                                3 :left-curly-brace}
+                                         [4 3] {0 :g
+                                                2 :home}
+                                         [5 3] {0 :f
+                                                2 :pageup}
+                                         [6 3] {0 nil}
+
+                                         [0 4] {0 nil}
+                                         [1 4] {0 :0
+                                                1 :f10
+                                                3 :clj/thread-last}
+                                         [2 4] {0 :9
+                                                1 :f9
+                                                3 :clj/thread-first}
+                                         [3 4] {0 :8
+                                                1 :f8
+                                                3 :clj/thread-first-backwards}
+                                         [4 4] {0 :7
+                                                1 :f7
+                                                3 :clj/thread-last-backwards}
+                                         [5 4] {0 :6
+                                                1 :f6}
+                                         [6 4] {0 nil
+                                                3 :firmware/flashmode}}}}
+
+
+ :keymap                {:left  {:p {[0 0] {0 :lctrl}
+                                     [1 0] {0 :lalt}
+                                     [1 2] {0 :lshift}
+                                     [2 0] {0 :escape}
+                                     [2 1] {0 :lgui
+                                            1 :app}
+                                     [2 2] {0 :space}}
+
+
+
+                                 :i {[0 -1] {0 :s
+                                             2 :cursive/split-sexp}
+                                     [0 0]  {0 :fun1
+                                             2 :cursive/send-top-form-to-repl}
+                                     [0 1]  {0 :u}
+                                     [0 2]  {0 :p}
+                                     [0 3]  {0 :4
+                                             1 :f4
+                                             3 :f4
+                                             4 :f14}
+                                     [1 0]  {0 :x}
+                                     [1 1]  {0 :i}
+                                     [1 2]  {0 :y}
+                                     [1 3]  {0 :5
+                                             1 :f5
+                                             3 :f5
+                                             4 :f15}
+                                     [2 0]  {0 nil}
+                                     [2 2]  {0 nil}
+                                     [2 3]  {0 nil
+                                             1 :firmware/flashmode}}
+
+                                 :m {[0 -1] {0 :k
+                                             2 :cursive/kill-sexp}
+                                     [0 0]  {0 :fun2
+                                             1 :cursive/send-top-form-to-repl}
+                                     [0 1]  {0 :e
+                                             1 :cursive/extend-selection}
+                                     [0 2]  {0 :a
+                                             1 :cursive/switch-repl-to-ns}
+                                     [0 3]  {0 :3
+                                             1 :f3
+                                             3 :f3
+                                             4 :f13}}
+
+                                 :a {[0 -1]  {0 :q}
+                                     [0 0]   {0 :j
+                                              1 :cursive/send-form-before-to-repl}
+                                     [0 1]   {0 :o
+                                              1 :cursive/shrink-selection}
+                                     [0 2]   {0 :l
+                                              1 :cursive/load-file-in-repl}
+                                     [0 3]   {0 :2
+                                              1 :f2
+                                              3 :f2
+                                              4 :f12}
+                                     [-1 -1] {0 nil}
+                                     [-1 0]  {0 :backslash}
+                                     [-1 1]  {0 :delete}
+                                     [-1 2]  {0 :tab}
+                                     [-1 3]  {0 :1
+                                              1 :f1
+                                              3 :f1
+                                              4 :f12}
+                                     [-2 -1] {0 nil}
+                                     [-2 0]  {0 nil}
+                                     [-2 1]  {0 nil}
+                                     [-2 2]  {0 nil}
+                                     [-2 3]  {0 nil}}}
+
+                         :right {:p {[0 0] {0 :space}
+                                     [1 0] {0 :rshift}
+                                     [1 2] {0 :ralt}
+                                     [2 0] {0 :escape}
+                                     [2 1] {0 :rgui
+                                            1 :app}
+                                     [2 2] {0 :ralt}}
+
+                                 :i {[0 -1] {0 :m
+                                             2 :cursive/sexp-left
+                                             3 :underscore
+                                             4 :plus
+                                             5 :semicolon}
+                                     [0 0]  {0 :fun3
+                                             1 :cursive/slurp-forward
+                                             2 :cursive/sexp-down-left
+                                             3 :fun3
+                                             4 :minus
+                                             5 :colon}
+                                     [0 1]  {0 :h
+                                             2 :left
+                                             3 :cursive/wrap-with-double-quotes
+                                             4 :equals
+                                             5 :double-quote}
+                                     [0 2]  {0 :g
+                                             2 :home}
+                                     [0 3]  {0 :7
+                                             1 :f7
+                                             3 :clj/thread-last-backwards}
+                                     [1 0]  {0 :b
+                                             5 :tilde}
+                                     [1 1]  {0 :d
+                                             2 :previous-word
+                                             5 :backtick}
+                                     [1 2]  {0 :f
+                                             2 :pageup}
+                                     [1 3]  {0 :6
+                                             1 :f6}
+                                     [2 0]  {0 nil}
+                                     [2 2]  {0 nil}
+                                     [2 3]  {0 nil
+                                             3 :firmware/flashmode}}
+
+                                 :m {[0 -1] {0 :w
+                                             1 :cursive/join-sexp
+                                             2 :cursive/sexp-down-right
+                                             3 :left-angle-brace
+                                             5 :comma}
+                                     [0 0]  {0 :fun4
+                                             1 :cursive/splice-sexp
+                                             2 :cursive/sexp-up-left
+                                             3 :left-round-brace
+                                             4 :fun4
+                                             5 :period}
+                                     [0 1]  {0 :t
+                                             1 :cursive/move-form-down
+                                             2 :down
+                                             3 :lbracket
+                                             5 :quote}
+                                     [0 2]  {0 :c
+                                             1 :cursive/move-form-up
+                                             2 :up
+                                             3 :left-curly-brace}
+                                     [0 3]  {0 :8
+                                             1 :f8
+                                             3 :clj/thread-first-backwards}}
+
+                                 :a {[0 -1]  {0 :v
+                                              2 :cursive/sexp-right
+                                              3 :right-angle-brace
+                                              4 :backslash}
+                                     [0 0]   {0 :fun5
+                                              1 :cursive/barf-forward
+                                              2 :cursive/sexp-up-right
+                                              3 :right-round-brace
+                                              4 :slash
+                                              5 :fun5}
+                                     [0 1]   {0 :n
+                                              2 :right
+                                              3 :rbracket
+                                              4 :question-mark}
+                                     [0 2]   {0 :r
+                                              1 :cursive/raise-form
+                                              2 :end
+                                              3 :right-curly-brace}
+                                     [0 3]   {0 :9
+                                              1 :f9
+                                              3 :clj/thread-first}
+                                     [-1 -1] {0 :z
+                                              1 :lat1
+                                              2 :lat2
+                                              3 :lat3
+                                              4 :lat4
+                                              5 :lat5}
+                                     [-1 0]  {0 :enter
+                                              3 :cursive/wrap-with-round-braces}
+                                     [-1 1]  {0 :escape
+                                              2 :next-word
+                                              3 :cursive/wrap-with-square-braces}
+                                     [-1 2]  {0 :backspace
+                                              2 :pagedown
+                                              3 :cursive/wrap-with-curly-braces}
+                                     [-1 3]  {0 :0
+                                              1 :f10
+                                              3 :clj/thread-last}
+                                     [-2 -1] {0 nil}
+                                     [-2 0]  {0 nil}
+                                     [-2 1]  {0 nil}
+                                     [-2 2]  {0 nil}
+                                     [-2 3]  {0 nil}}}}
+
+
+
+ :matrix->kll-defaults  {:left  {:thumb   {;; [x y] Starts at bottom left
+                                           [0 0] :backspace
+                                           [1 0] :delete
+                                           [1 2] :lctrl
+                                           [2 0] :end
+                                           [2 1] :home
+                                           [2 2] :lalt}
+
+
+                                 :fingers {;; [x y] starts at bottom left
+                                           [0 0] :lgui
+                                           [1 0] :backtick
+                                           [2 0] :function3
+                                           [3 0] :function4
+                                           [4 0] :function5
+
+
+                                           [0 1] :lshift
+                                           [1 1] :z
+                                           [2 1] :x
+                                           [3 1] :c
+                                           [4 1] :v
+                                           [5 1] :b
+                                           [6 1] :function2
+
+                                           [0 2] :tab
+                                           [1 2] :a
+                                           [2 2] :s
+                                           [3 2] :d
+                                           [4 2] :f
+                                           [5 2] :g
+
+                                           [0 3] :backslash
+                                           [1 3] :q
+                                           [2 3] :w
+                                           [3 3] :e
+                                           [4 3] :r
+                                           [5 3] :t
+                                           [6 3] :function1
+
+                                           [0 4] :equals
+                                           [1 4] :1
+                                           [2 4] :2
+                                           [3 4] :3
+                                           [4 4] :4
+                                           [5 4] :5
+                                           [6 4] :escape}}
+
+                         :right {:thumb   {;; [x y] starts at bottom right (mirror)
+                                           [0 0] :space
+                                           [1 0] :enter
+                                           [1 2] :rctrl
+                                           [2 0] :pagedown
+                                           [2 1] :pageup
+                                           [2 2] :ralt}
+
+
+                                 :fingers {;; [x y] starts at bottom right (mirror)
+                                           [0 0] :rgui
+                                           [1 0] :right
+                                           [2 0] :up
+                                           [3 0] :down
+                                           [4 0] :left
+
+                                           [0 1] :rshift
+                                           [1 1] :slash
+                                           [2 1] :period
+                                           [3 1] :comma
+                                           [4 1] :m
+                                           [5 1] :n
+                                           [6 1] :function7
+
+                                           [0 2] :quote
+                                           [1 2] :semicolon
+                                           [2 2] :l
+                                           [3 2] :k
+                                           [4 2] :j
+                                           [5 2] :h
+
+                                           [0 3] :rbrace
+                                           [1 3] :p
+                                           [2 3] :o
+                                           [3 3] :i
+                                           [4 3] :u
+                                           [5 3] :y
+                                           [6 3] :lbrace
+
+                                           [0 4] :minus
+                                           [1 4] :0
+                                           [2 4] :9
+                                           [3 4] :8
+                                           [4 4] :7
+                                           [5 4] :6
+                                           [6 4] :function6}}}
+
+ :fingers->kll-defaults {:left  {:p {[0 0] :backspace
+                                     [1 0] :delete
+                                     [1 2] :lctrl
+                                     [2 0] :end
+                                     [2 1] :home
+                                     [2 2] :lalt}
+                                 :i {[0 -1] :function5
+                                     [0 0]  :v
+                                     [0 1]  :f
+                                     [0 2]  :r
+                                     [0 3]  :4
+                                     [1 0]  :b
+                                     [1 1]  :g
+                                     [1 2]  :t
+                                     [1 3]  :5
+                                     [2 0]  :function2
+                                     [2 2]  :function1
+                                     [2 3]  :escape}
+                                 :m {[0 -1] :function4
+                                     [0 0]  :c
+                                     [0 1]  :d
+                                     [0 2]  :e
+                                     [0 3]  :3}
+                                 :a {[0 -1]  :function3
+                                     [0 0]   :x
+                                     [0 1]   :s
+                                     [0 2]   :w
+                                     [0 3]   :2
+                                     [-1 -1] :backtick
+                                     [-1 0]  :z
+                                     [-1 1]  :a
+                                     [-1 2]  :q
+                                     [-1 3]  :1
+                                     [-2 -1] :lgui
+                                     [-2 0]  :lshift
+                                     [-2 1]  :tab
+                                     [-2 2]  :backslash
+                                     [-2 3]  :equals}}
+                         :right {:p {[0 0] :space
+                                     [1 0] :enter
+                                     [1 2] :rctrl
+                                     [2 0] :pagedown
+                                     [2 1] :pageup
+                                     [2 2] :ralt}
+                                 :i {[0 -1] :left
+                                     [0 0]  :m
+                                     [0 1]  :j
+                                     [0 2]  :u
+                                     [0 3]  :7
+                                     [1 0]  :n
+                                     [1 1]  :h
+                                     [1 2]  :y
+                                     [1 3]  :6
+                                     [2 0]  :function7
+                                     [2 2]  :lbrace
+                                     [2 3]  :function6}
+                                 :m {[0 -1] :down
+                                     [0 0]  :comma
+                                     [0 1]  :k
+                                     [0 2]  :i
+                                     [0 3]  :8}
+                                 :a {[0 -1]  :up
+                                     [0 0]   :period
+                                     [0 1]   :l
+                                     [0 2]   :o
+                                     [0 3]   :9
+                                     [-1 -1] :right
+                                     [-1 0]  :slash
+                                     [-1 1]  :semicolon
+                                     [-1 2]  :p
+                                     [-1 3]  :0
+                                     [-2 -1] :rgui
+                                     [-2 0]  :rshift
+                                     [-2 1]  :quote
+                                     [-2 2]  :rbrace
+                                     [-2 3]  :minus}}}}
