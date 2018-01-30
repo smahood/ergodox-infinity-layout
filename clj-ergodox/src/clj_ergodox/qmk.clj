@@ -2,6 +2,72 @@
   (:require [clojure.edn :as edn]
             [clojure.string]))
 
+(def qmk-edn (edn/read-string (slurp "resources/qmk.edn")))
+
+(def start-c-layout-declaration
+  "\nconst uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {")
+
+(def end-c-layout-declaration
+  "};")
+
+(defn num-layers [keymap]
+  (let [position-layers (for [hand keymap
+                              section (val hand)
+                              position (val section)
+                              layer-map (val position)]
+                          (key layer-map))]
+    (apply max
+           (filter int? position-layers))))
+
+(defn make-defines [layers]
+  (let [layer-defines (clojure.string/join "\n"
+                                           (map #(str "#define _" % " " %)
+                                                layers))]
+    (clojure.string/join "\n"
+                         [layer-defines])))
+
+(defn make-layer [layer]
+  (str "/* Keymap " layer " */\n"
+       "[_" layer "] = LAYOUT_ergodox("
+
+
+       "), \n"
+
+       )
+  )
+
+
+(defn make-layers [layers]
+  (clojure.string/join "\n"
+                       (map make-layer layers)))
+
+
+
+(defn make-body [layout]
+  (let [keymap (get layout :custom-keymap)
+        max-layer (num-layers keymap)
+        integer-layers (range max-layer)]
+    (clojure.string/join "\n"
+                         [(make-defines integer-layers)
+                          start-c-layout-declaration
+                          (make-layers integer-layers)
+                          end-c-layout-declaration])
+
+    ))
+
+
+(defn make-files [layout-file target-folder]
+  (let [qmk-header "resources/qmk-header.txt"
+        layout (edn/read-string (slurp layout-file))
+        qmk-body (make-body layout)]
+    (clojure.string/join "\n"
+                         [(slurp qmk-header)
+                          qmk-body])))
+
+(make-files "resources/ergodox-keymap.edn" "../qmk")
+
+
+
 
 
 (defn ergodox-layout [path]

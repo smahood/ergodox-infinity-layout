@@ -1,14 +1,20 @@
 (ns clj-ergodox.core
-  (:require [clj-ergodox.kll-hands :as kll]
+  (:require [clj-ergodox.kll :as kll]
+            [clj-ergodox.qmk :as qmk]
             [clj-ergodox.quick-ref :as reference]))
 
 (defn make-kll-files []
   (kll/make-files "resources/ergodox-keymap.edn" "../kiibohd/"))
 
+(defn make-qmk-files []
+  (qmk/make-files "resources/ergodox-keymap.edn" "../qmk"))
+
 (defn make-quick-reference []
   (reference/make-files "resources/ergodox-keymap.edn" "../reference"))
 
 
-(make-kll-files)
+(comment (make-kll-files))
 
-(make-quick-reference)
+(make-qmk-files)
+
+(comment (make-quick-reference))

@@ -3,8 +3,3 @@
 #include "action_layer.h"
 #include "version.h"
 
-
-
-
-
-[0] = LAYOUT_ergodox(
