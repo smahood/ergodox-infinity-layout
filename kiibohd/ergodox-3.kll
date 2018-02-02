@@ -16,18 +16,22 @@ U"3" : U"F3";   # left fingers [3 4]
 U"4" : U"F4";   # left fingers [4 4]
 U"5" : U"F5";   # left fingers [5 4]
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 
 # Fingers
 U"RIGHT" : U"LAT3";   # right fingers [1 0]
-U"SLASH" : U"SHIFT" + U"ALT" + U"9";   # right fingers [1 1]
-U"SEMICOLON" : U"ALT" + U"LBRACKET";   # right fingers [1 2]
-U"P" : U"SHIFT" + U"ALT" + U"LBRACKET";   # right fingers [1 3]
+U"SLASH" : ')';   # right fingers [1 1]
+U"SEMICOLON" : U"RBRACKET";   # right fingers [1 2]
+U"P" : '}';   # right fingers [1 3]
 U"0" : '->>';   # right fingers [1 4]
 U"UP" : '>';   # right fingers [2 0]
-U"PERIOD" : ')';   # right fingers [2 1]
-U"L" : U"RBRACKET";   # right fingers [2 2]
-U"O" : '}';   # right fingers [2 3]
+U"PERIOD" : U"SHIFT" + U"ALT" + U"9";   # right fingers [2 1]
+U"L" : U"ALT" + U"LBRACKET";   # right fingers [2 2]
+U"O" : U"SHIFT" + U"ALT" + U"LBRACKET";   # right fingers [2 3]
 U"9" : '->';   # right fingers [2 4]
 U"DOWN" : '<';   # right fingers [3 0]
 U"COMMA" : '(';   # right fingers [3 1]

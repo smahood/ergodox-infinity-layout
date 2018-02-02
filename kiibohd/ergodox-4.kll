@@ -16,6 +16,10 @@ U"3" : U"F13";   # left fingers [3 4]
 U"4" : U"F14";   # left fingers [4 4]
 U"5" : U"F15";   # left fingers [5 4]
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 
 # Fingers

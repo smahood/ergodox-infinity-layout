@@ -14,6 +14,10 @@ U"FUNCTION4" : U"ALT" + U"CTRL" + U"K";   # left fingers [3 0]
 U"FUNCTION5" : U"SHIFT" + U"ALT" + U"S";   # left fingers [4 0]
 U"V" : U"SHIFT" + U"CTRL" + U"T";   # left fingers [4 1]
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 
 # Fingers

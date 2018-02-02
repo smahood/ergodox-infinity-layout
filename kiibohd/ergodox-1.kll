@@ -25,6 +25,10 @@ U"4" : U"F4";   # left fingers [4 4]
 U"5" : U"F5";   # left fingers [5 4]
 U"ESCAPE" : flashMode();   # left fingers [6 4]
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 # Thumb
 U"PAGEUP" : U"APP";   # right thumb [2 1]

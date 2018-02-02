@@ -32,9 +32,7 @@
 
 
        "), \n"
-
-       )
-  )
+       ))
 
 
 (defn make-layers [layers]

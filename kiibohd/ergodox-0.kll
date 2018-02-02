@@ -50,6 +50,10 @@ U"FUNCTION2" : None;   # left fingers [6 1]
 U"FUNCTION1" : None;   # left fingers [6 3]
 U"ESCAPE" : None;   # left fingers [6 4]
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 # Thumb
 U"SPACE" : U"SPACE";   # right thumb [0 0]

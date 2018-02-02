@@ -3,7 +3,7 @@
             [clojure.string]
             [clj-ergodox.kll :as kll]))
 
-(def kll-edn (edn/read-string (slurp "resources/kll.edn")))
+(defn kll-edn [] (edn/read-string (slurp "resources/kll.edn")))
 
 
 (defn usb-code [x]
@@ -68,8 +68,10 @@
 
 
 
+
+
 (defn ->kll-keymap [exploded-keymap layout]
-  (let [kll-indexes (get kll-edn :matrix->kll-defaults)
+  (let [kll-indexes (get (kll-edn) :matrix->kll-defaults)
         shortcut-values (get layout :shortcuts)
         xf (map #(assoc %
                    :kll-index
@@ -83,10 +85,17 @@
 
 
 (defn make-kll-string [m]
-  (str "U\"" (clojure.string/upper-case (name (:kll-index m))) "\""
-       " : " (:kll-value m)
-       "   # " (:line-comment m)))
-
+  (let [scan-codes (get (kll-edn) :matrix->scancodes)]
+    #_(println (get-in scan-codes [(:hand m)
+                                   (:section m)
+                                   (:position m)]))
+    #_(str "S" (get-in scan-codes [(:section m)
+                                   (:position m)])
+           " : " (:kll-value m)
+           "   # " (:line-comment m))
+    (str "U\"" (clojure.string/upper-case (name (:kll-index m))) "\""
+         " : " (:kll-value m)
+         "   # " (:line-comment m))))
 
 
 
@@ -128,6 +137,8 @@
     (clojure.string/join "\n"
                          [kll-header
                           (hand-string layer-keymap :left)
+                          (str "# Sets all future Scan Code definitions to be applied to the first slave node\nConnectId = 1;")
+                          (str "\n")
                           (hand-string layer-keymap :right)])))
 
 

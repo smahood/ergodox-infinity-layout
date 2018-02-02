@@ -162,11 +162,11 @@
 
                                  [0 1] {0 nil}
                                  [1 1] {0 :enter
-                                        3 :cursive/wrap-with-round-braces}
+                                        3 :right-round-brace}
                                  [2 1] {0 :fun5
                                         1 :cursive/barf-forward
                                         2 :cursive/sexp-up-right
-                                        3 :right-round-brace
+                                        3 :cursive/wrap-with-round-braces
                                         4 :slash
                                         5 :fun5}
                                  [3 1] {0 :fun4
@@ -188,10 +188,10 @@
                                  [0 2] {0 nil}
                                  [1 2] {0 :escape
                                         2 :next-word
-                                        3 :cursive/wrap-with-square-braces}
+                                        3 :rbracket}
                                  [2 2] {0 :n
                                         2 :right
-                                        3 :rbracket
+                                        3 :cursive/wrap-with-square-braces
                                         4 :question-mark}
                                  [3 2] {0 :t
                                         1 :cursive/move-form-down
@@ -210,11 +210,11 @@
                                  [0 3] {0 nil}
                                  [1 3] {0 :backspace
                                         2 :pagedown
-                                        3 :cursive/wrap-with-curly-braces}
+                                        3 :right-curly-brace}
                                  [2 3] {0 :r
                                         1 :cursive/raise-form
                                         2 :end
-                                        3 :right-curly-brace}
+                                        3 :cursive/wrap-with-curly-braces}
                                  [3 3] {0 :c
                                         1 :cursive/move-form-up
                                         2 :up

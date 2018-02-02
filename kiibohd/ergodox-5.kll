@@ -8,6 +8,10 @@ Date = "2017-12-20";
 Generator = "clj-ergodox 0.1.0-SNAPSHOT";
 
 
+# Sets all future Scan Code definitions to be applied to the first slave node
+ConnectId = 1;
+
+
 ### Right Hand ###
 
 # Fingers
