@@ -1,0 +1,9 @@
+{1 "#include QMK_KEYBOARD_H
+    #include \"debug.h\"
+    #include \"action_layer.h\"
+    #include \"version.h"
+ 2 "const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {"
+ 3 "};"
+
+ }
+

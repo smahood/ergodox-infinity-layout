@@ -1,0 +1,201 @@
+{:left  {:thumb {;; [x y] Starts at bottom left
+                 [0 0] {0 :space                            ;:lctrl
+                        }
+                 [1 0] {0 :backspace                        ;:lalt
+                        }
+                 [2 0] {0 :end                              ;:escape
+                        }
+                 [1 1] {0 :home                             ;:lshift
+                        }
+
+                 [1 2] {0 :app                              ; :lgui
+                        1 :app}
+                 [2 2] {0 :lgui                             ;:space
+                        }}
+
+
+         :fingers
+                {;; [x y] starts at bottom left
+                 [0 0] {0 nil}
+                 [1 0] {0 nil}
+                 [2 0] {0 :q}
+                 [3 0] {0 :k
+                        2 :cursive/kill-sexp}
+                 [4 0] {0 :s
+                        2 :cursive/split-sexp}
+
+                 [0 1] {0 nil}
+                 [1 1] {0 :backslash}
+                 [2 1] {0 :j
+                        1 :cursive/send-form-before-to-repl}
+                 [3 1] {0 :fun2
+                        1 :cursive/send-top-form-to-repl}
+                 [4 1] {0 :fun1
+                        2 :cursive/send-top-form-to-repl}
+                 [5 1] {0 :x}
+                 [6 1] {0 nil}
+
+                 [0 2] {0 nil}
+                 [1 2] {0 :delete}
+                 [2 2] {0 :o
+                        1 :cursive/shrink-selection}
+                 [3 2] {0 :e
+                        1 :cursive/extend-selection}
+                 [4 2] {0 :u}
+                 [5 2] {0 :i}
+
+                 [0 3] {0 nil}
+
+                 [1 3] {0 :tab}
+                 [2 3] {0 :l
+                        1 :cursive/load-file-in-repl}
+                 [3 3] {0 :a
+                        1 :cursive/switch-repl-to-ns}
+                 [4 3] {0 :p}
+                 [5 3] {0 :y}
+                 [6 3] {0 nil}
+                 [0 4] {0 nil}
+                 [1 4] {0 :1
+                        1 :f1
+                        3 :f1
+                        4 :f12}
+                 [2 4] {0 :2
+                        1 :f2
+                        3 :f2
+                        4 :f12}
+                 [3 4] {0 :3
+                        1 :f3
+                        3 :f3
+                        4 :f13}
+                 [4 4] {0 :4
+                        1 :f4
+                        3 :f4
+                        4 :f14}
+                 [5 4] {0 :5
+                        1 :f5
+                        3 :f5
+                        4 :f15}
+                 [6 4] {0 nil
+                        1 :firmware/flashmode}}}
+
+ :right {:thumb {;; [x y] Starts at bottom right
+                 [0 0] {0 :enter                            ;:space
+                        }
+                 [1 0] {0 :tab                              ;:rshift
+                        }
+                 [2 0] {0 :pagedown                             ;:escape
+                        }
+                 [2 1] {0 :right-curly-brace
+                        ;:pageup                             ;:rgui
+                        1 :app}
+                 [1 2] {0 :rctrl                            ;:ralt
+                        }
+                 [2 2] {0 :ralt}}
+
+
+         :fingers
+                {;; [x y] starts at bottom right (mirror)
+                 [0 0] {0 nil}
+                 [1 0] {0 :z
+                        1 :lat1
+                        2 :lat2
+                        3 :lat3
+                        4 :lat4
+                        5 :lat5}
+                 [2 0] {0 :v
+                        2 :cursive/sexp-right
+                        3 :right-angle-brace
+                        4 :backslash}
+                 [3 0] {0 :w
+                        1 :cursive/join-sexp
+                        2 :cursive/sexp-down-right
+                        3 :left-angle-brace
+                        5 :comma}
+                 [4 0] {0 :m
+                        2 :cursive/sexp-left
+                        3 :underscore
+                        4 :plus
+                        5 :semicolon}
+
+                 [0 1] {0 nil}
+                 [1 1] {0 :enter
+                        3 :right-round-brace}
+                 [2 1] {0 :fun5
+                        1 :cursive/barf-forward
+                        2 :cursive/sexp-up-right
+                        3 :cursive/wrap-with-round-braces
+                        4 :slash
+                        5 :fun5}
+                 [3 1] {0 :fun4
+                        1 :cursive/splice-sexp
+                        2 :cursive/sexp-up-left
+                        3 :left-round-brace
+                        4 :fun4
+                        5 :period}
+                 [4 1] {0 :fun3
+                        1 :cursive/slurp-forward
+                        2 :cursive/sexp-down-left
+                        3 :fun3
+                        4 :minus
+                        5 :colon}
+                 [5 1] {0 :b
+                        5 :tilde}
+                 [6 1] {0 nil}
+
+                 [0 2] {0 nil}
+                 [1 2] {0 :escape
+                        2 :next-word
+                        3 :rbracket}
+                 [2 2] {0 :n
+                        2 :right
+                        3 :cursive/wrap-with-square-braces
+                        4 :question-mark}
+                 [3 2] {0 :t
+                        1 :cursive/move-form-down
+                        2 :down
+                        3 :lbracket
+                        5 :quote}
+                 [4 2] {0 :h
+                        2 :left
+                        3 :cursive/wrap-with-double-quotes
+                        4 :equals
+                        5 :double-quote}
+                 [5 2] {0 :d
+                        2 :previous-word
+                        5 :backtick}
+
+                 [0 3] {0 nil}
+                 [1 3] {0 :backspace
+                        2 :pagedown
+                        3 :right-curly-brace}
+                 [2 3] {0 :r
+                        1 :cursive/raise-form
+                        2 :end
+                        3 :cursive/wrap-with-curly-braces}
+                 [3 3] {0 :c
+                        1 :cursive/move-form-up
+                        2 :up
+                        3 :left-curly-brace}
+                 [4 3] {0 :g
+                        2 :home}
+                 [5 3] {0 :f
+                        2 :pageup}
+                 [6 3] {0 nil}
+
+                 [0 4] {0 nil}
+                 [1 4] {0 :0
+                        1 :f10
+                        3 :clj/thread-last}
+                 [2 4] {0 :9
+                        1 :f9
+                        3 :clj/thread-first}
+                 [3 4] {0 :8
+                        1 :f8
+                        3 :clj/thread-first-backwards}
+                 [4 4] {0 :7
+                        1 :f7
+                        3 :clj/thread-last-backwards}
+                 [5 4] {0 :6
+                        1 :f6}
+                 [6 4] {0 nil
+                        3 :firmware/flashmode}}}}

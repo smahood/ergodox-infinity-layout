@@ -52,14 +52,22 @@
 
 
 
- :custom-keymap {:left  {:thumb {;; [x y] Starts at bottom left
-                                 [0 0] {0 :lctrl}
-                                 [1 0] {0 :lalt}
-                                 [1 2] {0 :lshift}
-                                 [2 0] {0 :escape}
-                                 [2 1] {0 :lgui
+ :custom-keymap
+
+                {:left  {:thumb {;; [x y] Starts at bottom left
+                                 [0 0] {0 :space            ;:lctrl
+                                        }
+                                 [1 0] {0 :backspace        ;:lalt
+                                        }
+                                 [2 0] {0 :end                  ;:escape
+                                        }
+                                 [1 1] {0 :home              ;:lshift
+                                        }
+
+                                 [1 2] {0 :app                  ; :lgui
                                         1 :app}
-                                 [2 2] {0 :space}}
+                                 [2 2] {0 :lgui             ;:space
+                                        }}
 
 
                          :fingers
@@ -126,13 +134,17 @@
                                  [6 4] {0 nil
                                         1 :firmware/flashmode}}}
 
-                 :right {:thumb {;; [x y] Starts at bottom left
-                                 [0 0] {0 :space}
-                                 [1 0] {0 :rshift}
-                                 [1 2] {0 :ralt}
-                                 [2 0] {0 :escape}
-                                 [2 1] {0 :rgui
+                 :right {:thumb {;; [x y] Starts at bottom right
+                                 [0 0] {0 :enter            ;:space
+                                        }
+                                 [1 0] {0 :tab              ;:rshift
+                                        }
+                                 [2 0] {0 :pgdn             ;:escape
+                                        }
+                                 [2 1] {0 :pgup             ;:rgui
                                         1 :app}
+                                 [1 2] {0 :rctrl            ;:ralt
+                                        }
                                  [2 2] {0 :ralt}}
 
 

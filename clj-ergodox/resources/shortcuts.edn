@@ -1,0 +1,49 @@
+{:underscore                            "_"
+ :left-angle-brace                      "<"
+ :right-angle-brace                     ">"
+ :question-mark                         "?"
+ :double-quote                          "\""
+ :tilde                                 "~"
+ :colon                                 ":"
+ :plus                                  "+"
+ :left-curly-brace                      "{"
+ :right-curly-brace                     "}"
+ :left-round-brace                      "("
+ :right-round-brace                     ")"
+
+ :previous-word                         #{:ctrl :left}
+ :next-word                             #{:ctrl :right}
+
+ :clj/thread-first                      "->"
+ :clj/thread-first-backwards            "<-"
+ :clj/thread-last                       "->>"
+ :clj/thread-last-backwards             "<<-"
+
+ :cursive/load-file-in-repl             #{:ctrl :shift :l}
+ :cursive/switch-repl-to-ns             #{:ctrl :shift :n}
+ :cursive/move-form-up                  #{:ctrl :shift :up}
+ :cursive/raise-form                    #{:alt :r}
+ :cursive/shrink-selection              #{:ctrl :shift :w}
+ :cursive/extend-selection              #{:ctrl :w}
+ :cursive/move-form-down                #{:ctrl :shift :down}
+ :cursive/send-form-before-to-repl      #{:ctrl :shift :b}
+ :cursive/send-top-form-to-repl         #{:ctrl :shift :t}
+ :cursive/barf-forward                  #{:ctrl :shift :rbrace}
+ :cursive/join-sexp                     #{:alt :shift :j}
+ :cursive/slurp-forward                 #{:ctrl :shift :0}
+ :cursive/splice-sexp                   #{:alt :s}
+ :cursive/sexp-down-left                #{:ctrl :alt :p}
+ :cursive/sexp-up-left                  #{:ctrl :alt :u}
+ :cursive/sexp-up-right                 #{:ctrl :alt :n}
+ :cursive/sexp-left                     #{:ctrl :alt :b}
+ :cursive/sexp-down-right               #{:ctrl :alt :d}
+ :cursive/sexp-right                    #{:ctrl :alt :f}
+ :cursive/wrap-with-curly-braces        #{:alt :shift :lbracket}
+ :cursive/wrap-with-double-quotes       #{:alt :shift :quote}
+ :cursive/wrap-with-square-braces       #{:alt :lbracket}
+ :cursive/wrap-with-round-braces        #{:alt :shift :9}
+ :cursive/kill-sexp                     #{:ctrl :alt :k}
+ :cursive/split-sexp                    #{:alt :shift :s}
+ :cursive/close-round-brace-and-newline #{:alt :shift :0}
+
+ :firmware/flashmode                    ("flashMode")}
