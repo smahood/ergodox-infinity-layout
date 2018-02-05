@@ -30,8 +30,18 @@
                  (->> (get-in keymap [:right :thumb])
                       (sort-by #(vector (- (second (key %)))
                                         (- (first (key %)))))
-                      (into []))]]
-    (mapcat conj ordered)))
+                      (into []))]
+        xf (comp (mapcat conj))]
+
+
+    #_(mapcat conj ordered)
+    (transduce
+    xf
+    conj
+    ordered)))
+
+
+
 
 
 (defn layers [keymap]
@@ -65,7 +75,8 @@
 (defn make-file-contents []
   (let [constants (qmk-constants)
         translation (qmk-translation)
-        keymap (custom-keymap)]
+        keymap (custom-keymap)
+        sorted-keymap (sort-for-qmk keymap)]
 
     (string/join
       "\n"
@@ -74,40 +85,7 @@
        ""
        (get constants :enums)
        (get constants :start-layouts)
-       (let [ordered {:left
-                      {:fingers (->>
-                                  (-> keymap :left :fingers)
-                                  (sort-by #(vector (second (key %))
-                                                    (first (key %))))
-                                  (into []))
-                       :thumb   (->>
-                                  (-> keymap :left :thumb)
-                                  (sort-by #(vector (- (second (key %)))
-                                                    (first (key %))))
-                                  (into []))}
-                      :right
-                      {:fingers (->>
-                                  (-> keymap :right :fingers)
-                                  (sort-by #(vector (- (second (key %)))
-                                                    (- (first (key %)))))
-                                  (into []))
-                       :thumb   (->>
-                                  (-> keymap
-                                      :right
-                                      :thumb)
-                                  (sort-by #(vector (- (second (key %)))
-                                                    (- (first (key %)))))
-                                  (into []))}}]
-         #_(concat (-> ordered :left :fingers)
-                   (-> ordered :left :thumb)
-                   (-> ordered :right :fingers)
-                   (-> ordered :right :thumb))
-
-         (conj (get-in ordered [:left :fingers])
-               (get-in ordered [:left :thumb])
-               (get-in ordered [:right :fingers])
-               (get-in ordered [:right :thumb])
-               ))
+       sorted-keymap
        (get constants :stop-layouts)
        (get constants :last)])))
 
