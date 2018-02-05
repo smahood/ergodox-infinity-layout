@@ -15,34 +15,23 @@
 
 
 (defn sort-for-qmk [keymap]
-  (let [ordered {:left
-                 {:fingers (->>
-                             (-> keymap :left :fingers)
-                             (sort-by #(vector (second (key %))
-                                               (first (key %))))
-                             (into []))
-                  :thumb   (->>
-                             (-> keymap :left :thumb)
-                             (sort-by #(vector (- (second (key %)))
-                                               (first (key %))))
-                             (into []))}
-                 :right
-                 {:fingers (->>
-                             (-> keymap :right :fingers)
-                             (sort-by #(vector (- (second (key %)))
-                                               (- (first (key %)))))
-                             (into []))
-                  :thumb   (->>
-                             (-> keymap
-                                 :right
-                                 :thumb)
-                             (sort-by #(vector (- (second (key %)))
-                                               (- (first (key %)))))
-                             (into []))}}]
-    (concat (-> ordered :left :fingers)
-            (-> ordered :left :thumb)
-            (-> ordered :right :fingers)
-            (-> ordered :right :thumb))))
+  (let [ordered [(->> (get-in keymap [:left :fingers])
+                      (sort-by #(vector (second (key %))
+                                        (first (key %))))
+                      (into []))
+                 (->> (get-in keymap [:left :thumb])
+                      (sort-by #(vector (- (second (key %)))
+                                        (first (key %))))
+                      (into []))
+                 (->> (get-in keymap [:right :fingers])
+                      (sort-by #(vector (- (second (key %)))
+                                        (- (first (key %)))))
+                      (into []))
+                 (->> (get-in keymap [:right :thumb])
+                      (sort-by #(vector (- (second (key %)))
+                                        (- (first (key %)))))
+                      (into []))]]
+    (mapcat conj ordered)))
 
 
 (defn layers [keymap]
@@ -59,8 +48,6 @@
            :translation (get (qmk-translation) x)}]
     (or (:translation m) "KC_NO"))
 
-
-
   #_(let [shortcut (get shortcuts x)]
       (cond
         (nil? x) "KC_NO"
@@ -73,33 +60,67 @@
 
 
 
-(defn layer [keymap layer-key layer-num]
-  ; #define layer-key layer-num
-  (let [layer-keys (->> (sort-for-qmk keymap)
-                        (map second)
-                        (mapv #(get % 0))
-                        (map translate-key))]
 
-    (string/join "\n"
-                 [
-                  (str "[" layer-num "] = LAYOUT_ERGODOX(")
-                  (string/join ", " layer-keys)
-                  "), "])))
+
+(defn make-file-contents []
+  (let [constants (qmk-constants)
+        translation (qmk-translation)
+        keymap (custom-keymap)]
+
+    (string/join
+      "\n"
+      [(get constants :includes)
+       (get constants :defines)
+       ""
+       (get constants :enums)
+       (get constants :start-layouts)
+       (let [ordered {:left
+                      {:fingers (->>
+                                  (-> keymap :left :fingers)
+                                  (sort-by #(vector (second (key %))
+                                                    (first (key %))))
+                                  (into []))
+                       :thumb   (->>
+                                  (-> keymap :left :thumb)
+                                  (sort-by #(vector (- (second (key %)))
+                                                    (first (key %))))
+                                  (into []))}
+                      :right
+                      {:fingers (->>
+                                  (-> keymap :right :fingers)
+                                  (sort-by #(vector (- (second (key %)))
+                                                    (- (first (key %)))))
+                                  (into []))
+                       :thumb   (->>
+                                  (-> keymap
+                                      :right
+                                      :thumb)
+                                  (sort-by #(vector (- (second (key %)))
+                                                    (- (first (key %)))))
+                                  (into []))}}]
+         #_(concat (-> ordered :left :fingers)
+                   (-> ordered :left :thumb)
+                   (-> ordered :right :fingers)
+                   (-> ordered :right :thumb))
+
+         (conj (get-in ordered [:left :fingers])
+               (get-in ordered [:left :thumb])
+               (get-in ordered [:right :fingers])
+               (get-in ordered [:right :thumb])
+               ))
+       (get constants :stop-layouts)
+       (get constants :last)])))
 
 
 (let [constants (qmk-constants)
       translation (qmk-translation)
-      keymap (custom-keymap)
-      ]
-  (layer keymap "0" 0)
-  #_(->> (sort-for-qmk keymap)
-       (map second)
-       (mapv #(get % 0))
-       (map translate-key)
-       ;(string/join ", ")
-       )
+      keymap (custom-keymap)]
+  (make-file-contents)
 
-  )
+
+
+  #_(spit (str "../../qmk_firmware/keyboards/ergodox_infinity/keymaps/shaun/" "keymap.c")
+          (make-file-contents)))
 
 ; Step 1 - get base layer working with no shortcuts or translation
 
@@ -169,103 +190,6 @@
 ;            key, so just sends Alt+Ctrl+Shift.
 
 
-#define PERMISSIVE_HOLD
+;#define PERMISSIVE_HOLD
 
 
-
-(defn layer []
-  (str "/* Keymap " layer " */\n"
-       "[_" layer "] = LAYOUT_ergodox("
-
-
-       "), \n"
-       ))
-
-(defn num-layers [keymap]
-  (let [position-layers (for [hand keymap
-                              section (val hand)
-                              position (val section)
-                              layer-map (val position)]
-                          (key layer-map))]
-    (apply max
-           (filter int? position-layers))))
-
-(defn make-defines [layers]
-  (let [layer-defines (clojure.string/join "\n"
-                                           (map #(str "#define _" % " " %)
-                                                layers))]
-    (clojure.string/join "\n"
-                         [layer-defines])))
-
-
-
-
-(defn make-layers [layers]
-  (clojure.string/join "\n"
-                       (map make-layer layers)))
-
-
-
-(defn make-body [layout]
-  (let [keymap (get layout :custom-keymap)
-        max-layer (num-layers keymap)
-        integer-layers (range max-layer)]
-    (clojure.string/join "\n"
-                         [(make-defines integer-layers)
-                          start-c-layout-declaration
-                          (make-layers integer-layers)
-                          end-c-layout-declaration])
-
-    ))
-
-
-(defn make-files [layout-file target-folder]
-  (let [qmk-header "resources/qmk-header.txt"
-        layout (edn/read-string (slurp layout-file))
-        qmk-body (make-body layout)]
-    (clojure.string/join "\n"
-                         [(slurp qmk-header)
-                          qmk-body])))
-
-
-
-
-
-
-
-
-
-
-(make-files "resources/ergodox-keymap.edn" "../qmk")
-
-
-
-
-
-(defn ergodox-layout [path]
-  (edn/read-string (slurp path)))
-
-
-(defn ordered-layout [keymap]
-  {:left  [:equals
-           :1 :2 :3 :4 :5 :esc
-           :backslash :q :w :e :r :t :function1
-           :tab :a :s :d :f :g
-           :lshift :z :x :c :v :b :function2
-           :lgui :backtick :function3 :function4 :function5
-           :lctrl :lalt :home :backspace :delete :end]
-   :right [:function6 :6 :7 :8 :9 :0 :minus
-           :lbrace :y :u :i :o :p :rbrace
-           :h :j :k :l :semicolon :quote
-           :function7 :n :m :comma :period :slash :rshift
-           :left :down :up :right :rgui
-           :ralt :rctrl :pageup :pagedown :enter :space]})
-
-
-(let [el (ergodox-layout "resources/ergodox-keymap.edn")
-      km (:keymap el)
-      ol (ordered-layout km)]
-  {:left  (map #(get km %)
-               (:left ol))
-   :right (map #(get km %)
-               (:right ol))})

@@ -1,5 +1,6 @@
 (ns clj-ergodox.core
-  (:require [clj-ergodox.kll :as kll]
+  (:require [clojure.java.shell :refer [sh with-sh-dir]]
+            [clj-ergodox.kll :as kll]
             [clj-ergodox.qmk :as qmk]
             [clj-ergodox.quick-ref :as reference]))
 
@@ -18,3 +19,22 @@
 (make-qmk-files)
 
 (comment (make-quick-reference))
+
+
+
+
+
+(with-sh-dir "../../qmk_firmware/" (sh "make"
+                                       "ergodox_infinity:shaun"))
+
+(with-sh-dir "../../qmk_firmware/" (sh "make"
+                                       "ergodox_infinity:shaun"
+                                       "MASTER=right"))
+
+
+(with-sh-dir "../../qmk_firmware/" (sh "dfu-util"
+                                       "-D"
+                                       "ergodox_infinity_shaun.bin"
+                                       "-S"
+                                       "mk20dx256vlh7"))
+

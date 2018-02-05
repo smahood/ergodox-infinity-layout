@@ -85,8 +85,7 @@
                         }
                  [2 0] {0 :pagedown                             ;:escape
                         }
-                 [2 1] {0 :right-curly-brace
-                        ;:pageup                             ;:rgui
+                 [2 1] {0 :pageup                             ;:rgui
                         1 :app}
                  [1 2] {0 :rctrl                            ;:ralt
                         }
