@@ -22,7 +22,7 @@
 
 
 
-
+(qmk/make-file "../../qmk_firmware/keyboards/ergodox_infinity/keymaps/shaun/" "keymap.c")
 
 (with-sh-dir "../../qmk_firmware/" (sh "make"
                                        "ergodox_infinity:shaun"))

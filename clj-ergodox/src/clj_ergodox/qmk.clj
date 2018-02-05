@@ -2,21 +2,21 @@
   (:require [clojure.edn :as edn]
             [clojure.string :as string]))
 
-(defn qmk-constants [] (edn/read-string (slurp "resources/qmk-constants.edn")))
+(def qmk-constants (edn/read-string (slurp "resources/qmk-constants.edn")))
 
 
-(defn qmk-translation [] (edn/read-string (slurp "resources/qmk-translation.edn")))
+(def qmk-translation (edn/read-string (slurp "resources/qmk-translation.edn")))
 
 
-(defn custom-keymap [] (edn/read-string (slurp "resources/custom-keymap.edn")))
+(def custom-keymap (edn/read-string (slurp "resources/custom-keymap.edn")))
 
 
-(defn shortcuts [] (edn/read-string (slurp "resources/shortcuts.edn")))
+(def shortcuts (edn/read-string (slurp "resources/shortcuts.edn")))
 
 
 (defn sort-for-qmk [keymap]
   (let [ordered [(->> (get-in keymap [:left :fingers])
-                      (sort-by #(vector (second (key %))
+                      (sort-by #(vector (- (second (key %)))
                                         (first (key %))))
                       (into []))
                  (->> (get-in keymap [:left :thumb])
@@ -32,31 +32,37 @@
                                         (- (first (key %)))))
                       (into []))]
         xf (comp (mapcat conj))]
-
-
-    #_(mapcat conj ordered)
-    (transduce
-    xf
-    conj
-    ordered)))
-
-
-
+    (transduce xf conj ordered)))
 
 
 (defn layers [keymap]
-  (->> (sort-for-qmk keymap)
-       (map second)
-       (map keys)
-       (apply concat)
-       (into #{})))
+  (let [xf (comp
+             (map second)
+             (map keys)
+             (mapcat conj)
+             (distinct))]
+    (transduce xf conj (sort-for-qmk custom-keymap))))
 
 
-(defn translate-key [x]
-  (let [m {:x           x
-           :shortcut    (get (shortcuts) x)
-           :translation (get (qmk-translation) x)}]
-    (or (:translation m) "KC_NO"))
+(defn translate-key [layer-key x]
+  (let [shortcut-exists? (contains? shortcuts x)
+        shortcut (get shortcuts x)
+        translation-exists? (contains? qmk-translation x)
+        translation (get qmk-translation x)]
+
+    {:layer               layer-key
+     :x                   x
+     :shortcut-exists?    shortcut-exists?
+     :shortcut            shortcut
+     :translation-exists? translation-exists?
+     :translation         (cond
+                            (and (= layer-key 0) (nil? translation))
+                            "KC_NO"
+                            (and (not= layer-key 0) (nil? translation))
+                            "KC_TRANSPARENT"
+                            :else translation)
+
+     })
 
   #_(let [shortcut (get shortcuts x)]
       (cond
@@ -68,37 +74,39 @@
                :translation (get (qmk-translation) x)})))
 
 
-
+(defn layer [layer-key sorted-keymap]
+  (let [xf (comp
+             (map second)
+             (map #(get % layer-key))
+             (map #(translate-key layer-key %))
+             (map :translation))]
+    (transduce xf
+               conj
+               sorted-keymap)))
 
 
 
 (defn make-file-contents []
-  (let [constants (qmk-constants)
-        translation (qmk-translation)
-        keymap (custom-keymap)
-        sorted-keymap (sort-for-qmk keymap)]
-
+  (let [sorted-keymap (sort-for-qmk custom-keymap)]
     (string/join
       "\n"
-      [(get constants :includes)
-       (get constants :defines)
+      [(get qmk-constants :includes)
+       (get qmk-constants :defines)
        ""
-       (get constants :enums)
-       (get constants :start-layouts)
-       sorted-keymap
-       (get constants :stop-layouts)
-       (get constants :last)])))
+       (get qmk-constants :enums)
+       (get qmk-constants :start-layouts)
+       ;;;;;;;;;;;;;;; placeholder
+       (string/join ", " (layer 0 (sort-for-qmk custom-keymap)))
+       ;;;;;;;;;;;;;;;
+       (get qmk-constants :stop-layouts)
+       (get qmk-constants :last)])))
 
 
-(let [constants (qmk-constants)
-      translation (qmk-translation)
-      keymap (custom-keymap)]
-  (make-file-contents)
-
-
-
-  #_(spit (str "../../qmk_firmware/keyboards/ergodox_infinity/keymaps/shaun/" "keymap.c")
+(defn make-file [target-folder target-file]
+  (spit (str target-folder target-file)
           (make-file-contents)))
+
+
 
 ; Step 1 - get base layer working with no shortcuts or translation
 
